@@ -487,3 +487,5 @@ Caused by: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/Ins
 [01:50:52] [User Authenticator #1/INFO]: UUID of player Maths_96 is 0031529e-6db2-3d77-9fa1-f0e50f37bd9a
 [01:50:52] [Server thread/INFO]: Maths_96 joined the game
 [01:50:52] [Server thread/INFO]: Maths_96[/127.118.188.61:50669] logged in with entity id 643 at ([world]471.1758859871654, -46.0, 226.80083235900761)
+[03:02:57] [Server thread/INFO]: Maths_96 issued server command: /give Maths_96 minecraft:debug_stick
+[03:02:57] [Server thread/INFO]: [Maths_96: Gave 1 [Debug Stick] to Maths_96]
