@@ -562,3 +562,24 @@ Caused by: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/Ins
 [23:27:02] [Server thread/INFO]: Maths_96 issued server command: /ce reload
 [23:28:03] [Server thread/INFO]: Maths_96 issued server command: /ce reload
 [23:29:29] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[23:30:19] [Server thread/INFO]: Maths_96 issued server command: /gamemode creative
+[23:30:19] [Server thread/INFO]: [Maths_96: Set own game mode to Creative Mode]
+[23:30:22] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[23:30:22] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[23:30:29] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador
+[23:30:29] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[23:30:29] [luckperms-command-executor/INFO]: [LP] maths_96 had their existing parent groups cleared, and now only inherits default in context global.
+[23:30:39] [Server thread/INFO]: Maths_96 issued server command: /resetvaloresprueba1
+[23:30:39] [Server thread/INFO]: [Maths_96: Added Maths_96 to team [Jugador]]
+[23:30:39] [Server thread/INFO]: [Maths_96: Set 0 experience levels on Maths_96]
+[23:30:39] [Server thread/INFO]: [Maths_96: Removed tag '0' from Maths_96]
+[23:30:39] [Server thread/INFO]: [Maths_96: Removed tag '1' from Maths_96]
+[23:30:39] [Server thread/INFO]: [Maths_96: Removed tag '2' from Maths_96]
+[23:30:39] [Server thread/INFO]: [Maths_96: Removed tag '3' from Maths_96]
+[23:30:44] [Server thread/INFO]: Maths_96 issued server command: /gamemode creative
+[23:30:44] [Server thread/INFO]: [Maths_96: Set own game mode to Creative Mode]
+[23:30:48] [Server thread/INFO]: Maths_96 issued server command: /kit cazador
+[23:31:00] [Server thread/INFO]: Maths_96 issued server command: /setrole cazador
+[23:31:00] [Server thread/INFO]: Added Maths_96 to team [Cazador]
+[23:31:00] [luckperms-command-executor/INFO]: [LP] maths_96 had their existing parent groups cleared, and now only inherits cazador in context global.
+[23:34:54] [Server thread/INFO]: Maths_96 issued server command: /ce reload

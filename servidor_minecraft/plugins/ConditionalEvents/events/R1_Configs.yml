@@ -396,7 +396,7 @@ Events:
       - 'to_all: message:  ♻ &9&lGravity &3&lChanger&3:'
       - 'to_all: message: '
       - 'to_all: message:   &c• El daño por caída será'
-      - 'to_all: message:   &c  activado durante 30s.'
+      - 'to_all: message:   &c  activado durante 1 minuto.'
       - 'to_all: message: '
       - 'wait: 8'
       - 'console_command: gamerule fallDamage true'
