@@ -532,3 +532,23 @@ Caused by: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/Ins
 [23:09:37] [Server thread/INFO]: Target doesn't have the requested effect
 [23:09:37] [Server thread/INFO]: Added Maths_96 to team [esperando]
 [23:09:52] [Server thread/INFO]: Added Maths_96 to team [mision2_1]
+[23:10:53] [Server thread/INFO]: Added tag '2' to Maths_96
+[23:10:53] [Server thread/INFO]: Set 2 experience levels on Maths_96
+[23:10:53] [Server thread/INFO]: Set 0 experience points on Maths_96
+[23:10:53] [Server thread/INFO]: Target doesn't have the requested effect
+[23:10:53] [Server thread/INFO]: Added Maths_96 to team [esperando]
+[23:11:08] [Server thread/INFO]: Added Maths_96 to team [mision3_1]
+[23:11:33] [Server thread/INFO]: Maths_96 issued server command: /gamemode creative
+[23:11:33] [Server thread/INFO]: [Maths_96: Set own game mode to Creative Mode]
+[23:14:32] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[23:14:32] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[23:15:59] [Server thread/INFO]: Maths_96 issued server command: /effect clear Maths_96 minecraft:night_vision
+[23:15:59] [Server thread/INFO]: [Maths_96: Removed effect Night Vision from Maths_96]
+[23:16:05] [Server thread/INFO]: Maths_96 issued server command: /effect give Maths_96 minecraft:night_vision infinite
+[23:16:05] [Server thread/INFO]: [Maths_96: Applied effect Night Vision to Maths_96]
+[23:16:23] [Server thread/INFO]: Added tag '3' to Maths_96
+[23:16:23] [Server thread/INFO]: Set 3 experience levels on Maths_96
+[23:16:23] [Server thread/INFO]: Set 0 experience points on Maths_96
+[23:16:23] [Server thread/INFO]: Target doesn't have the requested effect
+[23:16:23] [Server thread/INFO]: Added Maths_96 to team [esperando]
+[23:16:38] [Server thread/INFO]: Added Maths_96 to team [mision4_4]

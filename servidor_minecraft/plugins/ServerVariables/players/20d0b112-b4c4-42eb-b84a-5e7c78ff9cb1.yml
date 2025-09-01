@@ -1,3 +1,5 @@
 name: Maths_96
 variables:
   ticks_medkit: '11'
+  puntos_ronda1: '2'
+  v_picar_COAL: '5'
