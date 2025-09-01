@@ -475,3 +475,60 @@ Caused by: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/Ins
 [22:52:35] [Server thread/INFO]: Maths_96 issued server command: /effect give Maths_96 minecraft:speed 100 10
 [22:52:35] [Server thread/INFO]: [Maths_96: Applied effect Speed to Maths_96]
 [22:59:21] [Server thread/INFO]: Maths_96 issued server command: /skin Maths_96
+[23:00:21] [Server thread/INFO]: Maths_96 issued server command: /gamemode survival
+[23:00:21] [Server thread/INFO]: [Maths_96: Set own game mode to Survival Mode]
+[23:00:22] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[23:00:22] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[23:00:28] [Server thread/INFO]: Maths_96 issued server command: /kit minero
+[23:00:28] [Server thread/INFO]: Maths_96 has made the advancement [Isn't It Iron Pick]
+[23:01:11] [Server thread/INFO]: Maths_96 issued server command: /ce call empezar_misiones_all
+[23:01:21] [Server thread/INFO]: No entity was found
+[23:01:21] [Server thread/INFO]: No entity was found
+[23:01:21] [Server thread/INFO]: [ConditionalEvents] That event doesn't exists on the config.
+[23:01:51] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[23:02:11] [Server thread/INFO]: Maths_96 issued server command: /ce call empezar_misiones_all
+[23:02:21] [Server thread/INFO]: No entity was found
+[23:02:21] [Server thread/INFO]: No entity was found
+[23:02:21] [Server thread/INFO]: [ConditionalEvents] That event doesn't exists on the config.
+[23:02:42] [Server thread/INFO]: Maths_96 issued server command: /set role jugador
+[23:02:44] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador
+[23:02:44] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[23:02:44] [luckperms-command-executor/INFO]: [LP] maths_96 had their existing parent groups cleared, and now only inherits default in context global.
+[23:02:49] [Server thread/INFO]: Maths_96 issued server command: /ce call empezar_misiones_all
+[23:02:59] [Server thread/INFO]: Added Maths_96 to team [mision1]
+[23:02:59] [Server thread/INFO]: Added tag '0' to Maths_96
+[23:02:59] [Server thread/INFO]: [ConditionalEvents] That event doesn't exists on the config.
+[23:04:03] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[23:04:06] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador
+[23:04:06] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[23:04:06] [luckperms-command-executor/INFO]: [LP] maths_96 had their existing parent groups cleared, and now only inherits default in context global.
+[23:04:14] [Server thread/INFO]: Maths_96 issued server command: /resetvalores_prueba1
+[23:04:19] [Server thread/INFO]: Maths_96 issued server command: /resetvalores
+[23:04:21] [Server thread/INFO]: Maths_96 issued server command: /resetvalores_p1
+[23:04:24] [Server thread/INFO]: Maths_96 issued server command: /resetvalores_P1
+[23:04:31] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[23:05:10] [Server thread/INFO]: Maths_96 issued server command: /resetvaloresprueba1
+[23:05:10] [Server thread/INFO]: [Maths_96: Added Maths_96 to team [Jugador]]
+[23:05:11] [Server thread/INFO]: [Maths_96: Set 0 experience levels on Maths_96]
+[23:05:11] [Server thread/INFO]: [Maths_96: Removed tag '0' from Maths_96]
+[23:05:45] [Server thread/INFO]: Maths_96 has made the advancement [Stone Age]
+[23:06:05] [Server thread/INFO]: Maths_96 issued server command: /gamerule announceAdvancements false
+[23:06:05] [Server thread/INFO]: [Maths_96: Gamerule announceAdvancements is now set to: false]
+[23:07:36] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador
+[23:07:36] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[23:07:36] [luckperms-command-executor/INFO]: [LP] maths_96 had their existing parent groups cleared, and now only inherits default in context global.
+[23:07:53] [Server thread/INFO]: Maths_96 issued server command: /ce call empezar_misiones_all
+[23:08:03] [Server thread/INFO]: Added Maths_96 to team [mision1]
+[23:08:03] [Server thread/INFO]: Added tag '0' to Maths_96
+[23:08:03] [Server thread/INFO]: [ConditionalEvents] Event prueba1_misionesactionbars enabled.
+[23:08:03] [Server thread/INFO]: [ConditionalEvents] Event prueba1_esperandoactionbar enabled.
+[23:08:46] [Server thread/INFO]: Maths_96 issued server command: /gamerule fallDamage true
+[23:08:46] [Server thread/INFO]: [Maths_96: Gamerule fallDamage is now set to: true]
+[23:08:50] [Server thread/INFO]: Maths_96 issued server command: /gamerule fallDamage false
+[23:08:50] [Server thread/INFO]: [Maths_96: Gamerule fallDamage is now set to: false]
+[23:09:37] [Server thread/INFO]: Added tag '1' to Maths_96
+[23:09:37] [Server thread/INFO]: Set 1 experience levels on Maths_96
+[23:09:37] [Server thread/INFO]: Set 0 experience points on Maths_96
+[23:09:37] [Server thread/INFO]: Target doesn't have the requested effect
+[23:09:37] [Server thread/INFO]: Added Maths_96 to team [esperando]
+[23:09:52] [Server thread/INFO]: Added Maths_96 to team [mision2_1]
