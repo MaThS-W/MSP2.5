@@ -630,6 +630,7 @@ Events:
     - '%inventory_type% == CRAFTING or %inventory_type% == WORKBENCH'
     - '%slot_type% == RESULT'
     - '%item% == AIR execute error2'
+    - '%item% == STONE_PRESSURE_PLATE or %item% == HEAVY_WEIGHTED_PRESSURE_PLATE or %item% == LIGHT_WEIGHTED_PRESSURE_PLATE or %item% == BLUE_DYE execute error3'
     - '%click_type% != SHIFT_LEFT or %click_type% != SHIFT_RIGHT'
     - '%click_type% == SHIFT_LEFT or %click_type% == SHIFT_RIGHT execute error1'
     - '%action_type% == NOTHING execute error2'
@@ -659,6 +660,11 @@ Events:
       - close_inventory
       error2:
       - 'cancel_event: true'
+      error3:
+      - 'cancel_event: true'
+      - 'message: &cNo puedes hacer eso'
+      - 'wait_ticks: 1'
+      - close_inventory
     enabled: true
   
   glowing_castigo:

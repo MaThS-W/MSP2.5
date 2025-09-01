@@ -1,5 +1,7 @@
 name: Maths_96
 variables:
   ticks_medkit: '11'
-  puntos_ronda1: '2'
-  v_picar_COAL: '5'
+  puntos_ronda1: '3'
+  v_picar_REDSTONE: '7'
+  v_picar_RAW_GOLD: '6'
+  v_cocinar_GOLD_INGOT: '6'

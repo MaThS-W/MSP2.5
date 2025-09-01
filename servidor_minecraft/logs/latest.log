@@ -552,3 +552,13 @@ Caused by: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/Ins
 [23:16:23] [Server thread/INFO]: Target doesn't have the requested effect
 [23:16:23] [Server thread/INFO]: Added Maths_96 to team [esperando]
 [23:16:38] [Server thread/INFO]: Added Maths_96 to team [mision4_4]
+[23:24:45] [Server thread/INFO]: Maths_96 issued server command: /gamemode creative
+[23:24:45] [Server thread/INFO]: [Maths_96: Set own game mode to Creative Mode]
+[23:26:28] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[23:26:30] [Server thread/INFO]: Maths_96 issued server command: /gamemode survival
+[23:26:30] [Server thread/INFO]: [Maths_96: Set own game mode to Survival Mode]
+[23:26:31] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[23:26:31] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[23:27:02] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[23:28:03] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[23:29:29] [Server thread/INFO]: Maths_96 issued server command: /ce reload
