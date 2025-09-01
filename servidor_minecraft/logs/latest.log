@@ -489,3 +489,13 @@ Caused by: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/Ins
 [01:50:52] [Server thread/INFO]: Maths_96[/127.118.188.61:50669] logged in with entity id 643 at ([world]471.1758859871654, -46.0, 226.80083235900761)
 [03:02:57] [Server thread/INFO]: Maths_96 issued server command: /give Maths_96 minecraft:debug_stick
 [03:02:57] [Server thread/INFO]: [Maths_96: Gave 1 [Debug Stick] to Maths_96]
+[03:14:34] [Server thread/INFO]: Maths_96 issued server command: /gamemode survival
+[03:14:34] [Server thread/INFO]: [Maths_96: Set own game mode to Survival Mode]
+[03:14:40] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[03:14:40] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[03:15:34] [Server thread/INFO]: Maths_96 issued server command: /gamemode survival
+[03:15:34] [Server thread/INFO]: [Maths_96: Set own game mode to Survival Mode]
+[03:15:35] [Server thread/INFO]: Maths_96 issued server command: /gamemode creative
+[03:15:35] [Server thread/INFO]: [Maths_96: Set own game mode to Creative Mode]
+[03:15:40] [Server thread/INFO]: Maths_96 lost connection: Disconnected
+[03:15:40] [Server thread/INFO]: Maths_96 left the game
