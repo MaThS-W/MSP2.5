@@ -1,0 +1,7 @@
+sounds: false
+Mobs:
+- cow
+progress:
+  chicken: 0
+  pig: 0
+  warden: 0

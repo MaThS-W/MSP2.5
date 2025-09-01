@@ -1,0 +1,33 @@
+AnimacionDeathLucky:
+  TargetConditions:
+  - hastag{t=0} true
+  Skills:
+  - particlesphere{particle=end_rod;amount=50;radius=0.6;y=0.35;s=0.04} @self
+  - state{s=died_lucky;priority=2} @self
+  - delay 20
+  - skill{s=DarItemsLucky;executeafterdeath=true}
+  - remove @self
+
+RespawnLucky:
+  Skills:
+  - delay 1200
+  - summon{type=luckyblock_prueba1;amount=1} @SpawnLocation
+
+DarItemsLucky:
+  Skills:
+  - vskill{s=LuckyItem_<random.1to5>} @trigger
+LuckyItem_1:
+  Skills:
+  - giveitem{i=Lucky_Velocidad}
+LuckyItem_2:
+  Skills:
+  - giveitem{i=Lucky_Regeneracion}
+LuckyItem_3:
+  Skills:
+  - giveitem{i=Lucky_CuracionInstantanea}
+LuckyItem_4:
+  Skills:
+  - giveitem{i=Lucky_VisionNocturna}
+LuckyItem_5:
+  Skills:
+  - giveitem{i=Lucky_Invisibilidad}

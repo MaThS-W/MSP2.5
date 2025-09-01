@@ -1,0 +1,1 @@
+{"parent":"minecraft:item/generated","textures":{"layer0":"minecraft:item/leather_horse_armor"},"overrides":[{"predicate":{"custom_model_data":1},"model":"modelengine:luckyblock_cyan/bone"},{"predicate":{"custom_model_data":2},"model":"modelengine:luckyblock_red/bone"},{"predicate":{"custom_model_data":3},"model":"modelengine:luckyblock_yellow/bone"}]}

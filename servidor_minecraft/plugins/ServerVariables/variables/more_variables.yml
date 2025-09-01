@@ -1,0 +1,66 @@
+variables:
+  puntos_ronda1:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_FLINT:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_AMETHYST:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_COAL:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_RAW_COPPER:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_RAW_IRON:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_RAW_GOLD:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_DIAMOND:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_LAPIS_LAZULI:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_REDSTONE:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_picar_EMERALD:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+
+  v_cocinar_COPPER_INGOT:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_cocinar_IRON_INGOT:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_cocinar_GOLD_INGOT:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+
+  ticks_medkit:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+    limitations:
+      min_value: 0
+      max_value: 15

@@ -1,0 +1,138 @@
+Events:
+  regalo_inicio:
+    type: player_command
+    conditions:
+    - '%command% == /regalo'
+    one_time: true
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'console_command: serveritem give chanclas_doradas 1 %player%'
+      - 'console_command: serveritem give pechera_escondite 1 %player%'
+      - 'console_command: serveritem give manzana_notch 1 %player%'
+      - 'console_command: serveritem give pocion_invicorta 1 %player%'
+      - 'console_command: serveritem give pocion_huida 2 %player%'
+      - 'console_command: serveritem give comida1 64 %player%'
+      - 'message: &a¡Regalo recibido exitosamente!'
+      - 'playsound: ENTITY_PLAYER_LEVELUP;10;2'
+      one_time:
+      - 'cancel_event: true'
+      - 'message: &cSolo puedes recibir el regalo una sola vez.'
+  empieza_evento:
+    type: player_command
+    conditions:
+    - '%command% == /iniciarevento'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'wait: 1'
+      - 'to_all: title: 60;120;40;&a&lINICIAMOS EVENTO;none'
+      - 'wait: 2'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_LAUNCH;5;0.8'
+      - 'wait: 1'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_LAUNCH;5;0.8'
+      - 'wait: 1'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_LAUNCH;5;0.8'
+      - 'wait: 1'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_TWINKLE;5;0.8'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_TWINKLE;5;0.8'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_TWINKLE;5;0.8'
+      - 'message: &7&o[Evento realizado con éxito]'
+  muerte_jugador:
+    type: player_kill
+    conditions:
+    - '%item% == NETHERITE_SWORD'
+    - '%victim% == PLAYER'
+    actions:
+      default:
+      - 'to_all: title: 20;100;20;&c&lJUGADOR ATRAPADO;😢 &6Maths ha encontrado a %target:player%'
+      - 'to_all: message: &6☹ &6&lMaths ha encontrado a %target:player%'
+      - 'console_command: gamemode spectator %target:player%'
+      - 'wait: 1'
+      - 'console_command: lp user %target:player% parent set muerto'
+  plugins:
+    type: player_command
+    ignore_with_permission: conditionalevents.admin
+    conditions:
+    - '%command% == /plugins'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &c¡No puedes hacer eso aquí!'
+  glow_maths:
+    type: item_interact
+    conditions:
+    - '%item% == PLAYER_HEAD'
+    - '%item_name% == Glow Maths'
+    - '%item_lore_line_1% == Brillo rojo para Maths'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'console_command: eglow set Maths_96 red'
+  xray_habilidad:
+    type: item_interact
+    conditions:
+    - '%item% == PLAYER_HEAD'
+    - '%item_name% == X-Ray de Jugadores'
+    - '%item_lore_line_1% == Habilidad de maths para darle'
+    - '%item_lore_line_2% == brillo a los supervivientes por 5s.'
+    - '%item_lore_line_3% == Cooldown: 1m'
+    cooldown: 60
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_GUITAR;5;1'
+      - 'wait_ticks: 10'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_GUITAR;5;1'
+      - 'wait_ticks: 10'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_GUITAR;5;1'
+      - 'wait: 1'
+      - 'to_all: playsound: ENTITY_WITHER_SPAWN;5;0.1'
+      - 'to_all: centered_message: &c&l-------------------------------'
+      - 'to_all: centered_message: &4&lMATHS HA ACTIVADO LA HABILIDAD'
+      - 'to_all: centered_message: &4&lDE BRILLO HACIA TODOS POR 5s'
+      - 'to_all: centered_message: &e&l¡CUIDADO!'
+      - 'to_all: centered_message: &c&l-------------------------------'
+      - 'wait: 1'
+      - 'console_command: eglow set * green'
+      - 'console_command: eglow set Maths_96 red'
+      - 'wait: 5'
+      - 'console_command: eglow unset *'
+      - 'console_command: eglow set Maths_96 red'
+      cooldown:
+      - 'cancel_event: true'
+      - 'actionbar: &cCooldown: &f&l%time%;60'
+  pegar_jugador:
+    type: player_attack
+    conditions:
+    - '%vault_rank% == default'
+    - '%victim% == PLAYER'
+    - '%random_1_10% <= 2'
+    actions:
+      default:
+      - 'console_command: eglow set %player% yellow'
+      - 'actionbar: &eBrillo: &c¡Estás brillando por golpear a un jugador, CUIDADO!;60'
+      - 'wait: 4'
+      - 'console_command: eglow unset %player%'
+    enabled: true
+  ganador_evento:
+    type: player_command
+    conditions:
+    - '%command% startsWith /eventwinner'
+    - '%args_length% < 1 execute error '
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'wait: 1'
+      - 'to_all: title: 60;120;40;&e&l¡Ganador del evento!;&a%arg_1%'
+      - 'wait: 2'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_LAUNCH;5;0.8'
+      - 'wait: 1'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_LAUNCH;5;0.8'
+      - 'wait: 1'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_LAUNCH;5;0.8'
+      - 'wait: 1'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_TWINKLE;5;0.8'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_TWINKLE;5;0.8'
+      - 'to_all: playsound: ENTITY_FIREWORK_ROCKET_TWINKLE;5;0.8'
+      - 'message: &7&o[Evento realizado con éxito]'

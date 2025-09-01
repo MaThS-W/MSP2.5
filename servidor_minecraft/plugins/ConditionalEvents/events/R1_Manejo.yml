@@ -1,0 +1,72 @@
+Events:
+  set_roles:
+    type: player_command
+    conditions:
+    - '%player_is_op% == yes'
+    - '%command% startsWith /setrole'
+    - '%arg_1% == jugador and %args_length% == 1 execute roles_1{%rol_lp%=default;%rol_t%=jugador}'
+    - '%arg_1% == cazador and %args_length% == 1 execute roles_1{%rol_lp%=cazador;%rol_t%=cazador}'
+    - '%arg_1% == jugador and %args_length% == 2 execute roles_2{%rol_lp%=default;%rol_t%=jugador}'
+    - '%arg_1% == cazador and %args_length% == 2 execute roles_2{%rol_lp%=cazador;%rol_t%=cazador}'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &8Uso del comando&7: &7/&8setrole &7(&8rol&7)'
+      - 'message: &8Roles disponibles&7: &8jugador&7, &8cazador&7.'
+      roles_1:
+      - 'cancel_event: true'
+      - 'console_command: lp user %player% parent set %rol_lp%'
+      - 'console_command: team join %rol_t% %player%'
+      roles_2:
+      - 'cancel_event: true'
+      - 'console_command: lp user %arg_2% parent set %rol_lp%'
+      - 'console_command: team join %rol_t% %player%'
+      
+  empezar_presentacion_prueba1:
+    type: call
+    actions:
+      default:
+      - 'to_all: title: 60;200;60;∀;none'
+      # INSERTAR COMANDOS DE PRESENTACIÓN CON ALGUN MOD DE CINEMATICA
+      # AÑADIR LOS SONIDOS DE LA VOZ DE LA PRESENTACIÓN
+      - 'wait: 12'
+      - 'to_condition: cazadores: teleport: world;401.5;16;373.5;90;0'
+      - 'to_condition: cazadores: playsound: ENTITY_ITEM_PICKUP;0.5;1.5'
+      - 'to_condition: cazadores: give_item: saved_item:warden_punch;amount:1;slot:0;slot_replace:true'
+      - 'to_condition: cazadores: give_item: saved_item:warden_punch_offhand;amount:1;slot:40;slot_replace:true'
+      - 'to_condition: jugadores: playsound: ENTITY_ITEM_PICKUP;0.5;1.5'
+      - 'to_condition: jugadores: give_item: saved_item:pico_minero;amount:1;slot:0;slot_replace:true'
+      - 'to_condition: jugadores: give_item: saved_item:casco_minero;amount:1;slot:39;slot_replace:true'
+      - 'to_condition: jugadores: give_item: saved_item:pan_infinito;amount:16;slot:8;slot_replace:true'
+      - 'wait: 60'
+      - 'call_event: empezar_misiones_all'
+      - 'wait: 11'
+      - 'to_all: message: '
+      - 'to_all: message:  🕒 &a&lTienen &c&lun minuto &a&lpara adaptarse'
+      - 'to_all: message:      &a&la las misiones.'
+      - 'to_all: message: '
+      - 'wait: 2'
+      - 'call_event: TimerSimple'
+      - 'wait: 25'
+      - 'to_all: playsound: BLOCK_SCULK_SHRIEKER_SHRIEK;5;1'
+      - 'wait: 15'
+      - 'to_all: playsound: BLOCK_SCULK_SHRIEKER_SHRIEK;5;1'
+      - 'wait: 15'
+      - 'to_all: playsound: BLOCK_SCULK_SHRIEKER_SHRIEK;5;1'
+      - 'wait: 5'
+      - 'to_all: playsound: ENTITY_WARDEN_EMERGE;5;0.5'
+      - 'to_all: title: 20;40;20;&4&lLos cazadores;&c&lhan sido liberados'
+      - 'to_condition: cazadores: give_item: saved_item:glowing_radar;amount:1;slot:1;slot_replace:true'
+      - 'to_condition: cazadores: give_item: saved_item:glowing_roulette;amount:1;slot:2;slot_replace:true'
+      - 'to_condition: cazadores: give_item: saved_item:warden_eyes;amount:1;slot:3;slot_replace:true'
+      - 'to_condition: cazadores: give_item: saved_item:gravity_changer;amount:1;slot:4;slot_replace:true'
+      - 'to_condition: cazadores: give_item: saved_item:curse_of_warden;amount:1;slot:5;slot_replace:true'
+      - 'to_condition: cazadores: give_item: saved_item:elpisoeslaburo;amount:1;slot:6;slot_replace:true'
+      - 'to_condition: cazadores: give_item: saved_item:reverse_card;amount:1;slot:7;slot_replace:true'
+      - 'to_condition: cazadores: give_item: saved_item:sonic_boom;amount:1;slot:8;slot_replace:true'
+      - 'console_command: fill 400 16 376 402 19 376 air replace minecraft:iron_bars'
+      - 'to_all: message: '
+      - 'to_all: message:  &c☠ &4&lLos cazadores han sido liberados.'
+      - 'to_all: message:     &cMucha suerte.'
+      - 'to_all: message: '
+      - 'call_event: TimerPrueba1'

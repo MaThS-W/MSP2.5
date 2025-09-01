@@ -1,0 +1,60 @@
+Events:
+  transición:
+    type: player_command
+    conditions:
+    - '%command% == /transición'
+    - '%player_is_op% == yes'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: title: 60;200;60;∀;none'
+      - 'wait_ticks: 61'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:hunger 3 255'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:jump_boost
+        10 137'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:slowness 10
+        255'
+      - 'wait: 4'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:hunger 3 255'
+      - 'wait: 6'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:saturation
+        5 10'
+  
+  TimerSimple:
+    type: call
+    actions:
+      default:
+      - 'console_command: stimer set 00:00:59 none BLUE false "󏿿"'
+      - 'console_command: stimer set 00:00:59 timer BLUE false "≭󏿠󏿻&c<MM:SS>󐀔񐥠"'
+  
+  TimerPrueba1:
+    type: call
+    actions:
+      default:
+      - 'console_command: stimer set 00:30:00 none1 BLUE false "󏿿"'
+      - 'console_command: stimer set 00:30:00 prueba1 BLUE false "≮󏿠󏿹񏚠<MM:SS>󐀔񐥠"'
+  
+  TimerPrueba2:
+    type: call
+    actions:
+      default:
+      - 'console_command: stimer set 00:00:59 none1 BLUE false "󏿿"'
+      - 'console_command: stimer set 00:00:59 prueba2 BLUE false "≯󏿠󏿶񏚠<MM:SS>󐀔񐥠"'
+  
+  TimerPrueba3:
+    type: call
+    actions:
+      default:
+      - 'console_command: stimer remove all'
+      - 'console_command: stimer set 00:00:59 none1 BLUE false "󏿿"'
+      - 'console_command: stimer set 00:00:59 prueba3 BLUE false "≰󏿠󏿠󏿽󏿽񏚠<MM:SS>󐀠󐀎񐥠"'
+  
+  TitleEscondete:
+    type: repetitive
+    repetitive_time: 15
+    actions:
+      default:
+      - 'actionbar: %animations_<flash>Ě</flash>%;0'
+    enabled: false
+
+

@@ -1,0 +1,2106 @@
+Events:
+  1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision1'
+     - '%variable_name% == v_picar_COAL'
+     - '%new_value% >= 5'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=1;%item_c%=COAL;%item_cantidad%=%new_value%;%next_quest%=2'
+
+  2_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision2_1'
+     - '%variable_name% == v_craftear_STONE_PICKAXE'
+     - '%new_value% >= 5'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=2;%item_c%=STONE_PICKAXE;%item_cantidad%=%new_value%;%next_quest%=3'
+
+  2_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision2_2'
+     - '%variable_name% == v_picar_FLINT'
+     - '%new_value% >= 11'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=2;%item_c%=FLINT;%item_cantidad%=%new_value%;%next_quest%=3'
+
+  2_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision2_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 12'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=2;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=3'
+
+  2_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision2_4'
+     - '%variable_name% == v_craftear_TORCH'
+     - '%new_value% >= 12'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=2;%item_c%=TORCH;%item_cantidad%=%new_value%;%next_quest%=3'
+
+  3_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision3_1'
+     - '%variable_name% == v_craftear_STONE_BUTTON'
+     - '%new_value% >= 5'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=3;%item_c%=ENCHANTING_TABLE;%item_cantidad%=%new_value%;%next_quest%=4'
+
+  3_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision3_2'
+     - '%variable_name% == v_picar_FLINT'
+     - '%new_value% >= 15'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=3;%item_c%=FLINT;%item_cantidad%=%new_value%;%next_quest%=4'
+
+  3_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision3_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 15'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=3;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=4'
+
+  3_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision3_4'
+     - '%variable_name% == v_craftear_REPEATER'
+     - '%new_value% >= 1'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=3;%item_c%=REPEATER;%item_cantidad%=%new_value%;%next_quest%=4'
+
+  4_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision4_1'
+     - '%variable_name% == v_craftear_ANVIL'
+     - '%new_value% >= 1'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=4;%item_c%=ANVIL;%item_cantidad%=%new_value%;%next_quest%=5'
+
+  4_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision4_2'
+     - '%variable_name% == v_picar_DIAMOND'
+     - '%new_value% >= 5'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=4;%item_c%=DIAMOND;%item_cantidad%=5;%next_quest%=5'
+
+  4_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision4_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 16'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=4;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=5'
+
+  4_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision4_4'
+     - '%variable_name% == v_craftear_POWERED_RAIL'
+     - '%new_value% >= 16'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=4;%item_c%=POWERED_RAIL;%item_cantidad%=%new_value%;%next_quest%=5'
+
+  5_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision5_1'
+     - '%variable_name% == v_craftear_CHAIN'
+     - '%new_value% >= 14'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=5;%item_c%=CHAIN;%item_cantidad%=14;%next_quest%=6'
+
+  5_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision5_2'
+     - '%variable_name% == v_picar_AMETHYST'
+     - '%new_value% >= 7'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=5;%item_c%=AMETHYST;%item_cantidad%=%new_value%;%next_quest%=6'
+
+  5_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision5_3'
+     - '%variable_name% == v_cocinar_COPPER_INGOT'
+     - '%new_value% >= 14'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=5;%item_c%=RAW_COPPER;%item_cantidad%=%new_value%;%next_quest%=6'
+
+  5_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision5_4'
+     - '%variable_name% == v_craftear_COMPASS'
+     - '%new_value% >= 4'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=5;%item_c%=COMPASS;%item_cantidad%=%new_value%;%next_quest%=6'
+
+  6_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision6_1'
+     - '%variable_name% == v_craftear_IRON_PICKAXE'
+     - '%new_value% >= 3'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=6;%item_c%=IRON_PICKAXE;%item_cantidad%=4;%next_quest%=7'
+
+  6_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision6_2'
+     - '%variable_name% == v_picar_DIAMOND'
+     - '%new_value% >= 12'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=6;%item_c%=DIAMOND;%item_cantidad%=%new_value%;%next_quest%=7'
+
+  6_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision6_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 16'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=6;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=7'
+
+  6_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision6_4'
+     - '%variable_name% == v_craftear_CLOCK'
+     - '%new_value% >= 5'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=6;%item_c%=CLOCK;%item_cantidad%=%new_value%;%next_quest%=7'
+
+  7_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision7_1'
+     - '%variable_name% == v_craftear_SPYGLASS'
+     - '%new_value% >= 2'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=7;%item_c%=SPYGLASS;%item_cantidad%=%new_value%;%next_quest%=8'
+
+  7_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision7_2'
+     - '%variable_name% == v_picar_DIAMOND'
+     - '%new_value% >= 10'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=7;%item_c%=DIAMOND;%item_cantidad%=%new_value%;%next_quest%=8'
+
+  7_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision7_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 22'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=7;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=8'
+
+  7_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision7_4'
+     - '%variable_name% == v_craftear_TORCH'
+     - '%new_value% >= 28'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=7;%item_c%=TORCH;%item_cantidad%=%new_value%;%next_quest%=8'
+
+  8_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision8_1'
+     - '%variable_name% == v_craftear_IRON_TRAPDOOR'
+     - '%new_value% >= 5'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=8;%item_c%=CAMPFIRE;%item_cantidad%=%new_value%;%next_quest%=9'
+
+  8_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision8_2'
+     - '%variable_name% == v_picar_RAW_COPPER'
+     - '%new_value% >= 17'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=8;%item_c%=RAW_COPPER;%item_cantidad%=%new_value%;%next_quest%=9'
+
+  8_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision8_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 10'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=8;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=9'
+
+  8_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision8_4'
+     - '%variable_name% == v_craftear_STONECUTTER'
+     - '%new_value% >= 1'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=8;%item_c%=STONECUTTER;%item_cantidad%=%new_value%;%next_quest%=9'
+
+  9_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision9_1'
+     - '%variable_name% == v_craftear_RAW_IRON_BLOCK'
+     - '%new_value% >= 2'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=9;%item_c%=RAW_IRON_BLOCK;%item_cantidad%=%new_value%;%next_quest%=10'
+
+  9_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision9_2'
+     - '%variable_name% == v_picar_REDSTONE'
+     - '%new_value% >= 7'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=9;%item_c%=REDSTONE;%item_cantidad%=%new_value%;%next_quest%=10'
+
+  9_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision9_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 14'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=9;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=10'
+
+  9_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision9_4'
+     - '%variable_name% == v_craftear_GOLDEN_CHESTPLATE'
+     - '%new_value% >= 3'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=9;%item_c%=GOLDEN_CHESTPLATE;%item_cantidad%=%new_value%;%next_quest%=10'
+
+  10_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision10_1'
+     - '%variable_name% == v_craftear_IRON_PICKAXE'
+     - '%new_value% >= 2'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=10;%item_c%=IRON_PICKAXE;%item_cantidad%=%new_value%;%next_quest%=11'
+
+  10_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision10_2'
+     - '%variable_name% == v_picar_LAPIS_LAZULI'
+     - '%new_value% >= 14'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=10;%item_c%=LAPIS_LAZULI;%item_cantidad%=%new_value%;%next_quest%=11'
+
+  10_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision10_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 16'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=10;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=11'
+
+  10_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision10_4'
+     - '%variable_name% == v_craftear_TORCH'
+     - '%new_value% >= 36'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=10;%item_c%=TORCH;%item_cantidad%=%new_value%;%next_quest%=11'
+
+  11_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision11_1'
+     - '%variable_name% == v_craftear_LIGHTNING_ROD'
+     - '%new_value% >= 4'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=11;%item_c%=LIGHTNING_ROD;%item_cantidad%=%new_value%;%next_quest%=12'
+
+  11_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision11_2'
+     - '%variable_name% == v_picar_DIAMOND'
+     - '%new_value% >= 15'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=11;%item_c%=DIAMOND;%item_cantidad%=%new_value%;%next_quest%=12'
+
+  11_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision11_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 17'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=11;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=12'
+
+  11_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision11_4'
+     - '%variable_name% == v_craftear_REDSTONE_TORCH'
+     - '%new_value% >= 14'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=11;%item_c%=REDSTONE_TORCH;%item_cantidad%=%new_value%;%next_quest%=12'
+
+  12_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision12_1'
+     - '%variable_name% == v_craftear_TORCH'
+     - '%new_value% >= 12'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=12;%item_c%=TORCH;%item_cantidad%=%new_value%;%next_quest%=13'
+
+  12_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision12_2'
+     - '%variable_name% == v_picar_LAPIS_LAZULI'
+     - '%new_value% >= 13'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=12;%item_c%=LAPIS_LAZULI;%item_cantidad%=%new_value%;%next_quest%=13'
+
+  12_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision12_3'
+     - '%variable_name% == v_cocinar_COPPER_INGOT'
+     - '%new_value% >= 16'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=12;%item_c%=COPPER_INGOT;%item_cantidad%=%new_value%;%next_quest%=13'
+
+  12_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision12_4'
+     - '%variable_name% == v_craftear_REDSTONE_TORCH'
+     - '%new_value% >= 4'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=12;%item_c%=REDSTONE_TORCH;%item_cantidad%=%new_value%;%next_quest%=13'
+
+  13_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision13_1'
+     - '%variable_name% == v_craftear_RAIL'
+     - '%new_value% >= 16'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=13;%item_c%=RAIL;%item_cantidad%=%new_value%;%next_quest%=14'
+
+  13_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision13_2'
+     - '%variable_name% == v_picar_RAW_COPPER'
+     - '%new_value% >= 18'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=13;%item_c%=RAW_COPPER;%item_cantidad%=%new_value%;%next_quest%=14'
+
+  13_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision13_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 10'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=13;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=14'
+
+  13_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision13_4'
+     - '%variable_name% == v_craftear_MINECART'
+     - '%new_value% >= 4'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=13;%item_c%=MINECART;%item_cantidad%=%new_value%;%next_quest%=14'
+
+  14_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision14_1'
+     - '%variable_name% == v_craftear_REPEATER'
+     - '%new_value% >= 3'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=14;%item_c%=REPEATER;%item_cantidad%=%new_value%;%next_quest%=15'
+
+  14_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision14_2'
+     - '%variable_name% == v_picar_AMETHYST'
+     - '%new_value% >= 12'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=14;%item_c%=AMETHYST;%item_cantidad%=%new_value%;%next_quest%=15'
+
+  14_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision14_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 17'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=14;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=15'
+
+  14_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision14_4'
+     - '%variable_name% == v_craftear_COPPER_BLOCK'
+     - '%new_value% >= 3'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=14;%item_c%=COPPER_BLOCK;%item_cantidad%=%new_value%;%next_quest%=15'
+
+  15_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision15_1'
+     - '%variable_name% == v_craftear_SHEARS'
+     - '%new_value% >= 3'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=15;%item_c%=SHEARS;%item_cantidad%=%new_value%;%next_quest%=16'
+
+  15_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision15_2'
+     - '%variable_name% == v_picar_LAPIS_LAZULI'
+     - '%new_value% >= 18'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=15;%item_c%=LAPIS_LAZULI;%item_cantidad%=%new_value%;%next_quest%=16'
+
+  15_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision15_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 14'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=15;%item_c%=RAW_IRON;%item_cantidad%=%new_value%;%next_quest%=16'
+
+  15_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision15_4'
+     - '%variable_name% == v_craftear_IRON_SWORD'
+     - '%new_value% >= 3'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=15;%item_c%=CLOCK;%item_cantidad%=%new_value%;%next_quest%=16'
+
+  16_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision16_1'
+     - '%variable_name% == v_craftear_REDSTONE_BLOCK'
+     - '%new_value% >= 2'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=16;%item_c%=CLOCK;%item_cantidad%=%new_value%;%next_quest%=17'
+
+  16_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision16_2'
+     - '%variable_name% == v_picar_REDSTONE'
+     - '%new_value% >= 7'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=16;%item_c%=REDSTONE;%item_cantidad%=%new_value%;%next_quest%=17'
+
+  16_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision16_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 7'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=16;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=17'
+
+  16_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision16_4'
+     - '%variable_name% == v_craftear_EMERALD_BLOCK'
+     - '%new_value% >= 1'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=16;%item_c%=EMERALD_BLOCK;%item_cantidad%=%new_value%;%next_quest%=17'
+
+  17_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision17_1'
+     - '%variable_name% == v_craftear_DIAMOND_PICKAXE'
+     - '%new_value% >= 2'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=17;%item_c%=DIAMOND_PICKAXE;%item_cantidad%=%new_value%;%next_quest%=18'
+
+  17_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision17_2'
+     - '%variable_name% == v_picar_AMETHYST'
+     - '%new_value% >= 10'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=17;%item_c%=AMETHYST;%item_cantidad%=%new_value%;%next_quest%=18'
+
+  17_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision17_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 22'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=17;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=18'
+
+  17_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision17_4'
+     - '%variable_name% == v_craftear_REDSTONE_TORCH'
+     - '%new_value% >= 13'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=17;%item_c%=REDSTONE_TORCH;%item_cantidad%=%new_value%;%next_quest%=18'
+
+  18_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision18_1'
+     - '%variable_name% == v_craftear_CHAIN'
+     - '%new_value% >= 15'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=18;%item_c%=CHAIN;%item_cantidad%=%new_value%;%next_quest%=19'
+
+  18_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision18_2'
+     - '%variable_name% == v_picar_EMERALD'
+     - '%new_value% >= 9'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=18;%item_c%=EMERALD;%item_cantidad%=%new_value%;%next_quest%=19'
+
+  18_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision18_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 14'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=18;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=19'
+
+  18_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision18_4'
+     - '%variable_name% == v_craftear_DIAMOND_CHESTPLATE'
+     - '%new_value% >= 2'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=18;%item_c%=DIAMOND_CHESTPLATE;%item_cantidad%=%new_value%;%next_quest%=19'
+
+  19_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision19_1'
+     - '%variable_name% == v_craftear_DIAMOND_BLOCK'
+     - '%new_value% >= 1'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=19;%item_c%=DIAMOND_BLOCK;%item_cantidad%=%new_value%;%next_quest%=20'
+
+  19_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision19_2'
+     - '%variable_name% == v_picar_AMETHYST'
+     - '%new_value% >= 5'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=19;%item_c%=AMETHYST;%item_cantidad%=%new_value%;%next_quest%=20'
+
+  19_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision19_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 18'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=19;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=20'
+
+  19_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision19_4'
+     - '%variable_name% == v_craftear_ACTIVATOR_RAIL'
+     - '%new_value% >= 18'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=19;%item_c%=ACTIVATOR_RAIL;%item_cantidad%=%new_value%;%next_quest%=20'
+
+  20_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision20_1'
+     - '%variable_name% == v_craftear_FLINT_AND_STEEL'
+     - '%new_value% >= 8'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=20;%item_c%=FLINT_AND_STEEL;%item_cantidad%=%new_value%;%next_quest%=21'
+
+  20_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision20_2'
+     - '%variable_name% == v_picar_FLINT'
+     - '%new_value% >= 13'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=20;%item_c%=FLINT;%item_cantidad%=%new_value%;%next_quest%=21'
+
+  20_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision20_3'
+     - '%variable_name% == v_cocinar_COPPER_INGOT'
+     - '%new_value% >= 16'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=20;%item_c%=COPPER_INGOT;%item_cantidad%=%new_value%;%next_quest%=21'
+
+  20_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision20_4'
+     - '%variable_name% == v_craftear_SPYGLASS'
+     - '%new_value% >= 4'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=20;%item_c%=SPYGLASS;%item_cantidad%=%new_value%;%next_quest%=21'
+
+  21_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision21_1'
+     - '%variable_name% == v_craftear_STONECUTTER'
+     - '%new_value% >= 2'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=21;%item_c%=STONECUTTER;%item_cantidad%=%new_value%;%next_quest%=22'
+
+  21_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision21_2'
+     - '%variable_name% == v_picar_DIAMOND'
+     - '%new_value% >= 18'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=21;%item_c%=DIAMOND;%item_cantidad%=%new_value%;%next_quest%=22'
+
+  21_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision21_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 19'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=21;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=22'
+
+  21_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision21_4'
+     - '%variable_name% == v_craftear_FURNACE'
+     - '%new_value% >= 4'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=21;%item_c%=FURNACE;%item_cantidad%=%new_value%;%next_quest%=22'
+
+  22_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision22_1'
+     - '%variable_name% == v_craftear_ARMOR_STAND'
+     - '%new_value% >= 3'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=22;%item_c%=ARMOR_STAND;%item_cantidad%=%new_value%;%next_quest%=23'
+
+  22_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision22_2'
+     - '%variable_name% == v_picar_RAW_COPPER'
+     - '%new_value% >= 7'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=22;%item_c%=RAW_COPPER;%item_cantidad%=%new_value%;%next_quest%=23'
+
+  22_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision22_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 12'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=22;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=23'
+
+  22_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision22_4'
+     - '%variable_name% == v_craftear_CHAIN'
+     - '%new_value% >= 9'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=22;%item_c%=CHAIN;%item_cantidad%=%new_value%;%next_quest%=23'
+
+  23_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision23_1'
+     - '%variable_name% == v_craftear_STONECUTTER'
+     - '%new_value% >= 6'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=23;%item_c%=STONECUTTER;%item_cantidad%=%new_value%;%next_quest%=24'
+
+  23_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision23_2'
+     - '%variable_name% == v_picar_REDSTONE'
+     - '%new_value% >= 20'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=23;%item_c%=REDSTONE;%item_cantidad%=%new_value%;%next_quest%=24'
+
+  23_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision23_3'
+     - '%variable_name% == v_cocinar_COPPER_INGOT'
+     - '%new_value% >= 15'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=23;%item_c%=COPPER_INGOT;%item_cantidad%=%new_value%;%next_quest%=24'
+
+  23_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision23_4'
+     - '%variable_name% == v_craftear_DROPPER'
+     - '%new_value% >= 4'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=23;%item_c%=DROPPER;%item_cantidad%=%new_value%;%next_quest%=24'
+
+  24_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision24_1'
+     - '%variable_name% == v_craftear_BUCKET'
+     - '%new_value% >= 10'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=24;%item_c%=BUCKET;%item_cantidad%=%new_value%;%next_quest%=25'
+
+  24_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision24_2'
+     - '%variable_name% == v_picar_FLINT'
+     - '%new_value% >= 15'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=24;%item_c%=FLINT;%item_cantidad%=%new_value%;%next_quest%=25'
+
+  24_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision24_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 23'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=24;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=25'
+
+  24_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision24_4'
+     - '%variable_name% == v_craftear_TORCH'
+     - '%new_value% >= 32'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=24;%item_c%=TORCH;%item_cantidad%=%new_value%;%next_quest%=25'
+
+  25_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision25_1'
+     - '%variable_name% == v_craftear_CHAIN'
+     - '%new_value% >= 15'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=25;%item_c%=CHAIN;%item_cantidad%=%new_value%;%next_quest%=26'
+
+  25_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision25_2'
+     - '%variable_name% == v_picar_REDSTONE'
+     - '%new_value% >= 20'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=25;%item_c%=REDSTONE;%item_cantidad%=%new_value%;%next_quest%=26'
+
+  25_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision25_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 12'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=25;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=26'
+
+  25_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision25_4'
+     - '%variable_name% == v_craftear_BLAST_FURNACE'
+     - '%new_value% >= 2'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=25;%item_c%=BLAST_FURNACE;%item_cantidad%=%new_value%;%next_quest%=26'
+
+  26_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision26_1'
+     - '%variable_name% == v_craftear_SPYGLASS'
+     - '%new_value% >= 7'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=26;%item_c%=SPYGLASS;%item_cantidad%=%new_value%;%next_quest%=27'
+
+  26_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision26_2'
+     - '%variable_name% == v_picar_RAW_GOLD'
+     - '%new_value% >= 12'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=26;%item_c%=RAW_GOLD;%item_cantidad%=%new_value%;%next_quest%=27'
+
+  26_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision26_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 15'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=26;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=27'
+
+  26_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision26_4'
+     - '%variable_name% == v_craftear_COAL_BLOCK'
+     - '%new_value% >= 4'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=26;%item_c%=COAL_BLOCK;%item_cantidad%=%new_value%;%next_quest%=27'
+
+  27_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision27_1'
+     - '%variable_name% == v_craftear_COPPER_BLOCK'
+     - '%new_value% >= 4'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=27;%item_c%=COPPER_BLOCK;%item_cantidad%=%new_value%;%next_quest%=28'
+
+  27_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision27_2'
+     - '%variable_name% == v_picar_EMERALD'
+     - '%new_value% >= 16'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=27;%item_c%=EMERALD;%item_cantidad%=%new_value%;%next_quest%=28'
+
+  27_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision27_3'
+     - '%variable_name% == v_cocinar_COPPER_INGOT'
+     - '%new_value% >= 17'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=27;%item_c%=COPPER_INGOT;%item_cantidad%=%new_value%;%next_quest%=28'
+
+  27_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision27_4'
+     - '%variable_name% == v_craftear_FURNACE_MINECART'
+     - '%new_value% >= 5'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=27;%item_c%=FURNACE_MINECART;%item_cantidad%=%new_value%;%next_quest%=28'
+
+  28_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision28_1'
+     - '%variable_name% == v_craftear_SPYGLASS'
+     - '%new_value% >= 10'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=28;%item_c%=SPYGLASS;%item_cantidad%=%new_value%;%next_quest%=29'
+
+  28_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision28_2'
+     - '%variable_name% == v_picar_REDSTONE'
+     - '%new_value% >= 24'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=28;%item_c%=REDSTONE;%item_cantidad%=%new_value%;%next_quest%=29'
+
+  28_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision28_3'
+     - '%variable_name% == v_cocinar_IRON_INGOT'
+     - '%new_value% >= 20'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=28;%item_c%=IRON_INGOT;%item_cantidad%=%new_value%;%next_quest%=29'
+
+  28_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision28_4'
+     - '%variable_name% == v_craftear_ANVIL'
+     - '%new_value% >= 3'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=28;%item_c%=ANVIL;%item_cantidad%=%new_value%;%next_quest%=29'
+
+  29_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision29_1'
+     - '%variable_name% == v_craftear_CLOCK'
+     - '%new_value% >= 6'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=29;%item_c%=CLOCK;%item_cantidad%=%new_value%;%next_quest%=30'
+
+  29_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision29_2'
+     - '%variable_name% == v_picar_REDSTONE'
+     - '%new_value% >= 25'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=29;%item_c%=REDSTONE;%item_cantidad%=%new_value%;%next_quest%=30'
+
+  29_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision29_3'
+     - '%variable_name% == v_cocinar_GOLD_INGOT'
+     - '%new_value% >= 14'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=29;%item_c%=GOLD_INGOT;%item_cantidad%=%new_value%;%next_quest%=30'
+
+  29_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision29_4'
+     - '%variable_name% == v_craftear_LAPIS_BLOCK'
+     - '%new_value% >= 5'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=29;%item_c%=LAPIS_BLOCK;%item_cantidad%=%new_value%;%next_quest%=30'
+
+  30_1:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision30_1'
+     - '%variable_name% == v_craftear_DIAMOND_PICKAXE'
+     - '%new_value% >= 8'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=30;%item_c%=DIAMOND_PICKAXE;%item_cantidad%=%new_value%;%next_quest%=31'
+
+  30_2:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision30_2'
+     - '%variable_name% == v_picar_EMERALD'
+     - '%new_value% >= 32'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=30;%item_c%=EMERALD;%item_cantidad%=%new_value%;%next_quest%=31'
+
+  30_3:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision30_3'
+     - '%variable_name% == v_cocinar_COPPER_INGOT'
+     - '%new_value% >= 32'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=30;%item_c%=COPPER_INGOT;%item_cantidad%=%new_value%;%next_quest%=31'
+
+  30_4:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+       - '%variable_type%;getVariable().getVariableType()'
+       - '%variable_name%;getVariable().getName()'
+       - '%new_value%;getNewValue()'
+    conditions:
+     - '%team_name% == mision30_4'
+     - '%variable_name% == v_craftear_TORCH'
+     - '%new_value% >= 72'
+     - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+       - 'call_event: restart_kit_minero;%numero_mision%=30;%item_c%=TORCH;%item_cantidad%=%new_value%;%next_quest%=31'

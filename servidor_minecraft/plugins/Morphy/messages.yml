@@ -1,0 +1,148 @@
+mobNames:
+  silverfish: silverfish
+  horse: caballo
+  vex: vex
+  wolf: lobo
+  vindicator: vindicador
+  bogged: bogged
+  shulker: shulker
+  wither: wither
+  cave_spider: araña de cueva
+  sniffer: sniffer
+  evoker: invocador
+  llama: llama
+  cow: vaca
+  guardian: guardián
+  turtle: tortuga
+  pig: cerdo
+  strider: zancudo
+  camel: camello
+  sheep: oveja
+  ghast: ghast
+  blaze: blaze
+  warden: warden
+  zombie_villager: aldeano zombi
+  illusioner: ilusionista
+  cod: bacalao
+  snowman: muñeco de nieve
+  pillager: saqueador
+  bee: abeja
+  endermite: endermite
+  allay: allay
+  panda: panda
+  tadpole: renacuajo
+  dolphin: delfín
+  goat: cabra
+  ender_dragon: dragón del end
+  ocelot: ocelote
+  husk: zombi momificado
+  zombie: zombi
+  mule: mula
+  piglin_brute: piglin bruto
+  spider: araña
+  donkey: burro
+  enderman: enderman
+  baby: bebé
+  chicken: gallina
+  ravager: devastador
+  creeper: creeper
+  skeleton: esqueleto
+  glow_squid: calamar brillante
+  piglin: piglin
+  breeze: brisa
+  drowned: ahogado
+  slime: slime
+  bat: murciélago
+  axolotl: ajolote
+  hoglin: hoglin
+  zoglin: zoglin
+  pufferfish: pez globo
+  wither_skeleton: esqueleto wither
+  stray: stray
+  skeleton_horse: caballo esqueleto
+  villager: aldeano
+  squid: calamar
+  tropical_fish: pez tropical
+  parrot: loro
+  magma_cube: cubo de magma
+  witch: bruja
+  fox: zorro
+  iron_golem: gólem de hierro
+  phantom: fantasma
+  salmon: salmón
+  cat: gato
+  polar_bear: oso polar
+  zombified_piglin: piglin zombificado
+  mushroom_cow: mushrrom
+  giant: gigante
+  frog: rana
+  rabbit: conejo
+youHaveMorphed: '&eTe has disfrazado de {mob}!'
+prefix: '&a&l »&e'
+vexTooManyLayers: '&e¡Demasiadas capas para atravesar!'
+unableToChangeView: '&c¡Los jugadores no pueden cambiar su vista de disfraz!'
+couldNotFindPlayer: '&eNo se pudo encontrar al jugador {target}'
+commands:
+  morph near: '&eTe dice si hay un jugador cerca de ti transformado'
+  unmorph <all:player>: '&eDestransforma a todos los jugadores o a un jugador en particular'
+  addmorph <player> <mob>: '&eAñadir una transformación a un jugador'
+  morph info <mob>: '&eMuestra las habilidades que obtiene una transformación'
+  delmorph <player> <mob>: '&eEliminar una transformación de un jugador'
+  morph reload: '&eRecarga el plugin'
+  forcemorph <player> <mob> [ignoreChecks] [silent]: '&eForzar a un jugador a transformarse en un mob'
+  morph: '&eTransformarse en un mob'
+  morph status: '&eMuestra en qué estás transformado'
+  unmorph: '&eVuelve a tu forma original'
+disableInThisWorld: '&eEste plugin está deshabilitado en este mundo'
+cooldown: '&e¡Por favor espera {time} segundos!'
+targetCanAlreadyMorph: '&e{target} ya puede transformarse en un {mob}'
+outOfMorphPower: '&e¡Sin energía de transformación! Debes aterrizar para recuperarla.'
+unmorphedByTime: '&eTu disfraz ha expirado y has vuelto a la normalidad!'
+morphedNearby: '&e{target} está cerca de ti y está disfrazado como un {mob}'
+unmorphedByStaff: '&e¡Un miembro del staff te ha quitado el disfraz!'
+canMorphInto: '&ePuedes transformarte en: {canMorphAs}'
+noPlayersMorphed: '&e¡No hay jugadores disfrazados actualmente!'
+invalidMorph: '&eTipo de disfraz inválido.'
+unableToMorph: '&eNo puedes disfrazarte de {mob}'
+morphReversed: '&e¡Has vuelto a la normalidad!'
+getMorphByKill: '&eHas matado a {target}, que estaba transformado como un {mob}, ahora obtienes su transformación!'
+noPermissions: '&cNo tienes los permisos necesarios'
+unmorphedByWorld: '&cHas sido destransformado porque las transformaciones están deshabilitadas en este mundo'
+openingInventory: '&eAbriendo inventario...'
+changeSoundVolSuccess: '&eLos sonidos de tu mob han sido %statusColor%!'
+morphedAs: '&eEstás transformado como un {mob}'
+addedMorphToTarget: '&eSe ha añadido el mob {mob} al usuario {target}'
+timeLeftAsMorph: '&eTiempo restante como {mob}: {min}:{second}'
+changeViewSuccess: '&e¡Ahora puedes %status% ver tu propia transformación!'
+removedMorph: '&eSe ha eliminado el mob {mob} del usuario {target}'
+morphOnCooldown: '&e¡Por favor espera {time} segundos!'
+noBabyType: '&e¡Ese mob no tiene una versión bebé!'
+notMorphedAsAnything: '&e¡No estás disfrazado de nada!'
+unableToMorphAsPlayer: '&eNo puedes transformarte en {target}. ¿Lo escribiste correctamente? (Las mayúsculas importan)'
+unmorphedAllPlayers: '&eTodos los jugadores ya no tienen disfraz'
+playerUnmorphed: '&eEl jugador {target} ha sido destransformado!'
+morphProgress: '&eAhora tienes {kills}/{requiredKills} asesinatos para obtener la transformación en un {mob}.'
+invalidArguments: '&e¡Argumentos inválidos! Escribe /morph help para obtener ayuda'
+diedLostCurrent: '&eFuiste asesinado por {player}, por lo que perdiste tu transformación actual: un {mob}'
+nobodyNearby: '&e¡No hay nadie disfrazado cerca de ti!'
+invalidPlayer: '&e¡No se pudo encontrar al jugador llamado {target}!'
+abilityToggledOff: '&e¡Tus habilidades han sido desactivadas!'
+endermenDisabled: '&eLos Enderman han sido deshabilitados porque crasheaban a otros jugadores'
+cannotMorphAsAnything: '&e¡Aún no puedes transformarte en nada! ¡Ve a matar algunos mobs!'
+morphedTitle: Actualmente transformado como un {mob}
+helpFormat: '&e{command}: {description}'
+reloadedConfig: '&e¡Configuración recargada con éxito!'
+abilityToggledOn: '&e¡Tus habilidades han sido activadas!'
+morphPower: '&eEnergía de transformación: &a'
+diedLostAll: '&eFuiste asesinado por {player}, por lo que perdiste todas tus transformaciones!'
+alreadyMorphed: '&eYa estás transformado como un {mob}'
+currentlyMorphedAs: '&eEstás transformado como un {mob}'
+unmorphedTitle: No estás disfrazado de nada
+clickToMorph: '&bHaz clic para transformarte en un {mob}'
+GUIdisabled: '&cLa GUI de transformación está deshabilitada. Para más ayuda usa /morph help'
+abilityInfo:
+  title: '&eInformación de habilidades para {mob}'
+mobDisabled: '&e¡Este mob no está habilitado!'
+morphedAsPlayer: '&eTe has transformado en {target}'
+creeperExploded: '&e¡Has explotado!'
+youCanNowMorph: '&e¡Ahora puedes transformarte en un {mob}!'

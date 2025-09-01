@@ -1,0 +1,31 @@
+luckyblock_red:
+  Type: ARMOR_STAND
+  Options:
+    HasGravity: false
+  Skills:
+  - model{mid=luckyblock_red} @self ~onSpawn
+
+luckyblock_blue:
+  Type: ARMOR_STAND
+  Options:
+    HasGravity: false
+  Skills:
+  - model{mid=m_luckyblock_cyan} @self ~onSpawn
+
+luckyblock_prueba2:
+  Type: ARMOR_STAND
+  Options:
+    HasGravity: false
+  Skills:
+  - model{mid=luckyblock_yellow} @self ~onSpawn
+
+luckyblock_prueba1:
+  Type: ARMOR_STAND
+  Options:
+    HasGravity: false
+    Glowing: false
+  Skills:
+  - model{mid=luckyblock_cyan;h=true} @self ~onSpawn
+  - teleportin{vector=0,1,0} @self ~onSpawn
+  - skill{s=AnimacionDeathLucky;executeafterdeath=true} @Trigger ~onDamaged
+  - skill{s=RespawnLucky} ~onDespawn

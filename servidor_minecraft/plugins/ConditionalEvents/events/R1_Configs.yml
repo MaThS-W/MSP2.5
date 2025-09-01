@@ -1,0 +1,794 @@
+Events:
+  restart_kit_minero:
+    type: call
+    actions:
+      default:
+      - 'console_command: tag %player% add %numero_mision%'
+      - 'title: 5;15;5;∁;none'
+      - 'playsound: ENTITY_PLAYER_LEVELUP;10;2'
+      - 'wait_ticks: 1'
+      - 'console_command: xp set %player% %numero_mision% levels'
+      - 'console_command: xp set %player% 0 points'
+      - close_inventory
+      - 'console_command: effect clear %player% minecraft:glowing'
+      - 'wait_ticks: 1'
+      - 'remove_item: %item_c%;%item_cantidad%'
+      - 'give_item: saved_item:pico_minero;amount:1;slot:0;slot_replace:true'
+      - 'give_item: saved_item:casco_minero;amount:1;slot:39;slot_replace:true'
+      - 'give_item: saved_item:pan_infinito;amount:16;slot:8;slot_replace:true'
+      - 'console_command: svar add puntos_ronda1 1 %player% silent:true'
+      - 'console_command: svar reset v_picar_FLINT %player% silent:true'
+      - 'console_command: svar reset v_picar_AMETHYST %player% silent:true'
+      - 'console_command: svar reset v_picar_RAW_COPPER %player% silent:true'
+      - 'console_command: svar reset v_picar_COAL %player% silent:true'
+      - 'console_command: svar reset v_picar_RAW_IRON %player% silent:true'
+      - 'console_command: svar reset v_picar_RAW_GOLD %player% silent:true'
+      - 'console_command: svar reset v_picar_DIAMOND %player% silent:true'
+      - 'console_command: svar reset v_picar_LAPIS_LAZULI %player% silent:true'
+      - 'console_command: svar reset v_picar_REDSTONE %player% silent:true'
+      - 'console_command: svar reset v_picar_EMERALD %player% silent:true'
+      - 'console_command: svar reset v_cocinar_COPPER_INGOT %player% silent:true'
+      - 'console_command: svar reset v_cocinar_IRON_INGOT %player% silent:true'
+      - 'console_command: svar reset v_cocinar_GOLD_INGOT %player% silent:true'
+      - 'console_command: svar reset v_craftear_TORCH %player% silent:true'
+      - 'console_command: svar reset v_craftear_LEVER %player% silent:true'
+      - 'console_command: svar reset v_craftear_ARMOR_STAND %player% silent:true'
+      - 'console_command: svar reset v_craftear_FLINT_AND_STEEL %player% silent:true'
+      - 'console_command: svar reset v_craftear_STONE_PICKAXE %player% silent:true'
+      - 'console_command: svar reset v_craftear_STONE_SWORD %player% silent:true'
+      - 'console_command: svar reset v_craftear_FURNACE %player% silent:true'
+      - 'console_command: svar reset v_craftear_BLAST_FURNACE %player% silent:true'
+      - 'console_command: svar reset v_craftear_STONE_BUTTON %player% silent:true'
+      - 'console_command: svar reset v_craftear_DROPPER %player% silent:true'
+      - 'console_command: svar reset v_craftear_COPPER_BLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_LIGHTNING_ROD %player% silent:true'
+      - 'console_command: svar reset v_craftear_SPYGLASS %player% silent:true'
+      - 'console_command: svar reset v_craftear_COAL_BLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_RAW_IRON_BLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_IRON_BLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_IRON_PICKAXE %player% silent:true'
+      - 'console_command: svar reset v_craftear_IRON_SWORD %player% silent:true'
+      - 'console_command: svar reset v_craftear_IRON_CHESTPLATE %player% silent:true'
+      - 'console_command: svar reset v_craftear_COMPASS %player% silent:true'
+      - 'console_command: svar reset v_craftear_SHEARS %player% silent:true'
+      - 'console_command: svar reset v_craftear_BUCKET %player% silent:true'
+      - 'console_command: svar reset v_craftear_MINECART %player% silent:true'
+      - 'console_command: svar reset v_craftear_FURNACE_MINECART %player% silent:true'
+      - 'console_command: svar reset v_craftear_RAIL %player% silent:true'
+      - 'console_command: svar reset v_craftear_ACTIVATOR_RAIL %player% silent:true'
+      - 'console_command: svar reset v_craftear_POWERED_RAIL %player% silent:true'
+      - 'console_command: svar reset v_craftear_DETECTOR_RAIL %player% silent:true'
+      - 'console_command: svar reset v_craftear_STONECUTTER %player% silent:true'
+      - 'console_command: svar reset v_craftear_IRON_TRAPDOOR %player% silent:true'
+      - 'console_command: svar reset v_craftear_ANVIL %player% silent:true'
+      - 'console_command: svar reset v_craftear_CHAIN %player% silent:true'
+      - 'console_command: svar reset v_craftear_RAW_GOLD_BLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_GOLD_BLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_GOLDEN_PICKAXE %player% silent:true'
+      - 'console_command: svar reset v_craftear_GOLDEN_SWORD %player% silent:true'
+      - 'console_command: svar reset v_craftear_GOLDEN_CHESTPLATE %player% silent:true'
+      - 'console_command: svar reset v_craftear_CLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_DIAMOND_BLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_DIAMOND_PICKAXE %player% silent:true'
+      - 'console_command: svar reset v_craftear_DIAMOND_SWORD %player% silent:true'
+      - 'console_command: svar reset v_craftear_DIAMOND_CHESTPLATE %player% silent:true'
+      - 'console_command: svar reset v_craftear_EMERALD_BLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_REDSTONE_BLOCK %player% silent:true'
+      - 'console_command: svar reset v_craftear_REDSTONE_TORCH %player% silent:true'
+      - 'console_command: svar reset v_craftear_REPEATER %player% silent:true'
+      - 'console_command: svar reset v_craftear_COMPARATOR %player% silent:true'
+      - 'console_command: team join esperando %player%'
+      - 'wait: 15'
+      - 'execute_action_group: mision1:25;mision2:25;mision3:25;mision4:25'
+      mision1:
+      - 'console_command: team join mision%next_quest%_1 %player%'
+      mision2:
+      - 'console_command: team join mision%next_quest%_2 %player%'
+      mision3:
+      - 'console_command: team join mision%next_quest%_3 %player%'
+      mision4:
+      - 'console_command: team join mision%next_quest%_4 %player%'
+  
+  kits:
+    type: player_command
+    conditions:
+    - '%player_is_op% == no execute error'
+    - '%player_is_op% == yes'
+    - '%command% startsWith /kit'
+    - '%arg_1% == minero execute kit_minero'
+    - '%arg_1% == cazador execute kit_cazador'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &7Kits disponibles:'
+      - 'message: &7- minero'
+      - 'message: &7- cazador'
+      kit_minero:
+      - 'cancel_event: true'
+      - 'playsound: ENTITY_ITEM_PICKUP;0.5;1.5'
+      - 'give_item: saved_item:pico_minero;amount:1;slot:0;slot_replace:true'
+      - 'give_item: saved_item:casco_minero;amount:1;slot:39;slot_replace:true'
+      - 'give_item: saved_item:pan_infinito;amount:16;slot:8;slot_replace:true'
+      kit_cazador:
+      - 'cancel_event: true'
+      - 'playsound: ENTITY_ITEM_PICKUP;0.5;1.5'
+      - 'give_item: saved_item:warden_punch;amount:1;slot:0;slot_replace:true'
+      - 'give_item: saved_item:warden_punch_offhand;amount:1;slot:40;slot_replace:true'
+      - 'give_item: saved_item:glowing_radar;amount:1;slot:1;slot_replace:true'
+      - 'give_item: saved_item:glowing_roulette;amount:1;slot:2;slot_replace:true'
+      - 'give_item: saved_item:warden_eyes;amount:1;slot:3;slot_replace:true'
+      - 'give_item: saved_item:gravity_changer;amount:1;slot:4;slot_replace:true'
+      - 'give_item: saved_item:curse_of_warden;amount:1;slot:5;slot_replace:true'
+      - 'give_item: saved_item:elpisoeslaburo;amount:1;slot:6;slot_replace:true'
+      - 'give_item: saved_item:reverse_card;amount:1;slot:7;slot_replace:true'
+      - 'give_item: saved_item:sonic_boom;amount:1;slot:8;slot_replace:true'
+      error:
+      - 'cancel_event: true'
+  
+  pan_infinito:
+    type: item_consume
+    conditions:
+    - '%item% == MELON_SLICE'
+    - '%item_custom_model_data% == 1'
+    - '%item_name% == Pan Infinito'
+    - '%player_gamemode% == ADVENTURE or %player_gamemode% == SURVIVAL'
+    actions:
+      default:
+      - 'wait_ticks: 5'
+      - 'give_item: saved_item:pan_infinito;amount:1'
+  
+  orbes:
+    type: item_interact
+    cooldown: 1
+    conditions:
+    - '%item% == ENDER_PEARL'
+    - '%action_type% == RIGHT_CLICK or %action_type% == SHIFT_RIGHT_CLICK'
+    - '%item_name% == Orbe de Velocidad execute velocidad'
+    - '%item_name% == Orbe de Regeneración execute regeneracion'
+    actions:
+      default: []
+      velocidad:
+      - 'cancel_event: true'
+      - 'give_potion_effect: SPEED;100;3;true'
+      - 'playsound: ITEM_TRIDENT_THUNDER;10;1.6'
+      - 'title: 5;5;10;none;∂'
+      - 'particle: effect:END_ROD offset:0.5;0.4;0.5 speed:0.005 amount:200'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      regeneracion:
+      - 'cancel_event: true'
+      - 'give_potion_effect: REGENERATION;100;2;true'
+      - 'title: 5;5;10;none;&c∂'
+      - 'particle: effect:HEART offset:0.5;0.4;0.5 speed:0.005 amount:30'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      - 'playsound: ENTITY_PUFFER_FISH_BLOW_UP;10;0.5'
+      - 'wait_ticks: 5'
+      - 'playsound: ENTITY_PUFFER_FISH_BLOW_UP;10;0.7'
+      - 'wait_ticks: 5'
+      - 'playsound: ENTITY_PUFFER_FISH_BLOW_UP;10;0.9'
+      - 'wait_ticks: 5'
+      - 'playsound: ENTITY_PUFFER_FISH_BLOW_UP;10;1.1'
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+  
+  botiquin:
+    type: item_interact
+    cooldown: 10
+    prevent_cooldown_activation:
+    - error
+    - error2
+    conditions:
+    - '%action_type% == LEFT_CLICK or %action_type% == SHIFT_LEFT_CLICK execute error2'
+    - '%item% == ENDER_PEARL'
+    - '%item_name% == Botiquin'
+    - '%player_health% == 20.0 execute error'
+    - '%player_health% < 20.0'
+    - '%action_type% == RIGHT_CLICK execute error'
+    - '%action_type% == SHIFT_RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'console_command: attribute %player% minecraft:generic.movement_speed base
+        set 0.01'
+      - 'console_command: effect give %player% minecraft:jump_boost 3 250 true'
+      - 'playsound_resource_pack: botiquin;1;1'
+      - 'title: 0;20;0;none;&c&l3'
+      - 'wait: 1'
+      - 'title: 0;20;0;none;&c&l2'
+      - 'wait: 1'
+      - 'title: 0;20;0;none;&c&l1'
+      - 'wait: 1'
+      - 'title: 0;20;0;none;&c&l✔'
+      - 'playsound_resource_pack: curacion;1;1'
+      - 'console_command: effect give %player% minecraft:instant_health 1 2 true'
+      - 'console_command: attribute %player% minecraft:generic.movement_speed base
+        set 0.10000000149011612'
+      - 'remove_item: %item%;1;name: %item_name%'
+      error:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+      error2: []
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+  
+  visores_nocturnos:
+    type: item_interact
+    cooldown: 31
+    conditions:
+    - '%item% == ENDER_PEARL and %item_name% == Visores Nocturnos'
+    - '%action_type% == RIGHT_CLICK execute error'
+    - '%action_type% == SHIFT_RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'title: 10;10;10;none;∀'
+      - 'wait_ticks: 10'
+      - 'give_item: saved_item:VisoresNocturnos;amount:1;slot:39;slot_replace:true'
+      - 'give_potion_effect: NIGHT_VISION;600;0;false'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      - 'wait: 29'
+      - 'title: 10;20;10;none;∀'
+      - 'wait_ticks: 5'
+      - 'give_item: saved_item:casco_minero;amount:1;slot:39;slot_replace:true'
+      error:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+  
+  chispas_invisibilidad_prueba1:
+    type: item_interact
+    cooldown: 10
+    conditions:
+    - '%item% == ENDER_PEARL'
+    - '%action_type% == RIGHT_CLICK or %action_type% == SHIFT_RIGHT_CLICK'
+    - '%item_name% == Chispas de Invisibilidad'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'give_item: id:AIR;amount:1;slot:39;slot_replace:true'
+      - 'give_potion_effect: INVISIBILITY;200;1;false'
+      - 'playsound: BLOCK_FIRE_EXTINGUISH;1;0.1'
+      - 'title: 5;5;10;none;&8∂'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      - 'wait: 10'
+      - 'give_item: saved_item:casco_minero;amount:1;slot:39;slot_replace:false'
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+  
+  chispas_invisibilidad_prueba2&3:
+    type: item_interact
+    cooldown: 10
+    conditions:
+    - '%item% == ENDER_PEARL'
+    - '%action_type% == RIGHT_CLICK or %action_type% == SHIFT_RIGHT_CLICK'
+    - '%item_name% == Chispas de Invisibilidad'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'give_potion_effect: INVISIBILITY;200;1;false'
+      - 'playsound: BLOCK_FIRE_EXTINGUISH;1;0.1'
+      - 'title: 5;5;10;none;&8∂'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+    enabled: false
+  
+  enfriamiento_habilidades:
+    type: item_interact
+    conditions:
+    - '%item% == ENDER_PEARL'
+    - '%action_type% == LEFT_CLICK or %action_type% == SHIFT_LEFT_CLICK execute error1'
+    - '%item_custom_model_data% == 7 or %item_custom_model_data% == 9 or %item_custom_model_data%
+      == 11 or %item_custom_model_data% == 13 or %item_custom_model_data% == 15 or %item_custom_model_data% == 17 or %item_custom_model_data% == 19'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+      error1: []
+  
+  habilidades_cazadores:
+    type: item_interact
+    cooldown: 300
+    prevent_cooldown_activation:
+    - error1
+    - error2
+    conditions:
+    - '%item% == ENDER_PEARL'
+    - '%action_type% == LEFT_CLICK or %action_type% == SHIFT_LEFT_CLICK execute error1'
+    - '%team_name% != cazador and %item_name% == Glowing Radar and %item_custom_model_data%
+      == 6 execute error2'
+    - '%team_name% == cazador and %item_name% == Glowing Radar and %item_custom_model_data%
+      == 6 execute glowing_radar'
+    - '%team_name% != cazador and %item_name% == Glowing Roulette and %item_custom_model_data%
+      == 8 execute error2'
+    - '%team_name% == cazador and %item_name% == Glowing Roulette and %item_custom_model_data%
+      == 8 execute glowing_roulette'
+    - '%team_name% != cazador and %item_name% == Warden Eyes and %item_custom_model_data%
+      == 10 execute error2'
+    - '%team_name% == cazador and %item_name% == Warden Eyes and %item_custom_model_data%
+      == 10 execute warden_eyes'
+    - '%team_name% != cazador and %item_name% == Gravity Changer and %item_custom_model_data%
+      == 12 execute error2'
+    - '%team_name% == cazador and %item_name% == Gravity Changer and %item_custom_model_data%
+      == 12 execute gravity_changer'
+    - '%team_name% != cazador and %item_name% == Curse of Warden and %item_custom_model_data%
+      == 14 execute error2'
+    - '%team_name% == cazador and %item_name% == Curse of Warden and %item_custom_model_data%
+      == 14 execute curse_of_warden'
+    - '%team_name% != cazador and %item_name% == El piso es laburo and %item_custom_model_data%
+      == 16 execute error2'
+    - '%team_name% == cazador and %item_name% == El piso es laburo and %item_custom_model_data%
+      == 16 execute elpisoeslaburo'
+    - '%team_name% != cazador and %item_name% == Reverse Card and %item_custom_model_data%
+      == 18 execute error2'
+    - '%team_name% == cazador and %item_name% == Reverse Card and %item_custom_model_data%
+      == 18 execute reverse_card'
+    actions:
+      default: []
+      glowing_radar:
+      - 'cancel_event: true'
+      - 'call_event: enfriamiento_hc'
+      - 'to_condition: cazadores: message: &7[Activando habilidad: "&f&lGlowing &x&0&0&F&F&0&0&lRadar&7"]...'
+      - 'wait: 2'
+      - 'call_event: sonidos_hc'
+      - 'wait_ticks: 70'
+      - 'to_all: message: '
+      - 'to_all: message:  ⏺ &f&lGlowing &x&0&0&F&F&0&0&lRadar&x&0&0&F&F&0&0:'
+      - 'to_all: message: '
+      - 'to_all: message:   &c• Los 5 jugadores más cercanos'
+      - 'to_all: message:   &c  a los wardens recibirán'
+      - 'to_all: message:   &c  glowing durante 12s.'
+      - 'to_all: message:   &c  (10 jugadores en total)'
+      - 'to_all: message: &4&l   ¡Alejate del Warden!'
+      - 'to_all: message: '
+      - 'wait: 8'
+      - 'console_command: execute at @a[team=cazador] run effect give @a[tag=0,sort=nearest,limit=5]
+        minecraft:glowing 12 0'
+      glowing_roulette:
+      - 'cancel_event: true'
+      - 'call_event: enfriamiento_hc'
+      - 'to_condition: cazadores: message: &7[Activando habilidad: "&f&lGlowing &x&F&F&0&0&0&0&lR&x&F&F&B&F&0&0&lo&x&7&F&F&F&0&0&lu&x&0&0&F&F&3&F&ll&x&0&0&F&F&F&F&le&x&0&0&3&F&F&F&lt&x&7&F&0&0&F&F&lt&x&F&F&0&0&B&F&le&7"]...'
+      - 'wait: 2'
+      - 'call_event: sonidos_hc'
+      - 'wait_ticks: 70'
+      - 'to_all: message: '
+      - 'to_all: message:  &d⏺ &f&lGlowing &x&F&F&0&0&0&0&lR&x&F&F&B&F&0&0&lo&x&7&F&F&F&0&0&lu&x&0&0&F&F&3&F&ll&x&0&0&F&F&F&F&le&x&0&0&3&F&F&F&lt&x&7&F&0&0&F&F&lt&x&F&F&0&0&B&F&le&f:'
+      - 'to_all: message: '
+      - 'to_all: message:   &c• Un jugador será elegido'
+      - 'to_all: message:   &c  aleatoriamente y recibirá'
+      - 'to_all: message:   &c  glowing durante 20s.'
+      - 'to_all: message: '
+      - 'wait: 8'
+      - 'set_block: location:413,37,412,world;id:REDSTONE_BLOCK'
+      - 'wait_ticks: 5'
+      - 'set_block: location:413,37,412,world;id:AIR'
+      - 'wait: 5'
+      warden_eyes:
+      - 'cancel_event: true'
+      - 'call_event: enfriamiento_hc'
+      - 'to_condition: cazadores: message: &7[Activando habilidad: "&f&l&x&4&0&F&F&D&F&lWarden &a&lEyes&7"]...'
+      - 'wait: 2'
+      - 'call_event: sonidos_hc'
+      - 'wait_ticks: 70'
+      - 'to_all: message: '
+      - 'to_all: message:  ⏺ &x&4&0&F&F&D&F&lWarden &a&lEyes&a:'
+      - 'to_all: message: '
+      - 'to_all: message:   &c• Los wardens recuperan su vision.'
+      - 'to_all: message:   &c  durante 20s.'
+      - 'to_all: message: '
+      - 'wait: 8'
+      - 'console_command: ce enable recuperar_vision_cazadores'
+      - 'wait: 20'
+      - 'console_command: ce disable recuperar_vision_cazadores'
+      gravity_changer:
+      - 'cancel_event: true'
+      - 'call_event: enfriamiento_hc'
+      - 'to_condition: cazadores: message: &7[Activando habilidad: "&9&lGravity &3&lChanger&7"]...'
+      - 'wait: 2'
+      - 'call_event: sonidos_hc'
+      - 'wait_ticks: 70'
+      - 'to_all: message: '
+      - 'to_all: message:  ♻ &9&lGravity &3&lChanger&3:'
+      - 'to_all: message: '
+      - 'to_all: message:   &c• El daño por caída será'
+      - 'to_all: message:   &c  activado durante 30s.'
+      - 'to_all: message: '
+      - 'wait: 8'
+      - 'console_command: gamerule fallDamage true'
+      - 'wait: 30'
+      - 'console_command: gamerule fallDamage false'
+      curse_of_warden:
+      - 'cancel_event: true'
+      - 'call_event: enfriamiento_hc'
+      - 'to_condition: cazadores: message: &7[Activando habilidad: "&c&lCurse of &x&4&0&F&F&D&F&lWarden&7"]...'
+      - 'wait: 2'
+      - 'call_event: sonidos_hc'
+      - 'wait_ticks: 70'
+      - 'to_all: message: '
+      - 'to_all: message:  ☢ &c&lCurse of &x&4&0&F&F&D&F&lWarden&x&4&0&F&F&D&F:'
+      - 'to_all: message: '
+      - 'to_all: message:   &c• Todos los jugadores recibirán'
+      - 'to_all: message:   &c  la visión del warden durante 20s.'
+      - 'to_all: message: '
+      - 'wait: 8'
+      - 'to_condition: jugadores: give_potion_effect: DARKNESS;400;1;false'
+      elpisoeslaburo:
+      - 'cancel_event: true'
+      - 'call_event: enfriamiento_hc'
+      - 'to_condition: cazadores: message: &7[Activando habilidad: "&f&lEl piso es
+        laburo&7"]...'
+      - 'wait: 2'
+      - 'call_event: sonidos_hc'
+      - 'wait_ticks: 70'
+      - 'to_all: message: '
+      - 'to_all: message:  ↑ &f&lEl piso es laburo&f:'
+      - 'to_all: message: '
+      - 'to_all: message:   &c• El piso es laburo durante 5s.'
+      - 'to_all: message:   &c• Daño por caída activado'
+      - 'to_all: message:   &c  durante 10s.'
+      - 'to_all: message: '
+      - 'wait: 8'
+      - 'to_condition: jugadores: give_potion_effect: LEVITATION;100;3;false'
+      - 'console_command: gamerule fallDamage true'
+      - 'wait: 10'
+      - 'console_command: gamerule fallDamage false'
+      reverse_card:
+      - 'cancel_event: true'
+      - 'call_event: enfriamiento_hc'
+      - 'to_condition: cazadores: message: &7[Activando habilidad: "&9Reverse &bCard&7"]...'
+      - 'wait: 2'
+      - 'call_event: sonidos_hc'
+      - 'wait_ticks: 70'
+      - 'to_all: message: '
+      - 'to_all: message:  🔄 &9&lReverse &b&lCard&b:'
+      - 'to_all: message: '
+      - 'to_all: message:   &c• Todos los jugadores recibirán'
+      - 'to_all: message:   &c  la visión del warden durante 10s.'
+      - 'to_all: message:   &c• Los wardens recuperan su visión'
+      - 'to_all: message:   &c  durante 10s.'
+      - 'to_all: message: '
+      - 'wait: 8'
+      - 'console_command: ce enable recuperar_vision_cazadores'
+      - 'to_condition: jugadores: give_potion_effect: DARKNESS;200;1;false'
+      - 'wait: 10'
+      - 'console_command: ce disable recuperar_vision_cazadores'
+      error1: []
+      error2:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+      - 'message: &cNo eres cazador!'
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+  
+  sonidos_hc:
+    type: call
+    actions:
+      default:
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_GUITAR;5;1'
+      - 'wait_ticks: 10'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_GUITAR;5;1'
+      - 'wait_ticks: 10'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_GUITAR;5;1'
+      - 'wait_ticks: 10'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_GUITAR;5;1'
+      - 'wait_ticks: 10'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_GUITAR;5;1'
+      - 'wait_ticks: 10'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_GUITAR;5;1'
+      - 'wait_ticks: 10'
+      - 'to_all: playsound: BLOCK_SCULK_SHRIEKER_SHRIEK;5;1'
+      - 'wait_ticks: 5'
+      - 'wait: 5'
+      - 'to_all: playsound: ENTITY_WARDEN_SONIC_CHARGE;5;0.8'
+      - 'wait: 3'
+      - 'to_all: playsound: ENTITY_WARDEN_SONIC_BOOM;5;1'
+  
+  enfriamiento_hc:
+    type: call
+    actions:
+      default:
+      - 'give_item: saved_item:glowing_radar_off;amount:1;slot:1;slot_replace:true'
+      - 'give_item: saved_item:glowing_roulette_off;amount:1;slot:2;slot_replace:true'
+      - 'give_item: saved_item:warden_eyes_off;amount:1;slot:3;slot_replace:true'
+      - 'give_item: saved_item:gravity_changer_off;amount:1;slot:4;slot_replace:true'
+      - 'give_item: saved_item:curse_of_warden_off;amount:1;slot:5;slot_replace:true'
+      - 'give_item: saved_item:elpisoeslaburo_off;amount:1;slot:6;slot_replace:true'
+      - 'give_item: saved_item:reverse_card_off;amount:1;slot:7;slot_replace:true'
+      - 'wait: 120'
+      - 'give_item: saved_item:glowing_radar;amount:1;slot:1;slot_replace:true'
+      - 'give_item: saved_item:glowing_roulette;amount:1;slot:2;slot_replace:true'
+      - 'give_item: saved_item:warden_eyes;amount:1;slot:3;slot_replace:true'
+      - 'give_item: saved_item:gravity_changer;amount:1;slot:4;slot_replace:true'
+      - 'give_item: saved_item:curse_of_warden;amount:1;slot:5;slot_replace:true'
+      - 'give_item: saved_item:elpisoeslaburo;amount:1;slot:6;slot_replace:true'
+      - 'give_item: saved_item:reverse_card;amount:1;slot:7;slot_replace:true'
+  
+  recuperar_vision_cazadores:
+    type: repetitive
+    repetitive_time: 1
+    actions:
+      default:
+      - 'to_condition: cazadores: remove_potion_effect: DARKNESS'
+    enabled: false
+  
+  palos&rocas:
+    type: block_interact
+    cooldown: 1
+    conditions:
+    - '%player_gamemode% == ADVENTURE or %player_gamemode% == SURVIVAL'
+    - '%block% == DEAD_HORN_CORAL_FAN execute palos'
+    - '%block% == STONE_BUTTON execute rocas'
+    - '%block% == DARK_OAK_BUTTON execute dark_rocas'
+    actions:
+      default: []
+      palos:
+      - 'cancel_event: true'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:AIR'
+      - 'give_item: id:STICK;amount:%random_1_2%'
+      - 'playsound: ENTITY_ITEM_PICKUP;0.5;1.5'
+      - 'wait: 15'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:%block%;block_data:%block_data%'
+      rocas:
+      - 'cancel_event: true'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:AIR'
+      - 'give_item: id:COBBLESTONE;amount:%random_1_2%'
+      - 'playsound: ENTITY_ITEM_PICKUP;0.5;1.5'
+      - 'wait: 15'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:%block%;block_data:%block_data%'
+      dark_rocas:
+      - 'cancel_event: true'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:AIR'
+      - 'give_item: id:COBBLED_DEEPSLATE;amount:%random_1_2%'
+      - 'playsound: ENTITY_ITEM_PICKUP;0.5;1.5'
+      - 'wait: 15'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:%block%;block_data:%block_data%'
+    enabled: true
+  
+  romper_minerales:
+    type: block_break
+    conditions:
+    - '%player_gamemode% == ADVENTURE or %player_gamemode% == SURVIVAL'
+    - '%block% == GRAVEL execute gravel'
+    - '%block% == AMETHYST_CLUSTER execute amethyst'
+    - '%block% == COPPER_ORE execute minerales_basicos{%item_mineral%=RAW_COPPER;%tiempo%=30}'
+    - '%block% == DEEPSLATE_COPPER_ORE execute minerales_basicos{%item_mineral%=RAW_COPPER;%tiempo%=30}'
+    - '%block% == COAL_ORE execute minerales_basicos{%item_mineral%=COAL;%tiempo%=30}'
+    - '%block% == DEEPSLATE_COAL_ORE execute minerales_basicos{%item_mineral%=COAL;%tiempo%=30}'
+    - '%block% == IRON_ORE execute minerales_basicos{%item_mineral%=RAW_IRON;%tiempo%=30}'
+    - '%block% == DEEPSLATE_IRON_ORE execute minerales_basicos{%item_mineral%=RAW_IRON;%tiempo%=30}'
+    - '%block% == GOLD_ORE execute minerales_basicos{%item_mineral%=RAW_GOLD;%tiempo%=30}'
+    - '%block% == DEEPSLATE_GOLD_ORE execute minerales_basicos{%item_mineral%=RAW_GOLD;%tiempo%=30}'
+    - '%block% == DIAMOND_ORE execute minerales_basicos{%item_mineral%=DIAMOND;%tiempo%=30}'
+    - '%block% == DEEPSLATE_DIAMOND_ORE execute minerales_basicos{%item_mineral%=DIAMOND;%tiempo%=30}'
+    - '%block% == EMERALD_ORE execute minerales_basicos{%item_mineral%=EMERALD;%tiempo%=30}'
+    - '%block% == DEEPSLATE_EMERALD_ORE execute minerales_basicos{%item_mineral%=EMERALD;%tiempo%=30}'
+    - '%block% == LAPIS_ORE execute minerales_basicos{%item_mineral%=LAPIS_LAZULI;%tiempo_minerales%=30}'
+    - '%block% == DEEPSLATE_LAPIS_ORE execute minerales_basicos{%item_mineral%=LAPIS_LAZULI;%tiempo%=30}'
+    - '%block% == REDSTONE_ORE execute minerales_basicos{%item_mineral%=REDSTONE;%tiempo%=30}'
+    - '%block% == DEEPSLATE_REDSTONE_ORE execute minerales_basicos{%item_mineral%=REDSTONE;%tiempo%=30}'
+    actions:
+      minerales_basicos:
+      - 'cancel_event: true'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:BEDROCK'
+      - 'give_item: id:%item_mineral%'
+      - 'playsound: BLOCK_NOTE_BLOCK_BELL;10;1'
+      - 'console_command: svar add v_picar_%item_mineral% 1 %player% silent:true'
+      - 'wait: %tiempo%'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:%block%'
+      
+      gravel:
+      - 'cancel_event: true'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:MUD'
+      - 'give_item: id:FLINT'
+      - 'playsound: BLOCK_NOTE_BLOCK_BELL;10;1'
+      - 'console_command: svar add v_picar_FLINT 1 %player% silent:true'
+      - 'wait: 30'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:%block%'
+      
+      amethyst:
+      - 'cancel_event: true'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:SMALL_AMETHYST_BUD;block_data:%block_data%'
+      - 'give_item: id:AMETHYST_SHARD'
+      - 'playsound: BLOCK_NOTE_BLOCK_BELL;10;1'
+      - 'console_command: svar add v_picar_AMETHYST 1 %player% silent:true'
+      - 'wait: 10'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:MEDIUM_AMETHYST_BUD;block_data:%block_data%'
+      - 'wait: 10'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:LARGE_AMETHYST_BUD;block_data:%block_data%'
+      - 'wait: 10'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:%block%;block_data:%block_data%'
+    enabled: true
+  
+  cocinar_items:
+    type: player_click_inventory
+    conditions:
+    - '%inventory_type% == FURNACE'
+    - '%slot_type% == RESULT'
+    - '%click_type% == RIGHT execute error1'
+    - '%item% == COPPER_INGOT execute material{%mineral%=COPPER_INGOT}'
+    - '%item% == IRON_INGOT execute material{%mineral%=IRON_INGOT}'
+    - '%item% == GOLD_INGOT execute material{%mineral%=GOLD_INGOT}'
+    - '%player_gamemode% == ADVENTURE or %player_gamemode% == SURVIVAL'
+    actions:
+      default: []
+      material:
+      - 'console_command: svar add v_cocinar_%mineral% %item_amount% %player% silent:true'
+      error1:
+      - 'cancel_event: true'
+      - 'message: &cNo puedes hacer eso.'
+    enabled: true
+  
+  craftear_items:
+    type: player_click_inventory
+    conditions:
+    - '%inventory_type% == CRAFTING or %inventory_type% == WORKBENCH'
+    - '%slot_type% == RESULT'
+    - '%item% == AIR execute error2'
+    - '%click_type% != SHIFT_LEFT or %click_type% != SHIFT_RIGHT'
+    - '%click_type% == SHIFT_LEFT or %click_type% == SHIFT_RIGHT execute error1'
+    - '%action_type% == NOTHING execute error2'
+    - '%item% == TORCH or %item% == LEVER or %item% == ARMOR_STAND or %item% == FLINT
+      or %item% == FLINT_AND_STEEL or %item% == STONE_PICKAXE or %item% == STONE_SWORD
+      or %item% == COMPASS or %item% == FURNACE or %item% == BLAST_FURNACE or %item%
+      == STONE_BUTTON or %item% == DROPPER or %item% == COPPER_BLOCK or %item% ==
+      LIGHTNING_ROD or %item% == SPYGLASS or %item% == COAL_BLOCK or %item% == RAW_IRON_BLOCK
+      or %item% == IRON_PICKAXE or %item% == IRON_SWORD or %item% == IRON_CHESTPLATE
+      or %item% == SHEARS or %item% == MINECART or %item% == FURNACE_MINECART or %item%
+      == IRON_BLOCK  or %item% == RAIL or %item% == ACTIVATOR_RAIL or %item% == POWERED_RAIL
+      or %item% == DETECTOR_RAIL or %item% == STONECUTTER or %item% == IRON_TRAPDOOR
+      or %item% == ANVIL or %item% == CHAIN or %item% == BUCKET or %item% == RAW_GOLD_BLOCK
+      or %item% == GOLD_BLOCK or %item% == GOLDEN_PICKAXE or %item% == GOLDEN_SWORD
+      or %item% == GOLDEN_CHESTPLATE or %item% == CLOCK or %item% == DIAMOND_BLOCK  or
+      %item% == DIAMOND_PICKAXE or %item% == DIAMOND_SWORD or %item% == DIAMOND_CHESTPLATE
+      or %item% == EMERALD_BLOCK or %item% == REDSTONE_BLOCK or %item% == REDSTONE_TORCH
+      or %item% == REPEATER or %item% == COMPARATOR'
+    - '%player_gamemode% == ADVENTURE or %player_gamemode% == SURVIVAL'
+    actions:
+      default:
+      - 'console_command: svar add v_craftear_%item% %item_amount% %player% silent:true'
+      error1:
+      - 'cancel_event: true'
+      - 'message: &cUsa solamente el &nclick&r &cpara recoger el item.'
+      - 'wait_ticks: 1'
+      - close_inventory
+      error2:
+      - 'cancel_event: true'
+    enabled: true
+  
+  glowing_castigo:
+    type: player_command
+    conditions:
+    - '%command% startsWith /castigop1'
+    - '%args_length% == 2 execute generar_castigo'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &8Uso&7: &7/&8castigop1 &7(&8misión límite&7) &7(&8tiempo en minutos&7)'
+      - 'message: &8Los numeros con un solo digito&7, &8usar un cero primero&7, &8ejemplo&8: &801&7, &805&7.'
+      generar_castigo:
+      - 'cancel_event: true'
+      - 'to_all: message: '
+      - 'to_all: message: En un minuto, los jugadores que tengan menos'
+      - 'to_all: message: de &c&l%arg_1% &rmisiones hechas, recibirán glowing.'
+      - 'to_all: message: '
+      - 'console_command: stimer set 00:00:59 glowing_misiones BLUE false "≭󏿠񏚠&c<MM:SS>"'
+      - 'wait: 60'
+      - 'console_command: effect give @a[tag=!%arg_1%] minecraft:glowing 300 0 true'
+  
+  reset_valores:
+    type: player_command
+    conditions:
+    - '%player_is_op% == yes'
+    - '%command% == /resetvaloresprueba1'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'player_command: svar reset puntos_ronda1 * silent:true'
+      - 'player_command: svar reset v_picar_coal * silent:true'
+      - 'player_command: svar reset v_picar_iron * silent:true'
+      - 'player_command: svar reset v_picar_gold * silent:true'
+      - 'player_command: svar reset v_picar_diamond * silent:true'
+      - 'player_command: svar reset v_picar_lapis * silent:true'
+      - 'player_command: svar reset v_picar_redstone * silent:true'
+      - 'player_command: svar reset v_picar_emerald * silent:true'
+      - 'console_command: svar reset v_picar_FLINT * silent:true'
+      - 'console_command: svar reset v_picar_AMETHYST * silent:true'
+      - 'console_command: svar reset v_picar_RAW_COPPER * silent:true'
+      - 'console_command: svar reset v_picar_COAL * silent:true'
+      - 'console_command: svar reset v_picar_RAW_IRON * silent:true'
+      - 'console_command: svar reset v_picar_RAW_GOLD * silent:true'
+      - 'console_command: svar reset v_picar_DIAMOND * silent:true'
+      - 'console_command: svar reset v_picar_LAPIS_LAZULI * silent:true'
+      - 'console_command: svar reset v_picar_REDSTONE * silent:true'
+      - 'console_command: svar reset v_picar_EMERALD * silent:true'
+      - 'console_command: svar reset v_cocinar_COPPER_INGOT * silent:true'
+      - 'console_command: svar reset v_cocinar_IRON_INGOT * silent:true'
+      - 'console_command: svar reset v_cocinar_GOLD_INGOT * silent:true'
+      - 'console_command: svar reset v_craftear_TORCH * silent:true'
+      - 'console_command: svar reset v_craftear_LEVER * silent:true'
+      - 'console_command: svar reset v_craftear_ARMOR_STAND * silent:true'
+      - 'console_command: svar reset v_craftear_FLINT_AND_STEEL * silent:true'
+      - 'console_command: svar reset v_craftear_STONE_PICKAXE * silent:true'
+      - 'console_command: svar reset v_craftear_STONE_SWORD * silent:true'
+      - 'console_command: svar reset v_craftear_FURNACE * silent:true'
+      - 'console_command: svar reset v_craftear_BLAST_FURNACE * silent:true'
+      - 'console_command: svar reset v_craftear_STONE_BUTTON * silent:true'
+      - 'console_command: svar reset v_craftear_DROPPER * silent:true'
+      - 'console_command: svar reset v_craftear_COPPER_BLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_LIGHTNING_ROD * silent:true'
+      - 'console_command: svar reset v_craftear_SPYGLASS * silent:true'
+      - 'console_command: svar reset v_craftear_COAL_BLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_RAW_IRON_BLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_IRON_BLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_IRON_PICKAXE * silent:true'
+      - 'console_command: svar reset v_craftear_IRON_SWORD * silent:true'
+      - 'console_command: svar reset v_craftear_IRON_CHESTPLATE * silent:true'
+      - 'console_command: svar reset v_craftear_COMPASS * silent:true'
+      - 'console_command: svar reset v_craftear_SHEARS * silent:true'
+      - 'console_command: svar reset v_craftear_BUCKET * silent:true'
+      - 'console_command: svar reset v_craftear_MINECART * silent:true'
+      - 'console_command: svar reset v_craftear_FURNACE_MINECART * silent:true'
+      - 'console_command: svar reset v_craftear_RAIL * silent:true'
+      - 'console_command: svar reset v_craftear_ACTIVATOR_RAIL * silent:true'
+      - 'console_command: svar reset v_craftear_POWERED_RAIL * silent:true'
+      - 'console_command: svar reset v_craftear_DETECTOR_RAIL * silent:true'
+      - 'console_command: svar reset v_craftear_STONECUTTER * silent:true'
+      - 'console_command: svar reset v_craftear_IRON_TRAPDOOR * silent:true'
+      - 'console_command: svar reset v_craftear_ANVIL * silent:true'
+      - 'console_command: svar reset v_craftear_CHAIN * silent:true'
+      - 'console_command: svar reset v_craftear_RAW_GOLD_BLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_GOLD_BLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_GOLDEN_PICKAXE * silent:true'
+      - 'console_command: svar reset v_craftear_GOLDEN_SWORD * silent:true'
+      - 'console_command: svar reset v_craftear_GOLDEN_CHESTPLATE * silent:true'
+      - 'console_command: svar reset v_craftear_CLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_DIAMOND_BLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_DIAMOND_PICKAXE * silent:true'
+      - 'console_command: svar reset v_craftear_DIAMOND_SWORD * silent:true'
+      - 'console_command: svar reset v_craftear_DIAMOND_CHESTPLATE * silent:true'
+      - 'console_command: svar reset v_craftear_EMERALD_BLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_REDSTONE_BLOCK * silent:true'
+      - 'console_command: svar reset v_craftear_REDSTONE_TORCH * silent:true'
+      - 'console_command: svar reset v_craftear_REPEATER * silent:true'
+      - 'console_command: svar reset v_craftear_COMPARATOR * silent:true'
+      - 'player_command: team join jugador @a[tag=0]'
+      - 'player_command: xp set @a 0 levels'
+      - 'player_command: tag @a remove 0'
+      - 'player_command: tag @a remove 1'
+      - 'player_command: tag @a remove 2'
+      - 'player_command: tag @a remove 3'
+      - 'player_command: tag @a remove 4'
+      - 'player_command: tag @a remove 5'
+      - 'player_command: tag @a remove 6'
+      - 'player_command: tag @a remove 7'
+      - 'player_command: tag @a remove 8'
+      - 'player_command: tag @a remove 9'
+      - 'player_command: tag @a remove 10'
+      - 'player_command: tag @a remove 11'
+      - 'player_command: tag @a remove 12'
+      - 'player_command: tag @a remove 13'
+      - 'player_command: tag @a remove 14'
+      - 'player_command: tag @a remove 15'
+      - 'player_command: tag @a remove 16'
+      - 'player_command: tag @a remove 17'
+      - 'player_command: tag @a remove 18'
+      - 'player_command: tag @a remove 19'
+      - 'player_command: tag @a remove 20'
+      - 'wait: 1'
+      - 'message: '
+      - 'message: &cListo!'
+  
+  numero_random:
+    type: player_command
+    conditions:
+    - '%command% == /randomnumber'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: %random_1_3%'

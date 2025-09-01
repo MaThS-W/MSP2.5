@@ -1,0 +1,29 @@
+Lucky_Velocidad:
+  Id: ender_pearl
+  Display: '&b&lOrbe de Velocidad'
+  Model: 1
+
+Lucky_Regeneracion:
+  Id: ender_pearl
+  Display: '&c&lOrbe de Regeneración'
+  Model: 2
+
+Lucky_CuracionInstantanea:
+  Id: ender_pearl
+  Display: '&f&lBotiquin'
+  Model: 3
+
+Lucky_VisionNocturna:
+  Id: ender_pearl
+  Display: '&a&lVisores Nocturnos'
+  Model: 4
+
+Lucky_Invisibilidad:
+  Id: ender_pearl
+  Display: '&7&lChispas de Invisibilidad'
+  Model: 5
+
+Lucky_Resistencia:
+  Id: ender_pearl
+  Display: '&6&lEsencias Proteicas'
+  Model: 6

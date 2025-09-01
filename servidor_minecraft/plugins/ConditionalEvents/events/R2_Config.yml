@@ -1,0 +1,136 @@
+Events:
+  interactuar_entities:
+    type: entity_interact
+    cooldown: 15
+    prevent_cooldown_activation:
+    - 'error'
+    conditions:
+    - '%player_gamemode% == ADVENTURE'
+    - '%player_is_sneaking% == yes'
+    - '%entity% == CHICKEN and %team_name% != pollos execute animales{%team_mob_interactuado%=pollos}'
+    - '%entity% == CHICKEN and %team_name% == pollos execute error'
+    - '%entity% == PIG and %team_name% != cerdos execute animales{%team_mob_interactuado%=cerdos}'
+    - '%entity% == PIG and %team_name% == cerdos execute error'
+    - '%entity% == GOAT and %team_name% != cabras execute animales{%team_mob_interactuado%=cabras}'
+    - '%entity% == GOAT and %team_name% == cabras execute error'
+    - '%entity% == SHEEP and %team_name% != ovejas execute animales{%team_mob_interactuado%=ovejas}'
+    - '%entity% == SHEEP and %team_name% == ovejas execute error'
+    - '%entity% == COW and %team_name% != vacas execute animales{%team_mob_interactuado%=vacas}'
+    - '%entity% == COW and %team_name% == vacas execute error'
+    - '%entity% == HORSE and %team_name% != caballos execute animales{%team_mob_interactuado%=caballos}'
+    - '%entity% == HORSE and %team_name% == caballos execute error'
+    - '%entity% == LLAMA and %team_name% != llamas execute animales{%team_mob_interactuado%=llamas}'
+    - '%entity% == LLAMA and %team_name% == llamas execute error'
+    - '%entity% == SNIFFER and %team_name% != sniffers execute animales{%team_mob_interactuado%=sniffers}'
+    - '%entity% == SNIFFER and %team_name% == sniffers execute error'
+    actions:
+      default: []
+      animales:
+      - 'title: 5;10;10;#FFF3A6∂;none'
+      - 'playsound: ENTITY_ZOMBIE_VILLAGER_CONVERTED;10;1'
+      - 'console_command: forcemorph %player% %entity%'
+      - 'console_command: team join %team_mob_interactuado% %player%'
+      error: []
+      cooldown:
+      - 'title: 0;10;10;none;#FFF3A6Espera %time%'
+    enabled: true
+
+  speed_pads:
+    type: block_interact
+    conditions:
+    - '%block% == LIGHT_WEIGHTED_PRESSURE_PLATE'
+    - '%action_type% == PHYSICAL'
+    - '%player_gamemode% != SPECTATOR'
+    - '%attribute_player_baseValue_generic.movement_speed% == 0.10000000149011612'
+    actions:
+      default:
+      - 'console_command: attribute %player% minecraft:generic.movement_speed base set 0.25'
+      - 'playsound_resource_pack: speed_pad;0.1;1'
+      - 'wait: 2'
+      - 'console_command: attribute %player% minecraft:generic.movement_speed base set 0.10000000149011612'
+
+  jump_pads_p2:
+    type: block_interact
+    cooldown: 2
+    conditions:
+    - '%block% == HEAVY_WEIGHTED_PRESSURE_PLATE'
+    - '%action_type% == PHYSICAL'
+    - '%player_gamemode% != SPECTATOR'
+    actions:
+      default:
+      - 'give_potion_effect: LEVITATION;5;25;false'
+      - 'playsound_resource_pack: jump_pad;2;1'
+      cooldown: []
+    enabled: true
+
+  animal_party:
+    type: player_command
+    conditions:
+    - '%main_command% == /partyanimal1 and %args_length% == 1 execute fase_1'
+    - '%main_command% == /partyanimal2 and %args_length% == 2 execute fase_2'
+    - '%main_command% == /partyanimal3 and %args_length% == 3 execute fase_3'
+    - '%player_is_op% == yes'
+    - '%command% startsWith /partyanimal and %args_length% < 1 execute error'
+    actions:
+      fase_1:
+      - 'cancel_event: true'
+      - 'call_event: glowing_fase1;%mob_elegido_1%=%arg_1%'
+      fase_2:
+      - 'cancel_event: true'
+      - 'call_event: glowing_fase2;%mob_elegido_1%=%arg_1%;%mob_elegido_2%=%arg_2%'
+      fase_3:
+      - 'cancel_event: true'
+      - 'call_event: glowing_fase3;%mob_elegido_1%=%arg_1%;%mob_elegido_2%=%arg_2%;%mob_elegido_3%=%arg_3%'
+      error:
+      - 'cancel_event: true'
+      - 'message: '
+      - 'message: &7(&8Mensaje solo para administradores&7)'
+      - 'message: '
+      - 'message: &8Uso Fase &7#&81&7: &7/&8partyanimal1 &7(&8animal_1&7)'
+      - 'message: &8Uso Fase &7#&82&7: &7/&8partyanimal2 &7(&8animal_1&7) &7(&8animal_2&7)'
+      - 'message: &8Uso Fase &7#&83&7: &7/&8partyanimal3 &7(&8animal_1&7) &7(&8animal_2&7) &7(&8animal_3&7)'
+      - 'message: &7Animales disponibles: &8pollos&7, &8cerdos&7, &8cabras&7, &8ovejas&7, &8vacas&7, &8caballos&7, &8llamas&7, &8sniffers&7.'
+      - 'message: '
+      - 'message: &c- No repetir 2 o más veces el mismo animal.'
+      - 'message: &c- Usar según la fase para evitar errores.'
+      - 'message: '
+
+  glowing_fase1:
+    type: call
+    actions: 
+      default:
+      - 'to_all: message: '
+      - 'to_all: message: &c&lParty Animal:'
+      - 'to_all: message: Los %mob_elegido_1% recibirán glowing en 20 segundos!'
+      - 'to_all: message: '
+      - 'console_command: stimer set 00:00:20 partyanimal BLUE true "&e⚠ &4&lParty Animal &4▸ &c<MM:SS> &e⚠"'
+      - 'wait: 20'
+      - 'console_command: effect give @a[team=%mob_elegido_1%] minecraft:glowing 20 1 true'
+  
+  glowing_fase2:
+    type: call
+    actions: 
+      default:
+      - 'to_all: message: '
+      - 'to_all: message: &c&lParty Animal:'
+      - 'to_all: message: Los %mob_elegido_1% y %mob_elegido_2% recibirán glowing en 20 segundos!'
+      - 'to_all: message: '
+      - 'console_command: stimer set 00:00:20 partyanimal BLUE true "&e⚠ &4&lParty Animal &4▸ &c<MM:SS> &e⚠"'
+      - 'wait: 20'
+      - 'console_command: effect give @a[team=%mob_elegido_1%] minecraft:glowing 20 1 true'
+      - 'console_command: effect give @a[team=%mob_elegido_2%] minecraft:glowing 20 1 true'
+
+  glowing_fase3:
+    type: call
+    actions: 
+      default:
+      - 'to_all: message: '
+      - 'to_all: message: &c&lParty Animal:'
+      - 'to_all: message: Los %mob_elegido_1%, %mob_elegido_2% y %mob_elegido_3% recibirán glowing en 20 segundos!'
+      - 'to_all: message: '
+      - 'console_command: stimer set 00:00:20 partyanimal BLUE true "&e⚠ &4&lParty Animal &4▸ &c<MM:SS> &e⚠"'
+      - 'wait: 20'
+      - 'console_command: effect give @a[team=%mob_elegido_1%] minecraft:glowing 20 1 true'
+      - 'console_command: effect give @a[team=%mob_elegido_2%] minecraft:glowing 20 1 true'
+      - 'console_command: effect give @a[team=%mob_elegido_3%] minecraft:glowing 20 1 true'
+
