@@ -583,3 +583,5 @@ Caused by: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/Ins
 [23:31:00] [Server thread/INFO]: Added Maths_96 to team [Cazador]
 [23:31:00] [luckperms-command-executor/INFO]: [LP] maths_96 had their existing parent groups cleared, and now only inherits cazador in context global.
 [23:34:54] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[23:42:47] [Server thread/INFO]: Maths_96 lost connection: Disconnected
+[23:42:47] [Server thread/INFO]: Maths_96 left the game
