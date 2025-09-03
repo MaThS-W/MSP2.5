@@ -721,3 +721,8 @@ Caused by: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/Ins
 [23:42:17] [Server thread/INFO]: [Maths_96: Set own game mode to Survival Mode]
 [23:43:04] [Server thread/INFO]: Maths_96 issued server command: /si shoe
 [23:43:05] [Server thread/INFO]: Maths_96 issued server command: /si show
+[23:49:44] [Server thread/INFO]: Maths_96 issued server command: /ie rename &c&lDin&f&lam&a&lita
+[23:49:48] [Server thread/INFO]: Maths_96 issued server command: /ie rename &c&lDin&f&lam&c&lita
+[23:50:09] [Server thread/INFO]: Maths_96 issued server command: /ie rename &f&lDinamita
+[23:50:46] [Server thread/INFO]: Maths_96 issued server command: /si save Dinamita
+[23:50:53] [Server thread/INFO]: Maths_96 issued server command: /ce item save Dinamita

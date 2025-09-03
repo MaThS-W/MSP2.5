@@ -511,3 +511,12 @@ items:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"
         la perderán, durante 10s."}],"text":""}'
       custom-model-data: 19
+  Dinamita:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: YELLOW_DYE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Dinamita"}],"text":""}'
+      custom-model-data: 5
