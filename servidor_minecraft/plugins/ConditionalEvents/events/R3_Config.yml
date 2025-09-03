@@ -147,7 +147,7 @@ Events:
       - 'console_command: team join jugador %player%'
       - 'title: 5;15;5;∁;none'
       - 'playsound: ENTITY_PLAYER_LEVELUP;10;2'
-      - 'console_command: clear %player% minecraft:stone_sword'
+      - 'console_command: clear %player% minecraft:iron_sword'
 
   JugadorMuereP3:
     type: player_death
@@ -191,9 +191,9 @@ Events:
     type: call
     actions:
       default:
-      - 'console_command: title @a[team=!muerto] title {"text":"GANADOR","color":"#FFBC05","bold":true,"italic":false}'
-      - 'console_command: title @a[team=!muerto] subtitle {"selector":"@a[team=jugador,gamemode=adventure]","color":"#FFEC70","bold":true,"italic":false}'
-      - 'console_command: title @a[team=!muerto] times 60 200 60'
+      - 'console_command: title @a[team=jugador,limit=1] title {"text":"GANADOR","color":"#FFBC05","bold":true,"italic":false}'
+      - 'console_command: title @a[team=jugador,limit=1] subtitle {"selector":"@a[team=jugador,gamemode=adventure]","color":"#FFEC70","bold":true,"italic":false}'
+      - 'console_command: title @a[team=jugador,limit=1] times 60 200 60'
 
   AnimaciónMuerte:
     type: call
