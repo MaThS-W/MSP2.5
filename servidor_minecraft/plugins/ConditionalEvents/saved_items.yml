@@ -520,3 +520,13 @@ items:
       meta-type: UNSPECIFIC
       display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Dinamita"}],"text":""}'
       custom-model-data: 5
+  PepeMask:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: CARVED_PUMPKIN
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"Pepe
+        Mask"}],"text":""}'
+      custom-model-data: 257
