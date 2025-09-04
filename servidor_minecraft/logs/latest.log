@@ -208,3 +208,97 @@ java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
 [00:21:41] [Async Chat Thread - #16/INFO]: [Not Secure] <XCristi_> asi cualquiera
 [00:21:52] [Server thread/INFO]: Maths_96 issued server command: /si save PepeMask
 [00:21:59] [Server thread/INFO]: Maths_96 issued server command: /ce item save PepeMask
+[00:25:35] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:25:37] [Async Chat Thread - #18/INFO]: [Not Secure] <Maths_96> ya
+[00:25:45] [Server thread/INFO]: XCristi_ lost connection: Disconnected
+[00:25:45] [Server thread/INFO]: XCristi_ left the game
+[00:25:46] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:25:54] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador
+[00:25:54] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:25:54] [luckperms-command-executor/INFO]: [LP] maths_96 had their existing parent groups cleared, and now only inherits default in context global.
+[00:27:50] [User Authenticator #5/INFO]: UUID of player XCristi_ is 0ec6fd14-32ff-3c83-b659-f83c51ce3842
+[00:27:50] [Server thread/INFO]: XCristi_ joined the game
+[00:27:50] [Server thread/INFO]: XCristi_[/127.221.217.132:46425] logged in with entity id 863 at ([world]-236.94904947138204, 85.0, 576.1177970837266)
+[00:28:39] [Async Chat Thread - #20/INFO]: [Not Secure] <Maths_96> listo
+[00:28:41] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:28:45] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[00:28:45] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[00:28:59] [Server thread/INFO]: Maths_96 issued server command: /team modify jugador friendlyFire true
+[00:29:01] [Server thread/INFO]: Maths_96 issued server command: /team modify jugador friendlyFire false
+[00:29:01] [Server thread/INFO]: [Maths_96: Disabled friendly fire for team [Jugador]]
+[00:29:14] [Server thread/INFO]: Maths_96 issued server command: /nuevaronda_p3 1
+[00:29:14] [Server thread/INFO]: All timers have been deleted.
+[00:29:14] [Server thread/INFO]: Starting the timer 'bomba_timer' of 0:59.
+[00:29:14] [Server thread/INFO]: Added Maths_96 to team [con_bomba]
+[00:29:14] [Server thread/INFO]: Applied effect Instant Health to 2 targets
+[00:29:18] [Server thread/INFO]: Cleared titles for Maths_96
+[00:29:18] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:29:18] [Server thread/INFO]: Added XCristi_ to team [con_bomba]
+[00:29:19] [Server thread/INFO]: Cleared titles for XCristi_
+[00:29:19] [Server thread/INFO]: Added XCristi_ to team [Jugador]
+[00:29:19] [Server thread/INFO]: Added Maths_96 to team [con_bomba]
+[00:29:24] [Async Chat Thread - #22/INFO]: [Not Secure] <Maths_96> espera
+[00:29:34] [Async Chat Thread - #20/INFO]: [Not Secure] <XCristi_> boludito
+[00:29:43] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:29:45] [Server thread/INFO]: Maths_96 issued server command: /tp XCristi_
+[00:29:45] [Server thread/INFO]: [Maths_96: Teleported Maths_96 to XCristi_]
+[00:29:46] [Server thread/INFO]: Cleared titles for Maths_96
+[00:29:46] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:29:46] [Server thread/INFO]: Added XCristi_ to team [con_bomba]
+[00:29:52] [Server thread/INFO]: Cleared titles for XCristi_
+[00:29:52] [Server thread/INFO]: Added XCristi_ to team [Jugador]
+[00:29:52] [Server thread/INFO]: Added Maths_96 to team [con_bomba]
+[00:30:08] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:30:13] [Server thread/INFO]: Displaying particle minecraft:explosion
+[00:30:13] [Server thread/INFO]: Cleared titles for Maths_96
+[00:30:13] [Server thread/INFO]: Added Maths_96 to team [Cazador P3]
+[00:30:13] [Server thread/INFO]: All timers have been deleted.
+[00:30:13] [Server thread/INFO]: Starting the timer 'cazador_reveal' of 0:29.
+[00:30:14] [Server thread/INFO]: The timer bomba_timer is over!
+[00:30:19] [Async Chat Thread - #22/INFO]: [Not Secure] <Maths_96> ok
+[00:30:35] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:30:43] [Server thread/INFO]: Successfully filled 6 block(s)
+[00:30:43] [Server thread/INFO]: All timers have been deleted.
+[00:30:43] [Server thread/INFO]: Starting the timer 'bomba_timer' of 0:59.
+[00:30:43] [Server thread/INFO]: The timer cazador_reveal is over!
+[00:31:09] [Async Chat Thread - #20/INFO]: [Not Secure] <Maths_96> BRO DONDE ESTAS
+[00:31:17] [Server thread/INFO]: [@: Teleported Maths_96 to -235.500000, 147.000000, 361.500000]
+[00:31:19] [Async Chat Thread - #20/INFO]: [Not Secure] <XCristi_> nose
+[00:31:27] [Server thread/INFO]: Maths_96 issued server command: /tp XCristi_
+[00:31:27] [Server thread/INFO]: [Maths_96: Teleported Maths_96 to XCristi_]
+[00:31:43] [Server thread/INFO]: Added Maths_96 to team [muerto]
+[00:31:43] [Server thread/INFO]: Displaying particle minecraft:explosion
+[00:31:43] [Server thread/INFO]: No player was found
+[00:31:43] [Server thread/INFO]: Removed 1 item(s) from player Maths_96
+[00:31:43] [Server thread/INFO]: The timer bomba_timer is over!
+[00:31:50] [Async Chat Thread - #22/INFO]: [Not Secure] <XCristi_> boludito
+[00:32:10] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[00:32:10] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[00:32:19] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure XCristi_
+[00:32:29] [Server thread/INFO]: Maths_96 issued server command: /nuevaronda_p3 1
+[00:32:29] [Server thread/INFO]: All timers have been deleted.
+[00:32:29] [Server thread/INFO]: Starting the timer 'bomba_timer' of 0:59.
+[00:32:30] [Server thread/INFO]: Added XCristi_ to team [con_bomba]
+[00:32:30] [Server thread/INFO]: Applied effect Instant Health to 2 targets
+[00:32:36] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador
+[00:32:36] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:32:36] [luckperms-command-executor/INFO]: [LP] maths_96 had their existing parent groups cleared, and now only inherits default in context global.
+[00:32:37] [Server thread/INFO]: Cleared titles for XCristi_
+[00:32:37] [Server thread/INFO]: Added XCristi_ to team [Jugador]
+[00:32:37] [Server thread/INFO]: Added Maths_96 to team [con_bomba]
+[00:33:05] [Server thread/INFO]: Cleared titles for Maths_96
+[00:33:05] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:33:05] [Server thread/INFO]: Added XCristi_ to team [con_bomba]
+[00:33:07] [Server thread/INFO]: Cleared titles for XCristi_
+[00:33:07] [Server thread/INFO]: Added XCristi_ to team [Jugador]
+[00:33:07] [Server thread/INFO]: Added Maths_96 to team [con_bomba]
+[00:33:29] [Server thread/INFO]: Displaying particle minecraft:explosion
+[00:33:29] [Server thread/INFO]: Cleared titles for Maths_96
+[00:33:29] [Server thread/INFO]: Added Maths_96 to team [Cazador P3]
+[00:33:29] [Server thread/INFO]: All timers have been deleted.
+[00:33:29] [Server thread/INFO]: Starting the timer 'cazador_reveal' of 0:29.
+[00:33:29] [Server thread/INFO]: The timer bomba_timer is over!
+[00:33:59] [Server thread/INFO]: No blocks were filled
+[00:33:59] [Server thread/INFO]: All timers have been deleted.
+[00:33:59] [Server thread/INFO]: Starting the timer 'bomba_timer' of 0:59.
+[00:33:59] [Server thread/INFO]: The timer cazador_reveal is over!
