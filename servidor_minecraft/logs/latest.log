@@ -13,3 +13,89 @@
 [00:03:34] [Async Chat Thread - #7/INFO]: [Not Secure] <Maths_96> esto es temporal
 [00:03:37] [Server thread/INFO]: XCristi_ lost connection: Disconnected
 [00:03:37] [Server thread/INFO]: XCristi_ left the game
+[00:04:16] [User Authenticator #3/INFO]: UUID of player XCristi_ is 0ec6fd14-32ff-3c83-b659-f83c51ce3842
+[00:04:16] [Server thread/INFO]: XCristi_ joined the game
+[00:04:16] [Server thread/INFO]: XCristi_[/127.221.217.132:48745] logged in with entity id 853 at ([world]-237.3144261968361, 85.0, 575.2075930675031)
+[00:04:25] [Async Chat Thread - #6/INFO]: [Not Secure] <XCristi_> tmr
+[00:04:39] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:04:44] [Async Chat Thread - #7/INFO]: [Not Secure] <Maths_96> porqué te crashea?
+[00:04:47] [Async Chat Thread - #6/INFO]: [Not Secure] <XCristi_> bro dale a y
+[00:04:49] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[00:04:49] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[00:04:52] [Server thread/INFO]: XCristi_ lost connection: Disconnected
+[00:04:52] [Server thread/INFO]: XCristi_ left the game
+[00:05:18] [Server thread/INFO]: Maths_96 issued server command: /gamemode survival
+[00:05:18] [Server thread/INFO]: [Maths_96: Set own game mode to Survival Mode]
+[00:05:19] [Server thread/INFO]: Maths_96 issued server command: /gamemode creative
+[00:05:19] [Server thread/INFO]: [Maths_96: Set own game mode to Creative Mode]
+[00:05:25] [User Authenticator #4/INFO]: UUID of player XCristi_ is 0ec6fd14-32ff-3c83-b659-f83c51ce3842
+[00:05:26] [Server thread/INFO]: XCristi_ joined the game
+[00:05:26] [Server thread/INFO]: XCristi_[/127.221.217.132:34699] logged in with entity id 854 at ([world]-237.3144261968361, 85.0, 575.2075930675031)
+[00:06:22] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[00:06:22] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[00:06:24] [Async Chat Thread - #8/INFO]: [Not Secure] <Maths_96> vamos a probar
+[00:06:27] [Async Chat Thread - #9/INFO]: [Not Secure] <XCristi_> dale
+[00:06:42] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador XCristi
+[00:06:42] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:06:42] [luckperms-command-executor/INFO]: [LP] A user for XCristi could not be found.
+[00:06:48] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador XCristi_
+[00:06:48] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:06:48] [luckperms-command-executor/INFO]: [LP] xcristi_ had their existing parent groups cleared, and now only inherits default in context global.
+[00:06:59] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador XCristi_
+[00:06:59] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:06:59] [luckperms-command-executor/INFO]: [LP] xcristi_ had their existing parent groups cleared, and now only inherits default in context global.
+[00:07:12] [Async Chat Thread - #8/INFO]: [Not Secure] <XCristi_> bro?
+[00:07:30] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:07:32] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador XCristi_
+[00:07:32] [Server thread/INFO]: Added XCristi_ to team [Jugador]
+[00:07:32] [luckperms-command-executor/INFO]: [LP] xcristi_ had their existing parent groups cleared, and now only inherits default in context global.
+[00:07:42] [Async Chat Thread - #9/INFO]: [Not Secure] <Maths_96> no prometo que salga bien
+[00:07:44] [Server thread/INFO]: Maths_96 issued server command: /gamemode creative
+[00:07:44] [Server thread/INFO]: [Maths_96: Set own game mode to Creative Mode]
+[00:07:50] [Async Chat Thread - #8/INFO]: [Not Secure] <XCristi_> por algo es un beta test
+[00:08:00] [Server thread/INFO]: Maths_96 issued server command: /tp -235.61 89.00 565.79
+[00:08:00] [Server thread/INFO]: [Maths_96: Teleported Maths_96 to -235.610000, 89.000000, 565.790000]
+[00:08:08] [Server thread/INFO]: Maths_96 issued server command: /tp -235.5 89.00 565.5
+[00:08:08] [Server thread/INFO]: [Maths_96: Teleported Maths_96 to -235.500000, 89.000000, 565.500000]
+[00:08:59] [Server thread/INFO]: Maths_96 issued server command: /ce reloa
+[00:08:59] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:09:00] [Async Chat Thread - #10/INFO]: [Not Secure] <XCristi_> avisas
+[00:09:07] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[00:09:07] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[00:09:53] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:10:07] [Async Chat Thread - #12/INFO]: [Not Secure] <Maths_96> ya
+[00:10:15] [Server thread/INFO]: Maths_96 issued server command: /nuevaronda_p3 1
+[00:10:15] [Server thread/INFO]: All timers have been deleted.
+[00:10:15] [Server thread/INFO]: Starting the timer 'bomba_timer' of 0:59.
+[00:10:15] [Server thread/INFO]: Added Maths_96 to team [con_bomba]
+[00:10:15] [Server thread/INFO]: Applied effect Instant Health to 2 targets
+[00:10:31] [Async Chat Thread - #13/INFO]: [Not Secure] <Maths_96> VEN
+[00:10:33] [Async Chat Thread - #12/INFO]: [Not Secure] <Maths_96> ESTAMOS PROBANDO
+[00:11:14] [Server thread/INFO]: Displaying particle minecraft:explosion
+[00:11:14] [Server thread/INFO]: Cleared titles for Maths_96
+[00:11:14] [Server thread/INFO]: Added Maths_96 to team [Cazador P3]
+[00:11:14] [Server thread/WARN]: [ConditionalEvents] Task #809 for ConditionalEvents v4.60.1 generated an exception
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at ce.ajneb97.utils.ActionUtils.teleport(ActionUtils.java:99) ~[ConditionalEvents.jar:?]
+	at ce.ajneb97.model.internal.ExecutedEvent.executeAction(ExecutedEvent.java:335) ~[ConditionalEvents.jar:?]
+	at ce.ajneb97.model.internal.ExecutedEvent.executeActionsFromToTarget(ExecutedEvent.java:224) ~[ConditionalEvents.jar:?]
+	at ce.ajneb97.model.internal.ExecutedEvent.executeActionsFinal(ExecutedEvent.java:197) ~[ConditionalEvents.jar:?]
+	at ce.ajneb97.model.internal.ExecutedEvent.continueWithActions(ExecutedEvent.java:116) ~[ConditionalEvents.jar:?]
+	at ce.ajneb97.utils.ActionUtils$2.run(ActionUtils.java:783) ~[ConditionalEvents.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:480) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1479) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:446) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1393) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1170) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[00:11:15] [Server thread/INFO]: The timer bomba_timer is over!
+[00:11:17] [Async Chat Thread - #13/INFO]: [Not Secure] <XCristi_> boludito
+[00:12:04] [Server thread/INFO]: Maths_96 issued server command: /gamemode creative
+[00:12:04] [Server thread/INFO]: [Maths_96: Set own game mode to Creative Mode]
+[00:12:35] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:13:55] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:13:56] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[00:13:56] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[00:13:58] [Async Chat Thread - #14/INFO]: [Not Secure] <Maths_96> YAP

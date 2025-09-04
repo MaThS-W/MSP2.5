@@ -20,7 +20,7 @@ Events:
       roles_2:
       - 'cancel_event: true'
       - 'console_command: lp user %arg_2% parent set %rol_lp%'
-      - 'console_command: team join %rol_t% %player%'
+      - 'console_command: team join %rol_t% %arg_2%'
       
   empezar_presentacion_prueba1:
     type: call
