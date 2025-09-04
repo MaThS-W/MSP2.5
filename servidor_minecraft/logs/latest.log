@@ -302,3 +302,89 @@ java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
 [00:33:59] [Server thread/INFO]: All timers have been deleted.
 [00:33:59] [Server thread/INFO]: Starting the timer 'bomba_timer' of 0:59.
 [00:33:59] [Server thread/INFO]: The timer cazador_reveal is over!
+[00:34:12] [Async Chat Thread - #23/INFO]: [Not Secure] <XCristi_> tp=gay
+[00:34:59] [Server thread/INFO]: Added Maths_96 to team [muerto]
+[00:34:59] [Server thread/INFO]: Displaying particle minecraft:explosion
+[00:34:59] [Server thread/INFO]: No player was found
+[00:34:59] [Server thread/INFO]: Removed 1 item(s) from player Maths_96
+[00:34:59] [Server thread/INFO]: The timer bomba_timer is over!
+[00:35:03] [Async Chat Thread - #24/INFO]: [Not Secure] <XCristi_> XDDD
+[00:35:05] [Async Chat Thread - #24/INFO]: [Not Secure] <XCristi_> boludito
+[00:35:15] [Async Chat Thread - #23/INFO]: [Not Secure] <XCristi_> cuando ganas en tu propio juego?
+[00:35:27] [Async Chat Thread - #25/INFO]: [Not Secure] <XCristi_> sin tp ni bufos?
+[00:37:15] [Async Chat Thread - #26/INFO]: [Not Secure] <XCristi_> bro su peak pa que hora?
+[00:37:15] [Server thread/INFO]: Maths_96 issued server command: /gamemode creative
+[00:37:15] [Server thread/INFO]: [Maths_96: Set own game mode to Creative Mode]
+[00:37:20] [Server thread/INFO]: [@: Successfully filled 6 block(s)]
+[00:37:31] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure
+[00:37:31] [Server thread/INFO]: [Maths_96: Set own game mode to Adventure Mode]
+[00:37:33] [Server thread/INFO]: Maths_96 issued server command: /tp XCristi_
+[00:37:33] [Server thread/INFO]: [Maths_96: Teleported Maths_96 to XCristi_]
+[00:37:44] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador
+[00:37:44] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:37:44] [luckperms-command-executor/INFO]: [LP] maths_96 had their existing parent groups cleared, and now only inherits default in context global.
+[00:37:49] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador XCristi
+[00:37:49] [Server thread/INFO]: Added XCristi to team [Jugador]
+[00:37:49] [luckperms-command-executor/INFO]: [LP] A user for XCristi could not be found.
+[00:37:53] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador XCristi_
+[00:37:53] [Server thread/INFO]: Added XCristi_ to team [Jugador]
+[00:37:53] [luckperms-command-executor/INFO]: [LP] xcristi_ had their existing parent groups cleared, and now only inherits default in context global.
+[00:38:07] [Server thread/INFO]: Maths_96 issued server command: /ce reload
+[00:38:13] [Server thread/INFO]: Maths_96 issued server command: /nuevaronda_p3 1
+[00:38:13] [Server thread/INFO]: All timers have been deleted.
+[00:38:13] [Server thread/INFO]: Starting the timer 'bomba_timer' of 0:59.
+[00:38:13] [Server thread/INFO]: Added Maths_96 to team [con_bomba]
+[00:38:13] [Server thread/INFO]: Applied effect Instant Health to 2 targets
+[00:38:36] [Server thread/INFO]: Cleared titles for Maths_96
+[00:38:36] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:38:36] [Server thread/INFO]: Added XCristi_ to team [con_bomba]
+[00:38:37] [Server thread/INFO]: Cleared titles for XCristi_
+[00:38:37] [Server thread/INFO]: Added XCristi_ to team [Jugador]
+[00:38:37] [Server thread/INFO]: Added Maths_96 to team [con_bomba]
+[00:38:41] [Server thread/INFO]: Cleared titles for Maths_96
+[00:38:41] [Server thread/INFO]: Added Maths_96 to team [Jugador]
+[00:38:41] [Server thread/INFO]: Added XCristi_ to team [con_bomba]
+[00:39:12] [Server thread/INFO]: Displaying particle minecraft:explosion
+[00:39:12] [Server thread/INFO]: Cleared titles for XCristi_
+[00:39:12] [Server thread/INFO]: Added XCristi_ to team [Cazador P3]
+[00:39:12] [Server thread/INFO]: All timers have been deleted.
+[00:39:12] [Server thread/INFO]: Starting the timer 'cazador_reveal' of 0:29.
+[00:39:13] [Server thread/INFO]: The timer bomba_timer is over!
+[00:39:30] [Async Chat Thread - #28/INFO]: [Not Secure] <Maths_96> si pierdes vamos al peak
+[00:39:32] [Async Chat Thread - #29/INFO]: [Not Secure] <Maths_96> XD
+[00:39:42] [Server thread/INFO]: Successfully filled 6 block(s)
+[00:39:42] [Server thread/INFO]: All timers have been deleted.
+[00:39:42] [Server thread/INFO]: Starting the timer 'bomba_timer' of 0:59.
+[00:39:42] [Server thread/INFO]: The timer cazador_reveal is over!
+[00:40:13] [Async Chat Thread - #28/INFO]: [Not Secure] <Maths_96> bro?
+[00:40:19] [Async Chat Thread - #29/INFO]: [Not Secure] <XCristi_> tmr
+[00:40:42] [Server thread/INFO]: Added XCristi_ to team [muerto]
+[00:40:42] [Server thread/INFO]: Displaying particle minecraft:explosion
+[00:40:42] [Server thread/INFO]: No player was found
+[00:40:42] [Server thread/INFO]: Removed 1 item(s) from player XCristi_
+[00:40:42] [Server thread/INFO]: The timer bomba_timer is over!
+[00:40:54] [Server thread/INFO]: Maths_96 issued server command: /setrole jugador XCristi_
+[00:40:54] [Server thread/INFO]: Added XCristi_ to team [Jugador]
+[00:40:54] [luckperms-command-executor/INFO]: [LP] xcristi_ had their existing parent groups cleared, and now only inherits default in context global.
+[00:40:57] [Async Chat Thread - #29/INFO]: [Not Secure] <Maths_96> gg bro
+[00:41:00] [Server thread/INFO]: Maths_96 issued server command: /gamemode adventure XCristi_
+[00:41:00] [Server thread/INFO]: [Maths_96: Set XCristi_'s game mode to Adventure Mode]
+[00:41:03] [Server thread/INFO]: Maths_96 issued server command: /tp XCristi_ Maths_96
+[00:41:03] [Server thread/INFO]: [Maths_96: Teleported XCristi_ to Maths_96]
+[00:41:10] [Server thread/INFO]: Maths_96 issued server command: /clear x
+[00:41:11] [Server thread/INFO]: Maths_96 issued server command: /clear XCristi_
+[00:41:11] [Server thread/INFO]: [Maths_96: Removed 1 item(s) from player XCristi_]
+[00:41:17] [Async Chat Thread - #29/INFO]: [Not Secure] <Maths_96> te dejaste
+[00:41:23] [Async Chat Thread - #29/INFO]: [Not Secure] <XCristi_> si
+[00:41:25] [Async Chat Thread - #28/INFO]: [Not Secure] <XCristi_> su peak?
+[00:41:40] [Async Chat Thread - #30/INFO]: [Not Secure] <Maths_96> hay un detalle
+[00:41:44] [Async Chat Thread - #30/INFO]: [Not Secure] <Maths_96> no se como arreglarlo
+[00:41:50] [Async Chat Thread - #28/INFO]: [Not Secure] <Maths_96> cuando el cazador se libera
+[00:41:54] [Async Chat Thread - #29/INFO]: [Not Secure] <Maths_96> da glowing a todos
+[00:41:56] [Async Chat Thread - #28/INFO]: [Not Secure] <Maths_96> por 3 segundos
+[00:41:59] [Async Chat Thread - #29/INFO]: [Not Secure] <Maths_96> pero no te vi
+[00:42:04] [Async Chat Thread - #28/INFO]: [Not Secure] <Maths_96> y creo que tu tampoco me viste
+[00:42:11] [Async Chat Thread - #28/INFO]: [Not Secure] <XCristi_> ps no
+[00:42:31] [Async Chat Thread - #28/INFO]: [Not Secure] <Maths_96> tocará aumentarle el tiempo
+[00:42:52] [Async Chat Thread - #28/INFO]: [Not Secure] <XCristi_> ya pero vamos al peak?
+[00:42:57] [Async Chat Thread - #29/INFO]: [Not Secure] <XCristi_> o no habra peak?
