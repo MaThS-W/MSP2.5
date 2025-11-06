@@ -1,0 +1,191 @@
+variables:
+  v_craftear_TORCH: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_LEVER: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_ARMOR_STAND: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_FLINT_AND_STEEL: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_STONE_PICKAXE: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_STONE_SWORD: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_FURNACE: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_BLAST_FURNACE: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_STONE_BUTTON: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_DROPPER: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_COPPER_BLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_LIGHTNING_ROD: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_SPYGLASS: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_COAL_BLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_RAW_IRON_BLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_IRON_BLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_IRON_PICKAXE: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_IRON_SWORD: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_IRON_CHESTPLATE: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_COMPASS: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_SHEARS: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_BUCKET: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_MINECART: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_FURNACE_MINECART: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_RAIL: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_ACTIVATOR_RAIL: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_POWERED_RAIL: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_DETECTOR_RAIL: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_STONECUTTER: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_IRON_TRAPDOOR: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_ANVIL: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_CHAIN: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_RAW_GOLD_BLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_GOLD_BLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_GOLDEN_PICKAXE: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_GOLDEN_SWORD: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_GOLDEN_CHESTPLATE: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_CLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_DIAMOND_BLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_DIAMOND_PICKAXE: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_DIAMOND_SWORD: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_DIAMOND_CHESTPLATE: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_EMERALD_BLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_REDSTONE_BLOCK: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_REDSTONE_TORCH: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_REPEATER: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  v_craftear_COMPARATOR: 
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+
+    

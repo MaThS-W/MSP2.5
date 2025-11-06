@@ -1,0 +1,53 @@
+Events:
+  interactuar_entities:
+    type: entity_interact
+    cooldown: 15
+    prevent_cooldown_activation:
+    - error
+    conditions:
+    - '%player_gamemode% == ADVENTURE'
+    - '%player_is_sneaking% == yes'
+    - '%entity% == CHICKEN and %team_name% != pollos execute animales{%team_mob_interactuado%=pollos}'
+    - '%entity% == CHICKEN and %team_name% == pollos execute error'
+    - '%entity% == PIG and %team_name% != cerdos execute animales{%team_mob_interactuado%=cerdos}'
+    - '%entity% == PIG and %team_name% == cerdos execute error'
+    - '%entity% == GOAT and %team_name% != cabras execute animales{%team_mob_interactuado%=cabras}'
+    - '%entity% == GOAT and %team_name% == cabras execute error'
+    - '%entity% == SHEEP and %team_name% != ovejas execute animales{%team_mob_interactuado%=ovejas}'
+    - '%entity% == SHEEP and %team_name% == ovejas execute error'
+    - '%entity% == COW and %team_name% != vacas execute animales{%team_mob_interactuado%=vacas}'
+    - '%entity% == COW and %team_name% == vacas execute error'
+    - '%entity% == HORSE and %team_name% != caballos execute animales{%team_mob_interactuado%=caballos}'
+    - '%entity% == HORSE and %team_name% == caballos execute error'
+    - '%entity% == LLAMA and %team_name% != llamas execute animales{%team_mob_interactuado%=llamas}'
+    - '%entity% == LLAMA and %team_name% == llamas execute error'
+    - '%entity% == SNIFFER and %team_name% != sniffers execute animales{%team_mob_interactuado%=sniffers}'
+    - '%entity% == SNIFFER and %team_name% == sniffers execute error'
+    actions:
+      default: []
+      animales:
+      - 'title: 5;10;10;#FFF3A6∂;none'
+      - 'playsound: ENTITY_ZOMBIE_VILLAGER_CONVERTED;10;1'
+      - 'console_command: forcemorph %player% %entity%'
+      - 'console_command: team join %team_mob_interactuado% %player%'
+      error: []
+      cooldown:
+      - 'title: 0;10;10;none;#FFF3A6Espera %time%'
+    enabled: false
+  
+  prueba2_actionbars:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%team_name% == pollos execute animales{%mob%=}'
+    - '%team_name% == cerdos execute animales{%mob%=}'
+    - '%team_name% == cabras execute animales{%mob%=}'
+    - '%team_name% == ovejas execute animales{%mob%=}'
+    - '%team_name% == vacas execute animales{%mob%=}'
+    - '%team_name% == caballos execute animales{%mob%=}'
+    - '%team_name% == llamas execute animales{%mob%=}'
+    - '%team_name% == sniffers execute animales{%mob%=}'
+    actions:
+      animales:
+      - 'actionbar: #FFD429&l%animations_<appear> </appear>% &r%mob%#FFD429&l%animations_<appear>  </appear>%;0'
+    enabled: false

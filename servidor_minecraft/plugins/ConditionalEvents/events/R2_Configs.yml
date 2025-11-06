@@ -1,0 +1,231 @@
+Events:
+  speed_pads:
+    type: block_interact
+    conditions:
+    - '%block% == LIGHT_WEIGHTED_PRESSURE_PLATE'
+    - '%action_type% == PHYSICAL'
+    - '%player_gamemode% != SPECTATOR'
+    - '%attribute_player_baseValue_generic.movement_speed% == 0.10000000149011612'
+    actions:
+      default:
+      - 'console_command: attribute %player% minecraft:generic.movement_speed base
+        set 0.25'
+      - 'playsound_resource_pack: speed_pad;0.1;1'
+      - 'wait: 2'
+      - 'console_command: attribute %player% minecraft:generic.movement_speed base
+        set 0.10000000149011612'
+    enabled: true
+  
+  jump_pads:
+    type: block_interact
+    cooldown: 2
+    conditions:
+    - '%block% == HEAVY_WEIGHTED_PRESSURE_PLATE'
+    - '%action_type% == PHYSICAL'
+    - '%player_gamemode% != SPECTATOR'
+    actions:
+      default:
+      - 'give_potion_effect: LEVITATION;5;25;false'
+      - 'playsound_resource_pack: jump_pad;2;1'
+      cooldown: []
+    enabled: true
+  
+  tenedor_granjero:
+    type: item_pickup
+    conditions:
+    - '%item% == TRIDENT and %item_name% == Tenedor de Granjero'
+    - '%team_name% == cazador'
+    actions:
+      default:
+      - 'wait_ticks: 1'
+      - 'remove_item: TRIDENT;64'
+      - 'wait_ticks: 1'
+      - 'give_item: saved_item:farmer_fork;amount:1;slot:8;slot_replace:true'
+  
+  mobs_invulnerables:
+    type: player_attack
+    conditions:
+    - '%victim% == CHICKEN or %victim% == PIG or %victim% == GOAT or %victim% == SHEEP
+      or %victim% == COW or %victim% == HORSE or %victim% == LLAMA or %victim% ==
+      SNIFFER'
+    - '%servervariables_value_intentos_cazadores_p2% == 0 execute cero'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'console_command: svar reduce intentos_cazadores_p2 1 %player% silent:true'
+      - 'wait_ticks: 5'
+      - 'message: &cIntentos restantes: &f%servervariables_value_intentos_cazadores_p2%'
+      cero:
+      - 'cancel_event: true'
+    enabled: false
+  
+  cooldown_intentos:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+      - '%variable_type%;getVariable().getVariableType()'
+      - '%variable_name%;getVariable().getName()'
+      - '%new_value%;getNewValue()'
+    conditions:
+    - '%variable_name% == intentos_cazadores_p2'
+    - '%new_value% <= 0'
+    - '%team_name% == cazador'
+    - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+      - 'remove_item: IRON_SWORD;64'
+      - 'remove_item: TRIDENT;64'
+      - 'wait: 1'
+      - 'message: &c¡Intentos gastados!'
+      - 'message: &cEspera 30 segundos para reestrablecer tus intentos.'
+      - 'remove_item: TRIDENT;64'
+      - 'wait_ticks: 10'
+      - 'remove_item: TRIDENT;64'
+      - 'wait_ticks: 10'
+      - 'remove_item: TRIDENT;64'
+      - 'wait: 29'
+      - 'give_item: saved_item:farmer_hoe;amount:1;slot:0;slot_replace:true'
+      - 'give_item: saved_item:farmer_fork;amount:1;slot:8;slot_replace:true'
+      - 'console_command: svar reset intentos_cazadores_p2 %player% silent:true'
+  
+  animal_party:
+    type: player_command
+    conditions:
+    - '%main_command% == /partyanimal1 and %args_length% == 1 execute fase_1'
+    - '%main_command% == /partyanimal2 and %args_length% == 2 execute fase_2'
+    - '%main_command% == /partyanimal3 and %args_length% == 3 execute fase_3'
+    - '%player_is_op% == yes'
+    - '%command% startsWith /partyanimal and %args_length% < 1 execute error'
+    actions:
+      fase_1:
+      - 'cancel_event: true'
+      - 'call_event: glowing_fase1;%mob_elegido_1%=%arg_1%'
+      fase_2:
+      - 'cancel_event: true'
+      - 'call_event: glowing_fase2;%mob_elegido_1%=%arg_1%;%mob_elegido_2%=%arg_2%'
+      fase_3:
+      - 'cancel_event: true'
+      - 'call_event: glowing_fase3;%mob_elegido_1%=%arg_1%;%mob_elegido_2%=%arg_2%;%mob_elegido_3%=%arg_3%'
+      error:
+      - 'cancel_event: true'
+      - 'message: '
+      - 'message: &7(&8Mensaje solo para administradores&7)'
+      - 'message: '
+      - 'message: &8Uso Fase &7#&81&7: &7/&8partyanimal1 &7(&8animal_1&7)'
+      - 'message: &8Uso Fase &7#&82&7: &7/&8partyanimal2 &7(&8animal_1&7) &7(&8animal_2&7)'
+      - 'message: &8Uso Fase &7#&83&7: &7/&8partyanimal3 &7(&8animal_1&7) &7(&8animal_2&7)
+        &7(&8animal_3&7)'
+      - 'message: &7Animales disponibles: &8pollos&7, &8cerdos&7, &8cabras&7, &8ovejas&7,
+        &8vacas&7, &8caballos&7, &8llamas&7, &8sniffers&7.'
+      - 'message: '
+      - 'message: &c- No repetir 2 o más veces el mismo animal.'
+      - 'message: &c- Usar según la fase para evitar errores.'
+      - 'message: '
+  
+  glowing_fase1:
+    type: call
+    actions:
+      default:
+      - 'to_condition: jugadores_1: message: '
+      - 'to_condition: jugadores_1: message:  ◬ &c&lATENCION JUGADORES:'
+      - 'to_condition: jugadores_1: message:   Los que sean %mob_elegido_1% recibirán'
+      - 'to_condition: jugadores_1: message:   &cglowing &fen &c20 segundos&f.'
+      - 'to_condition: jugadores_1: message: '
+      - 'console_command: stimer set 00:00:20 partyanimal BLUE true "◬ &4▸ &c<MM:SS>
+        &4◂ &r◬"'
+      - 'wait: 20'
+      - 'console_command: effect give @a[team=%mob_elegido_1%] minecraft:glowing 20
+        1 true'
+  
+  glowing_fase2:
+    type: call
+    actions:
+      default:
+      - 'to_condition: jugadores_1: message: '
+      - 'to_condition: jjugadores_1: message:  ◬ &c&lATENCION JUGADORES:'
+      - 'to_condition: jugadores_1: message:   Los que sean %mob_elegido_1% y %mob_elegido_2%'
+      - 'to_condition: jugadores_1: message:   recibirán &cglowing en &c20 segundos&f.'
+      - 'to_condition: jugadores_1: message: '
+      - 'console_command: stimer set 00:00:20 partyanimal BLUE true "◬ &4▸ &c<MM:SS>
+        &4◂ &r◬'
+      - 'wait: 20'
+      - 'console_command: effect give @a[team=%mob_elegido_1%] minecraft:glowing 20
+        1 true'
+      - 'console_command: effect give @a[team=%mob_elegido_2%] minecraft:glowing 20
+        1 true'
+  
+  glowing_fase3:
+    type: call
+    actions:
+      default:
+      - 'to_condition: jugadores_1: message: '
+      - 'to_condition: jugadores_1: message:  ◬ &c&lATENCION JUGADORES:'
+      - 'to_condition: jugadores_1: message:   Los que sean %mob_elegido_1%, %mob_elegido_2%
+        y %mob_elegido_3%'
+      - 'to_condition: jugadores_1: message:   recibirán &cglowing en &c20 segundos&f.'
+      - 'to_condition: jugadores_1: message: '
+      - 'console_command: stimer set 00:00:20 partyanimal BLUE true "◬ &4▸ &c<MM:SS>
+        &4◂ &r◬'
+      - 'wait: 20'
+      - 'console_command: effect give @a[team=%mob_elegido_1%] minecraft:glowing 20
+        1 true'
+      - 'console_command: effect give @a[team=%mob_elegido_2%] minecraft:glowing 20
+        1 true'
+      - 'console_command: effect give @a[team=%mob_elegido_3%] minecraft:glowing 20
+        1 true'
+  
+  hambre_generar:
+    type: repetitive
+    repetitive_time: 60
+    conditions:
+    - '%player_gamemode% == ADVENTURE'
+    - '%player_food_level% > 0'
+    - '%team_name% == pollos or %team_name% == cerdos or %team_name% == cabras or
+      %team_name% == ovejas or %team_name% == vacas or %team_name% == caballos or
+      %team_name% == llamas or %team_name% == sniffers'
+    actions:
+      default:
+      - 'set_food_level: %math_0:DOWN_{player_food_level}-1%'
+    enabled: false
+  
+  regenerar_comida:
+    type: block_interact
+    conditions:
+    - '%player_gamemode% == ADVENTURE'
+    - '%player_food_level% < 20'
+    - '%team_name% == pollos and %block% == WHEAT execute regenerar_comida{%sonido%=FOX}'
+    - '%team_name% == cerdos and %block% == CARROTS execute regenerar_comida{%sonido%=FOX}'
+    - '%team_name% == cabras and %block% == WHEAT execute regenerar_comida{%sonido%=GOAT}'
+    - '%team_name% == ovejas and %block% == WHEAT execute regenerar_comida{%sonido%=FOX}'
+    - '%team_name% == vacas and %block% == WHEAT execute regenerar_comida{%sonido%=FOX}'
+    - '%team_name% == caballos and %block% == WHEAT execute regenerar_comida{%sonido%=HORSE}'
+    - '%team_name% == llamas and %block% == WHEAT execute regenerar_comida{%sonido%=LLAMA}'
+    - '%team_name% == sniffers and %block% == TORCHFLOWER execute regenerar_comida{%sonido%=SNIFFER}'
+    actions:
+      default: []
+      regenerar_comida:
+      - 'set_food_level: %math_0:DOWN_{player_food_level}+1%'
+      - 'playsound: ENTITY_%sonido%_EAT;10;1'
+    enabled: false
+  
+  desactivar_prueba2:
+    type: call
+    actions:
+      default:
+      - 'console_command: ce disable interactuar_entities'
+      - 'console_command: ce disable prueba2_actionbars'
+      - 'console_command: ce disable speed_pads'
+      - 'console_command: ce disable hambre_generar'
+      - 'console_command: ce disable regenerar_comida'
+  
+  activar_prueba2:
+    type: call
+    actions:
+      default:
+      - 'console_command: ce enable interactuar_entities'
+      - 'console_command: ce enable prueba2_actionbars'
+      - 'console_command: ce enable speed_pads'
+      - 'console_command: ce enable hambre_generar'
+      - 'console_command: ce enable regenerar_comida'

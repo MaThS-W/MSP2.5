@@ -1,0 +1,5 @@
+name: MathS_T9
+events:
+  monedas:
+    one_time: false
+    cooldown: 1759460536437

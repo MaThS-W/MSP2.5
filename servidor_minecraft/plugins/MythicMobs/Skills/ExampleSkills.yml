@@ -1,0 +1,75 @@
+AnimacionDeathLuckyP1:
+  TargetConditions:
+  - hastag{t=0} true
+  Skills:
+  - particlesphere{particle=end_rod;amount=50;radius=0.6;y=0.35;s=0.04} @self
+  - state{s=died_lucky;priority=2} @self
+  - delay 20
+  - skill{s=DarItemsLuckyP1;executeafterdeath=true}
+  - remove @self
+
+RespawnLuckyP1:
+  Skills:
+  - delay 1200
+  - summon{type=luckyblock_prueba1;amount=1} @SpawnLocation
+
+DarItemsLuckyP1:
+  Skills:
+  - vskill{s=LuckyP1Item_<random.1to5>} @trigger
+LuckyP1Item_1:
+  Skills:
+  - giveitem{i=Lucky_Velocidad}
+LuckyP1Item_2:
+  Skills:
+  - giveitem{i=Lucky_Regeneracion}
+LuckyP1Item_3:
+  Skills:
+  - giveitem{i=Lucky_CuracionInstantanea}
+LuckyP1Item_4:
+  Skills:
+  - giveitem{i=Lucky_VisionNocturna}
+LuckyP1Item_5:
+  Skills:
+  - giveitem{i=Lucky_Invisibilidad}
+
+# PRUEBA2 
+
+AnimacionDeathLuckyP2:
+  TargetConditions:
+  - hastag{t=0} true
+  Skills:
+  - particlesphere{particle=end_rod;amount=50;radius=0.6;y=0.35;s=0.04} @self
+  - state{s=died_lucky;priority=2} @self
+  - delay 20
+  - skill{s=DarItemsLuckyP2;executeafterdeath=true}
+  - remove @self
+
+RespawnLuckyP2:
+  Skills:
+  - delay 1200
+  - summon{type=luckyblock_prueba2;amount=1} @SpawnLocation
+
+DarItemsLuckyP2:
+  Skills:
+  - vskill{s=LuckyP2Item_<random.1to7>} @trigger
+LuckyP2Item_1:
+  Skills:
+  - giveitem{i=Lucky_Saturacion}
+LuckyP2Item_2:
+  Skills:
+  - giveitem{i=Lucky_Saturacion}
+LuckyP2Item_3:
+  Skills:
+  - giveitem{i=Lucky_Saturacion}
+LuckyP2Item_4:
+  Skills:
+  - giveitem{i=Lucky_Velocidad}
+LuckyP2Item_5:
+  Skills:
+  - giveitem{i=Lucky_Regeneracion}
+LuckyP2Item_6:
+  Skills:
+  - giveitem{i=Lucky_Invisibilidad}
+LuckyP2Item_7:
+  Skills:
+  - giveitem{i=Lucky_CuracionInstantanea}

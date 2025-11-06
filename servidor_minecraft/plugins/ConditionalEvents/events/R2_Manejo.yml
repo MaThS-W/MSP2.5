@@ -1,0 +1,65 @@
+Events:
+  AbrirPuertasP2:
+    type: call
+    actions:
+      default:
+      - 'set_block: location:-148,-43,-672,world;id:REDSTONE_BLOCK'
+      - 'wait: 30'
+      - 'set_block: location:-148,-43,-672,world;id:AIR'
+
+  CerrarPuertasP2:
+    type: call
+    actions:
+      default:
+      - 'set_block: location:-152,-43,-672,world;id:REDSTONE_BLOCK'
+      - 'wait: 30'
+      - 'set_block: location:-152,-43,-672,world;id:AIR'
+
+  empezar_presentacion_prueba2:
+    type: call
+    actions:
+      default:
+      - 'to_all: title: 60;200;60;∀;none'
+      # INSERTAR COMANDOS DE PRESENTACIÓN CON ALGUN MOD DE CINEMATICA
+      # AÑADIR LOS SONIDOS DE LA VOZ DE LA PRESENTACIÓN
+      - 'wait: 12'
+      - 'to_condition: cazadores: teleport: world;-149.01;-20;-660.5;180;0'
+      - 'to_condition: cazadores: give_item: saved_item:SombreroDeGranja;amount:1;slot:39;slot_replace:true'
+      - 'wait: 10'
+      - 'to_all: message: '
+      - 'to_all: message:  🕒 &a&lLos granjeros van a llegar'
+      - 'to_all: message:      &a&la la granja en &c&ldos minutos&a&l.'
+      - 'to_all: message: '
+      - 'console_command: stimer set 00:02:00 none BLUE false "󏿿"'
+      - 'console_command: stimer set 00:02:00 timer BLUE false "≭󏿠󏿻&f<MM:SS>󐀔񐥠"'
+      - 'wait: 120'
+      - 'give_item: saved_item:farmer_hoe;amount:1;slot:0;slot_replace:true'
+      - 'give_item: saved_item:farmer_fork;amount:1;slot:8;slot_replace:true'
+      - 'to_all: message: '
+      - 'to_all: message:  🤫 &6&lLos granjeros han llegado.'
+      - 'to_all: message:       &e&lMucha suerte.'
+      - 'to_all: message: '
+      - 'wait: 1'
+      - 'call_event: AbrirCeldasP2'
+      - 'wait: 2'
+      - 'call_event: TimerPrueba2'
+      - 'wait: 30'
+      - 'call_event: CerrarCeldasP2'
+
+  AbrirCeldasP2:
+    type: call
+    actions:
+      default:
+      - 'set_block: location:-148,-43,-669,world;id:REDSTONE_BLOCK'
+      - 'wait: 30'
+      - 'set_block: location:-148,-43,-669,world;id:AIR'
+
+  CerrarCeldasP2:
+    type: call
+    actions:
+      default:
+      - 'set_block: location:-152,-43,-669,world;id:REDSTONE_BLOCK'
+      - 'wait: 30'
+      - 'set_block: location:-152,-43,-669,world;id:AIR'
+      
+      

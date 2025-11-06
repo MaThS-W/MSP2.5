@@ -1,0 +1,20 @@
+name: XCristi_
+events:
+  palos&rocas:
+    one_time: false
+    cooldown: 1749945110185
+  orbes:
+    one_time: false
+    cooldown: 1749945110185
+  habilidades_cazadores:
+    one_time: false
+    cooldown: 1749945072400
+  botiquin:
+    one_time: false
+    cooldown: 1749943524260
+  chispas_invisibilidad_prueba1:
+    one_time: false
+    cooldown: 1749944662962
+  visores_nocturnos:
+    one_time: false
+    cooldown: 1749944613402

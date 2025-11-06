@@ -1,0 +1,111 @@
+Events:
+  transición:
+    type: player_command
+    conditions:
+    - '%command% == /transición'
+    - '%player_is_op% == yes'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: title: 60;200;60;∀;none'
+      - 'wait_ticks: 61'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:hunger 3 255'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:jump_boost
+        10 137'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:slowness 10
+        255'
+      - 'wait: 4'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:hunger 3 255'
+      - 'wait: 6'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:saturation
+        5 10'
+  
+  EsperarJugadores:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%server_online% > 15 execute default2'
+    - '%server_online% >= 45 execute iniciando'
+    actions:
+      default:
+      - 'actionbar: &fEsperando jugadores%animations_<appear>...</appear>% &l[&f%server_online%/45&l];0'
+      default2:
+      - 'actionbar: &fEsperando jugadores%animations_<appear>...</appear>% &l[&f%math_0:DOWN_{server_online}-2%/45&l];0'
+      iniciando:
+      - 'actionbar: &bIniciando en breve%animations_<appear>...</appear>% &f&l[&f%server_online%/45&l];0'
+    enabled: false
+  
+  TimerSimple:
+    type: call
+    actions:
+      default:
+      - 'console_command: stimer set 00:00:59 none BLUE false "󏿿"'
+      - 'console_command: stimer set 00:00:59 timer BLUE false "≭󏿠󏿻&c<MM:SS>󐀔񐥠"'
+  
+  TimerPrueba1:
+    type: call
+    actions:
+      default:
+      - 'console_command: stimer set 00:30:00 none1 BLUE false "󏿿"'
+      - 'console_command: stimer set 00:30:00 prueba1 BLUE false "≭󏿠󏿻&b<MM:SS>󐀔񐥠"'
+  
+  # TimerPrueba1:
+  #  type: call
+  #  actions:
+  #    default:
+  #    - 'console_command: stimer set 00:30:00 none1 BLUE false "󏿿"'
+  #    - 'console_command: stimer set 00:30:00 prueba1 BLUE false "≮󏿠󏿹񏚠<MM:SS>󐀔񐥠"'
+
+  TimerPrueba2:
+    type: call
+    actions:
+      default:
+      - 'console_command: stimer set 00:30:00 none1 BLUE false "󏿿"'
+      - 'console_command: stimer set 00:30:00 prueba1 BLUE false "≭󏿠󏿻&6<MM:SS>󐀔񐥠"'
+  
+  TimerPrueba3:
+    type: call
+    actions:
+      default:
+      - 'console_command: stimer set 00:02:59 none1 BLUE false "󏿿"'
+      - 'console_command: stimer set 00:02:59 prueba3 BLUE false "≰󏿠󏿠󏿽󏿽񏚠<MM:SS>󐀠󐀎񐥠"'
+  
+  TitleEscondete:
+    type: repetitive
+    repetitive_time: 15
+    actions:
+      default:
+      - 'actionbar: %animations_<flash>Ě</flash>%;0'
+    enabled: false
+  
+  Portales:
+    type: block_interact
+    cooldown: 5
+    conditions:
+    - '%block% == DARK_OAK_PRESSURE_PLATE execute portal_p1'
+    - '%block% == SPRUCE_PRESSURE_PLATE execute portal_p2'
+    - '%block% == CRIMSON_PRESSURE_PLATE execute portal_p3'
+    - '%action_type% == PHYSICAL'
+    actions:
+      default: []
+      cooldown:
+      - 'cancel_event: true'
+      portal_p1:
+      - 'playsound_resource_pack: portal_enter;0.1;1'
+      - 'wait_ticks: 10'
+      - 'title: 3;25;3;none;&b∄'
+      - 'wait: 1'
+      - 'teleport: world;358.5;-43;236.5;-90;0'
+      portal_p2:
+      - 'playsound_resource_pack: portal_enter;0.1;1'
+      - 'wait_ticks: 10'
+      - 'title: 3;25;3;none;&a∄'
+      - 'wait: 1'
+      - 'teleport: world;-148.99;-28;-626.5;180;0'
+      portal_p3:
+      - 'playsound_resource_pack: portal_enter;0.1;1'
+      - 'wait_ticks: 10'
+      - 'title: 3;25;3;none;∀'
+      - 'wait: 1'
+      - 'teleport: world;-234.5;128;596.5;0;90'
+

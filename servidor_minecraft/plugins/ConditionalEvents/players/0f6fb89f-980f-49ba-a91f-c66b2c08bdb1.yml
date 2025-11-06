@@ -1,0 +1,17 @@
+name: Cristicraft85
+events:
+  orbes:
+    one_time: false
+    cooldown: 1745800984985
+  botiquin:
+    one_time: false
+    cooldown: 1745800272010
+  chispas_invisibilidad_prueba1:
+    one_time: false
+    cooldown: 1745800833477
+  visores_nocturnos:
+    one_time: false
+    cooldown: 1745374071015
+  interactuar_entities:
+    one_time: false
+    cooldown: 1745374921455

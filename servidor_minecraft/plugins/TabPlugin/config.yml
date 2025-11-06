@@ -1,0 +1,10 @@
+#The config for changing your tablist!
+#NOTE: ALWAYS use "" for text. PlaceholderAPI + Animations are supported! Find more information at https://github.com/Niall7459/KiteBoard-Documentation/wiki/Animations-and-Modifiers
+#If you still see %...% do '/papi ecloud download player' + '/papi ecloud download server' + '/papi ecloud download animations'
+#Change the header here.
+Header: "\n 🆒\n\n\n 🆓 §f\n\n§f§nthe pepes world\n\n"
+#Change the footer here.
+Footer: "\n§a§ljugadores: §f§l%server_online%\npuntos p1: %servervariables_value_puntos_ronda1%"
+#Change the amount of ticks when updating the tablist. 20 ticks equals 1 second. 
+#If your number is high, the tablist will be updated slowly. When your number is low, the tablist will be updated frequently. I recommend using 5 as number.
+UpdateDelay: 5

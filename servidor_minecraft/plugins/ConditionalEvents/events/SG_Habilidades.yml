@@ -1,0 +1,164 @@
+Events:
+  pan_infinito:
+    type: item_consume
+    conditions:
+    - '%item% == MELON_SLICE'
+    - '%item_custom_model_data% == 1'
+    - '%item_name% == Pan Infinito'
+    - '%player_gamemode% == ADVENTURE or %player_gamemode% == SURVIVAL'
+    actions:
+      default:
+      - 'wait_ticks: 5'
+      - 'give_item: saved_item:pan_infinito;amount:1'
+  
+  orbes:
+    type: item_interact
+    cooldown: 1
+    conditions:
+    - '%item% == ENDER_PEARL'
+    - '%action_type% == RIGHT_CLICK or %action_type% == SHIFT_RIGHT_CLICK'
+    - '%item_name% == Orbe de Velocidad execute velocidad'
+    - '%item_name% == Orbe de Regeneración execute regeneracion'
+    actions:
+      default: []
+      velocidad:
+      - 'cancel_event: true'
+      - 'give_potion_effect: SPEED;100;3;true'
+      - 'playsound: ITEM_TRIDENT_THUNDER;10;1.6'
+      - 'title: 5;5;10;none;∂'
+      - 'particle: effect:END_ROD offset:0.5;0.4;0.5 speed:0.005 amount:200'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      regeneracion:
+      - 'cancel_event: true'
+      - 'give_potion_effect: REGENERATION;100;2;true'
+      - 'title: 5;5;10;none;&c∂'
+      - 'particle: effect:HEART offset:0.5;0.4;0.5 speed:0.005 amount:30'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      - 'playsound: ENTITY_PUFFER_FISH_BLOW_UP;10;0.5'
+      - 'wait_ticks: 5'
+      - 'playsound: ENTITY_PUFFER_FISH_BLOW_UP;10;0.7'
+      - 'wait_ticks: 5'
+      - 'playsound: ENTITY_PUFFER_FISH_BLOW_UP;10;0.9'
+      - 'wait_ticks: 5'
+      - 'playsound: ENTITY_PUFFER_FISH_BLOW_UP;10;1.1'
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+  
+  botiquin:
+    type: item_interact
+    cooldown: 10
+    prevent_cooldown_activation:
+    - error
+    - error2
+    conditions:
+    - '%action_type% == LEFT_CLICK or %action_type% == SHIFT_LEFT_CLICK execute error2'
+    - '%item% == ENDER_PEARL'
+    - '%item_name% == Botiquin'
+    - '%player_health% == 20.0 execute error'
+    - '%player_health% < 20.0'
+    - '%action_type% == RIGHT_CLICK execute error'
+    - '%action_type% == SHIFT_RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'console_command: attribute %player% minecraft:generic.movement_speed base
+        set 0.01'
+      - 'console_command: effect give %player% minecraft:jump_boost 3 250 true'
+      - 'playsound_resource_pack: botiquin;1;1'
+      - 'title: 0;20;0;none;&c&l3'
+      - 'wait: 1'
+      - 'title: 0;20;0;none;&c&l2'
+      - 'wait: 1'
+      - 'title: 0;20;0;none;&c&l1'
+      - 'wait: 1'
+      - 'title: 0;20;0;none;&c&l✔'
+      - 'playsound_resource_pack: curacion;1;1'
+      - 'console_command: effect give %player% minecraft:instant_health 1 2 true'
+      - 'console_command: attribute %player% minecraft:generic.movement_speed base
+        set 0.10000000149011612'
+      - 'remove_item: %item%;1;name: %item_name%'
+      error:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+      error2: []
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+  
+  visores_nocturnos:
+    type: item_interact
+    cooldown: 31
+    conditions:
+    - '%item% == ENDER_PEARL and %item_name% == Visores Nocturnos'
+    - '%action_type% == RIGHT_CLICK execute error'
+    - '%action_type% == SHIFT_RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'title: 10;10;10;none;∀'
+      - 'wait_ticks: 10'
+      - 'give_item: saved_item:VisoresNocturnos;amount:1;slot:39;slot_replace:true'
+      - 'give_potion_effect: NIGHT_VISION;600;0;false'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      - 'wait: 29'
+      - 'title: 10;20;10;none;∀'
+      - 'wait_ticks: 5'
+      - 'give_item: saved_item:casco_minero;amount:1;slot:39;slot_replace:true'
+      error:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+  
+  chispas_invisibilidad_prueba1:
+    type: item_interact
+    cooldown: 10
+    conditions:
+    - '%item% == ENDER_PEARL'
+    - '%action_type% == RIGHT_CLICK or %action_type% == SHIFT_RIGHT_CLICK'
+    - '%item_name% == Chispas de Invisibilidad'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'give_item: id:AIR;amount:1;slot:39;slot_replace:true'
+      - 'give_potion_effect: INVISIBILITY;200;1;false'
+      - 'playsound: BLOCK_FIRE_EXTINGUISH;1;0.1'
+      - 'title: 5;5;10;none;&8∂'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      - 'wait: 10'
+      - 'give_item: saved_item:casco_minero;amount:1;slot:39;slot_replace:false'
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+    enabled: true
+  
+  chispas_invisibilidad_prueba2&3:
+    type: item_interact
+    cooldown: 10
+    conditions:
+    - '%item% == ENDER_PEARL'
+    - '%action_type% == RIGHT_CLICK or %action_type% == SHIFT_RIGHT_CLICK'
+    - '%item_name% == Chispas de Invisibilidad'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'give_potion_effect: INVISIBILITY;200;1;false'
+      - 'playsound: BLOCK_FIRE_EXTINGUISH;1;0.1'
+      - 'title: 5;5;10;none;&8∂'
+      - 'remove_item: ENDER_PEARL;1;name: %item_name%'
+      cooldown:
+      - 'cancel_event: true'
+      - 'playsound_resource_pack: cooldown_items;1;1'
+    enabled: false
+
+  sopa_no_sospechosa:
+    type: item_consume
+    conditions:
+    - '%player_food_level% < 20'
+    - '%item% == MELON_SLICE and %item_custom_model_data% == 2 and %item_name% == Sopa NO Sospechosa'
+    actions:
+      default:
+      - 'give_potion_effect: SATURATION;200;1;false'
+      - 'playsound_resource_pack: namnamnam;0.2;1'

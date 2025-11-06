@@ -1,0 +1,405 @@
+Events:
+  NuevaRondaP3:
+    type: player_command
+    conditions:
+    - '%player_is_op% == yes'
+    - '%command% == /nuevaronda_p3 %arg_1%'
+    - '%arg_1% == final execute final'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'console_command: stimer remove all'
+      - 'call_event: TimerPrueba3'
+      - 'wait_ticks: 5'
+      - 'console_command: execute as @a[team=jugador,sort=random,limit=%arg_1%] at
+        @s run team join con_bomba @s'
+      - 'to_condition: con_bomba: playsound_resource_pack: recibir_bomba;1;1'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:0'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:1'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:2'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:3'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:4'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:5'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:6'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:7'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:8'
+      - 'to_condition: con_bomba: give_potion_effect: SPEED;3600;3;false'
+      - 'to_condition: jugadores_2: give_potion_effect: SPEED;3600;2;false'
+      - 'to_condition: con_bomba: give_potion_effect: SATURATION;3600;5;false'
+      - 'to_condition: jugadores_2: give_potion_effect: SATURATION;3600;5;false'
+      - 'to_condition: con_bomba: give_potion_effect: GLOWING;3600;1;false'
+      - 'to_condition: jugadores_2: give_potion_effect: GLOWING;3600;1;false'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:instant_health
+        1200 99 true'
+      - 'to_condition: con_bomba: title: 0;3600;0;∃;none'
+      - 'wait: 179'
+      - 'console_command: execute at @a[team=con_bomba] run particle minecraft:explosion
+        ~ ~1 ~ 1 1 1 0.1 50 force'
+      - 'console_command: title @a[team=con_bomba] clear'
+      - 'console_command: team join cazador_p3 @a[team=con_bomba]'
+      - 'wait_ticks: 1'
+      - 'to_condition: cazadores_p3: title: 10;20;10;none;∀'
+      - 'to_all: remove_item: YELLOW_DYE;9'
+      - 'to_condition: cazadores_p3: teleport: world;-236;87;561;90;0'
+      - 'console_command: stimer remove all'
+      - 'console_command: stimer set 00:00:29 cazador_reveal BLUE false "&c&lLos cazadores
+        serán liberados en &4▸ &f<MM:SS>"'
+      - 'to_condition: cazadores_p3: give_item: saved_item:cuchillo;amount:1'
+      - 'to_condition: cazadores_p3: give_item: saved_item:arco_cazador_p3;amount:1'
+      - 'to_condition: cazadores_p3: give_item: saved_item:pepe_tomato_mask;amount:1;slot:39;slot_replace:true'
+      - 'to_all: message: '
+      - 'to_all: message:  🕒 &a&lTienen 30 segundos para esconderse.'
+      - 'to_all: message: '
+      - 'to_condition: jugadores_2: give_potion_effect: SPEED;1800;0;false'
+      - 'wait: 30'
+      - 'to_condition: jugadores_2: give_item: saved_item:pepe_mask_2;amount:1;slot:39;slot_replace:true'
+      - 'to_condition: jugadores_2: give_item: saved_item:polo_p3;amount:1;slot:38;slot_replace:true'
+      - 'to_condition: jugadores_2: give_item: saved_item:piernas_p3;amount:1;slot:37;slot_replace:true'
+      - 'to_condition: jugadores_2: give_item: saved_item:pies_p3;amount:1;slot:36;slot_replace:true'
+      - 'to_condition: jugadores_2: give_potion_effect: INVISIBILITY;1200;0;false'
+      - 'to_all: message: '
+      - 'to_all: message:  🍅 &4&lTomatitos liberados'
+      - 'to_all: message:   &cSi en un minuto el cazador logra eliminar'
+      - 'to_all: message:   &ca un jugador, el cazador se salva de'
+      - 'to_all: message:   &cser eliminado.'
+      - 'to_all: message:   &cSi eso no sucede, este será eliminado.'
+      - 'to_all: message:   &f&l¡Alejate del tomatito!'
+      - 'to_all: message: '
+      - 'console_command: stimer remove all'
+      - 'wait: 1'
+      - 'call_event: AbrirCeldasP3'
+      - 'wait: 1'
+      - 'console_command: ce call TimerSimple'
+      - 'to_condition: cazadores_p3: give_potion_effect: SPEED;1200;3;false'
+      - 'call_event: GlowingParpadeante'
+      - 'wait: 60'
+      - 'to_condition: cazadores_p3: damage: 40'
+      - 'wait: 2'
+      - 'to_condition: jugadores: clear_inventory'
+      final:
+      - 'cancel_event: true'
+      - 'console_command: ce disable SalvarsePorAtrapar'
+      - 'console_command: ce disable JugadorMuereP3'
+      - 'console_command: ce enable SalvarsePorAtrapar_F'
+      - 'console_command: ce enable JugadorMuereP3_F'
+      - 'console_command: stimer remove all'
+      - 'console_command: stimer set 00:00:59 bomba_timer BLUE false "&c&lLa bomba
+        explotara en &4▸ &f<MM:SS>"'
+      - 'wait_ticks: 5'
+      - 'console_command: execute as @a[team=jugador,sort=random,limit=%arg_1%] at
+        @s run team join con_bomba @s'
+      - 'to_condition: con_bomba: playsound_resource_pack: recibir_bomba;1;1'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:0'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:1'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:2'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:3'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:4'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:5'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:6'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:7'
+      - 'to_condition: con_bomba: give_item: saved_item:Dinamita;slot:8'
+      - 'to_condition: con_bomba: give_potion_effect: SPEED;1200;1;false'
+      - 'to_condition: con_bomba: give_potion_effect: SATURATION;1200;2;false'
+      - 'to_condition: jugadores: give_potion_effect: SATURATION;1200;2;false'
+      - 'to_condition: con_bomba: give_potion_effect: GLOWING;1200;1;false'
+      - 'to_condition: jugadores: give_potion_effect: GLOWING;1200;1;false'
+      - 'console_command: effect give @a[gamemode=adventure] minecraft:instant_health
+        1200 99 true'
+      - 'to_condition: con_bomba: title: 0;1200;0;∃;none'
+      - 'wait: 59'
+      - 'console_command: execute at @a[team=con_bomba] run particle minecraft:explosion
+        ~ ~1 ~ 1 1 1 0.1 50 force'
+      - 'console_command: title @a[team=con_bomba] clear'
+      - 'console_command: team join cazador_p3 @a[team=con_bomba]'
+      - 'wait_ticks: 1'
+      - 'to_condition: cazadores_p3: title: 10;20;10;none;∀'
+      - 'to_all: remove_item: YELLOW_DYE;9'
+      - 'to_condition: cazadores_p3: teleport: world;-235;89;565;90;0'
+      - 'console_command: stimer remove all'
+      - 'console_command: stimer set 00:00:29 cazador_reveal BLUE false "&c&lLos cazadores
+        serán liberados en &4▸ &f<MM:SS>"'
+      - 'to_condition: cazadores_p3: give_item: saved_item:cuchillo;amount:1'
+      - 'to_condition: cazadores_p3: give_item: saved_item:arco_cazador_p3;amount:1'
+      - 'to_condition: cazadores_p3: give_item: saved_item:pepe_tomato_mask;amount:1;slot:39;slot_replace:true'
+      - 'to_all: message: '
+      - 'to_all: message:  🕒 &a&lTienen 30 segundos para esconderse.'
+      - 'to_all: message: '
+      - 'wait: 30'
+      - 'to_condition: cazadores_p3: give_potion_effect: SPEED;1200;3;false'
+      - 'to_condition: con_bomba: give_potion_effect: GLOWING;100;1;false'
+      - 'to_condition: jugadores: give_potion_effect: GLOWING;100;1;false'
+      - 'to_condition: jugadores: give_item: saved_item:pepe_mask;amount:1;slot:39;slot_replace:true'
+      - 'to_all: message: '
+      - 'to_all: message: '
+      - 'to_all: message:  🍅 &4&lTomatito liberado'
+      - 'to_all: message: '
+      - 'console_command: stimer remove all'
+      - 'console_command: ce call TimerSimple'
+      - 'wait: 60'
+      - 'to_condition: cazadores_p3: damage: 40'
+      - 'console_command: clear @a[team=cazador_p3] minecraft:iron_sword'
+      - 'console_command: clear @a[team=muerto] minecraft:iron_sword'
+      - 'wait: 3'
+      - 'call_event: TitleGanadorEvento'
+  
+  IntercambiarTNT:
+    type: player_attack
+    conditions:
+    - '%target:team_name% == jugador'
+    - '%team_name% == con_bomba'
+    actions:
+      default:
+      - 'remove_potion_effect: SPEED'
+      - 'remove_item: YELLOW_DYE;9'
+      - 'give_potion_effect: SPEED;1200;2;false'
+      - 'console_command: title %player% clear'
+      - 'console_command: team join jugador %player%'
+      - 'to_target: playsound_resource_pack: recibir_bomba;1;1'
+      - 'to_target: give_item: saved_item:Dinamita;slot:0;slot_replace:true'
+      - 'to_target: give_item: saved_item:Dinamita;slot:1;slot_replace:true'
+      - 'to_target: give_item: saved_item:Dinamita;slot:2;slot_replace:true'
+      - 'to_target: give_item: saved_item:Dinamita;slot:3;slot_replace:true'
+      - 'to_target: give_item: saved_item:Dinamita;slot:4;slot_replace:true'
+      - 'to_target: give_item: saved_item:Dinamita;slot:5;slot_replace:true'
+      - 'to_target: give_item: saved_item:Dinamita;slot:6;slot_replace:true'
+      - 'to_target: give_item: saved_item:Dinamita;slot:7;slot_replace:true'
+      - 'to_target: give_item: saved_item:Dinamita;slot:8;slot_replace:true'
+      - 'to_target: title: 0;1200;0;∃;none'
+      - 'console_command: team join con_bomba %target:player%'
+      - 'to_target: give_potion_effect: SPEED;1200;3;false'
+  
+  DesactivarMoverItems_P3:
+    type: item_move
+    conditions:
+    - '%team_name% == jugador or %team_name% == con_bomba or %team_name% == cazador_p3'
+    actions:
+      default:
+      - 'cancel_event: true'
+    enabled: false
+  
+  DesactivarDropearItems_P2&P3:
+    type: item_drop
+    conditions:
+    - '%team_name% == jugador or %team_name% == con_bomba or %team_name% == cazador_p3'
+    actions:
+      default:
+      - 'cancel_event: true'
+    enabled: true
+  
+  SalvarsePorAtrapar:
+    type: player_kill
+    conditions:
+    - '%target:team_name% == jugador'
+    - '%team_name% == cazador_p3'
+    actions:
+      default:
+      - 'console_command: team join jugador %player%'
+      - 'console_command: lp user %player% parent set default -s'
+      - 'teleport: world;-236;87;561;90;0'
+      - 'title: 5;15;5;∁;none'
+      - 'playsound: ENTITY_PLAYER_LEVELUP;10;2'
+      - clear_inventory
+  
+  JugadorMuereP3:
+    type: player_death
+    conditions:
+    - '%team_name% == jugador or %team_name% == cazador_p3'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'gamemode: SPECTATOR'
+      - 'call_event: AnimaciónMuerte'
+      - 'console_command: execute at %player% run particle minecraft:explosion ~ ~1
+        ~ 1 1 1 0.1 50 force'
+      - clear_inventory
+      - 'wait: 1'
+      - 'console_command: team join muerto %player%'
+    enabled: true
+  
+  SalvarsePorAtrapar_F:
+    type: player_kill
+    conditions:
+    - '%target:team_name% == jugador'
+    - '%team_name% == cazador_p3'
+    actions:
+      default:
+      - 'console_command: team join jugador %player%'
+      - 'title: 5;15;5;∁;none'
+      - 'playsound: ENTITY_PLAYER_LEVELUP;10;2'
+      - 'console_command: clear %player% minecraft:stone_sword'
+      - 'wait: 1'
+      - 'call_event: Ganador;%ganador%=%player%'
+    enabled: false
+  
+  JugadorMuereP3_F:
+    type: player_death
+    conditions:
+    - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'gamemode: SPECTATOR'
+      - 'call_event: AnimaciónMuerte'
+      - 'console_command: execute at %player% run particle minecraft:explosion ~ ~1
+        ~ 1 1 1 0.1 50 force'
+      - clear_inventory
+      - 'wait_ticks: 1'
+      - 'console_command: team join muerto %player%'
+    enabled: false
+  
+  AbrirCeldasP3:
+    type: call
+    actions:
+      default:
+      - 'set_block: location:-234,51,615,world;id:REDSTONE_BLOCK'
+      - 'wait: 30'
+      - 'set_block: location:-234,51,615,world;id:AIR'
+  
+  CerrarCeldasP3:
+    type: call
+    actions:
+      default:
+      - 'set_block: location:-238,51,615,world;id:REDSTONE_BLOCK'
+      - 'wait: 30'
+      - 'set_block: location:-238,51,615,world;id:AIR'
+  
+  TitleGanadorEvento:
+    type: call
+    actions:
+      default:
+      - 'console_command: title @a[team=jugador,limit=1] title {"text":"GANADOR","color":"#FFBC05","bold":true,"italic":false}'
+      - 'console_command: title @a[team=jugador,limit=1] subtitle {"selector":"@a[team=jugador,gamemode=adventure]","color":"#FFEC70","bold":true,"italic":false}'
+      - 'console_command: title @a[team=jugador,limit=1] times 60 200 60'
+  
+  monedas:
+    type: block_interact
+    cooldown: 1
+    conditions:
+    - '%block% == POLISHED_BLACKSTONE_PRESSURE_PLATE'
+    - '%action_type% == PHYSICAL'
+    - '%player_gamemode% == ADVENTURE'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'console_command: svar add monedas_p3 1 %player% silent:true'
+      - 'playsound_resource_pack: moneda_recolectar;1;1'
+      - 'actionbar: 丅󏿠󏿠󏿰󏿰󏿰&f&lMonedas: &f%servervariables_value_monedas_p3%/10󐀒󐀊񐥠񐥠;0'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:AIR'
+      - 'wait: 15'
+      - 'set_block: location:%block_x%,%block_y%,%block_z%,%block_world%;id:%block%'
+      cooldown:
+      - 'cancel_event: true'
+    enabled: false
+  
+  monedas_completar:
+    type: custom
+    custom_event_data:
+      event: svar.ajneb97.api.VariableChangeEvent
+      player_variable: getPlayer()
+      variables_to_capture:
+      - '%variable_type%;getVariable().getVariableType()'
+      - '%variable_name%;getVariable().getName()'
+      - '%new_value%;getNewValue()'
+    conditions:
+    - '%variable_name% == monedas_p3'
+    - '%new_value% >= 10'
+    - '%team_name% == jugador execute jugadores'
+    - '%team_name% == cazador_p3 execute cazadores'
+    - '%team_name% == con_bomba execute con_bomba'
+    - '%player_gamemode% == ADVENTURE'
+    actions:
+      default: []
+      jugadores:
+      - 'console_command: svar reset monedas_p3 %player% silent:true'
+      - 'playsound_resource_pack: moneda2;1;1'
+      - 'execute_action_group: velocidad:25;resistencia:25;supersalto:25;regeneracion:25'
+      cazadores:
+      - 'console_command: svar reset monedas_p3 %player% silent:true'
+      - 'playsound_resource_pack: moneda2;1;1'
+      - 'execute_action_group: velocidad_c:25;glowing_parpadeante:25;supersalto:25;flecha:25'
+      con_bomba:
+      - 'console_command: svar reset monedas_p3 %player% silent:true'
+      - 'playsound_resource_pack: moneda2;1;1'
+      - 'execute_action_group: velocidad_c:60;supersalto:40'
+      velocidad:
+      - 'message: &a¡Haz recibido velocidad!'
+      - 'give_potion_effect: SPEED;100;3;true'
+      velocidad_c:
+      - 'message: &a¡Haz recibido velocidad!'
+      - 'give_potion_effect: SPEED;100;4;true'
+      glowing_parpadeante:
+      - 'to_all: playsound: ENTITY_CREEPER_PRIMED;10;2'
+      - 'to_all: message: &c¡El cazador activó el glowing a todos!'
+      - 'wait_ticks: 30'
+      - 'call_event: GlowingParpadeante'
+      flecha:
+      - 'message: &a¡Haz recibido una flecha!'
+      - 'give_item: id:ARROW;amount:1'
+      supersalto:
+      - 'message: &a¡Haz recibido supersalto!'
+      - 'console_command: effect give %player% minecraft:jump_boost 5 0'
+      regeneracion:
+      - 'message: &a¡Haz recibido regeneración!'
+      - 'give_potion_effect: REGENERATION;100;1;true'
+      resistencia:
+      - 'message: &a¡Haz recibido resistencia!'
+      - 'console_command: effect give %player% minecraft:resistance 5 1'
+    enabled: false
+  
+  GlowingParpadeante:
+    type: call
+    actions:
+      default:
+      - 'to_condition: cazadores_p3: give_potion_effect: GLOWING;5;1;false'
+      - 'to_condition: jugadores: give_potion_effect: GLOWING;5;1;true'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      - 'wait_ticks: 6'
+      - 'to_condition: cazadores_p3: give_potion_effect: GLOWING;5;1;true'
+      - 'to_condition: jugadores: give_potion_effect: GLOWING;5;1;true'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      - 'wait_ticks: 6'
+      - 'to_condition: cazadores_p3: give_potion_effect: GLOWING;5;1;false'
+      - 'to_condition: jugadores: give_potion_effect: GLOWING;5;1;true'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      - 'wait_ticks: 6'
+      - 'to_condition: cazadores_p3: give_potion_effect: GLOWING;5;1;false'
+      - 'to_condition: jugadores: give_potion_effect: GLOWING;5;1;true'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      - 'wait_ticks: 6'
+      - 'to_condition: cazadores_p3: give_potion_effect: GLOWING;5;1;false'
+      - 'to_condition: jugadores: give_potion_effect: GLOWING;5;1;true'
+      - 'to_all: playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+  
+  desactivar_prueba3:
+    type: call
+    actions:
+      default:
+      - 'console_command: ce disable DesactivarMoverItems_P3'
+      - 'console_command: ce disable monedas'
+      - 'console_command: ce disable monedas_completar'
+      - 'console_command: stimer remove all'
+  
+  activar_prueba3:
+    type: call
+    actions:
+      default:
+      - 'console_command: ce enable DesactivarMoverItems_P3'
+      - 'console_command: ce enable interactuar_entities'
+      - 'console_command: ce enable speed_pads'
+      - 'console_command: ce enable regenerar_comida'
+  
+  revivir:
+    type: player_command
+    conditions:
+    - '%player_is_op% == yes'
+    - '%command% == /revivir %arg_1%'
+    - '%arg_1% == todos execute revivir_todos'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'console_command: gamemode adventure %arg_1%'
+      - 'console_command: lp user %arg_1% parent set default -s'
+      - 'console_command: team join jugador %arg_1%'
+      - 'console_command: tp %arg_1% iMathS_'
+
+

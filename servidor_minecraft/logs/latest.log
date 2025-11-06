@@ -1,0 +1,477 @@
+[21:20:08] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:20:11] [ServerMain/INFO]: Loaded 7 recipes
+[21:20:12] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[21:20:12] [Server thread/INFO]: Loading properties
+[21:20:12] [Server thread/INFO]: This server is running Paper version git-Paper-196 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 773dd72)
+[21:20:13] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:20:13] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:20:13] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[21:20:13] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[21:20:14] [Server thread/INFO]: Default game type: ADVENTURE
+[21:20:14] [Server thread/INFO]: Generating keypair
+[21:20:15] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:20:15] [Server thread/INFO]: Using epoll channel type
+[21:20:15] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[21:20:15] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[21:20:15] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loading 5 libraries... please wait
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[21:20:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/MSP2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
+[21:20:16] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'InstaSmeltX-1.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/InstaSmeltX has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: com/minecraft/instasmeltx/InstaSmeltX has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:229) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.1.jar:git-Paper-196]
+	... 9 more
+[21:20:16] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0-SNAPSHOT-741
+[21:20:17] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.17+6544-56d0383
+[21:20:18] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@78c3753]
+[21:20:18] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.8.0+0931f7c9e-SNAPSHOT
+[21:20:19] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[21:20:19] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9+5934e49
+[21:20:19] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v11.0.5
+[21:20:19] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.4.1-${CI_COMMIT_SHORT_SHA}
+[21:20:19] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[21:20:19] [Server thread/INFO]: [MythicMobs] §4M§6y§6t§6h§2i§2c§2 §3E§3n§1a§1b§1l§5e§5d§4!
+[21:20:19] [Server thread/INFO]: [AnimationUnicode] Loading server plugin AnimationUnicode v1.0-BETA
+[21:20:19] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.5.5
+[21:20:19] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.158
+[21:20:20] [Server thread/INFO]: [CommandAPI] Loading server plugin CommandAPI v10.1.2
+[21:20:20] [Server thread/INFO]: [CommandAPI] Loaded platform NMS_1_20_R1 > NMS_Common > CommandAPIBukkit
+[21:20:20] [Server thread/INFO]: [CommandAPI] Hooked into Spigot successfully for Chat/ChatComponents
+[21:20:20] [Server thread/INFO]: [CommandAPI] Hooked into Adventure for AdventureChat/AdventureChatComponents
+[21:20:20] [Server thread/INFO]: [CommandAPI] Hooked into Paper for paper-specific API implementations
+[21:20:20] [Server thread/INFO]: [ConditionalEvents] Loading server plugin ConditionalEvents v4.60.1
+[21:20:20] [Server thread/INFO]: [ServerVariables] Loading server plugin ServerVariables v2.5.3
+[21:20:20] [Server thread/INFO]: [TabPlugin] Loading server plugin TabPlugin v1.03
+[21:20:20] [Server thread/INFO]: [ModelEngine] Loading server plugin ModelEngine vR3.1.11
+[21:20:20] [Server thread/INFO]: [Morphy] Loading server plugin Morphy v3.6
+[21:20:20] [Server thread/INFO]: [SimpleTimer] Loading server plugin SimpleTimer v1.5.2
+[21:20:20] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:20:20] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0-SNAPSHOT-741
+[21:20:20] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.17+6544-56d0383
+[21:20:21] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[21:20:21] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[21:20:21] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R1.PaperweightAdapter as the Bukkit adapter
+[21:20:23] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.158
+[21:20:23] [Server thread/INFO]:         __    
+[21:20:23] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.158
+[21:20:23] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[21:20:23] [Server thread/INFO]: 
+[21:20:23] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[21:20:24] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[21:20:24] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[21:20:25] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[21:20:25] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2255ms)
+[21:20:25] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:20:25] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:20:25] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:20:25] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:20:25] [Server thread/INFO]: Preparing level "world"
+[21:20:26] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:20:27] [Server thread/INFO]: Time elapsed: 469 ms
+[21:20:27] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:20:27] [Server thread/INFO]: Time elapsed: 115 ms
+[21:20:27] [Server thread/INFO]: [packetevents] Enabling packetevents v2.8.0+0931f7c9e-SNAPSHOT
+[21:20:27] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[21:20:27] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[21:20:27] [packetevents-update-check-thread/INFO]: [packetevents] There is an update available for PacketEvents! Your build: (2.8.0+0931f7c9e-SNAPSHOT) | Latest release: (2.10.1)
+[21:20:28] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[21:20:28] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.9+5934e49
+[21:20:28] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[21:20:28] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[21:20:28] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[21:20:28] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[21:20:28] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[21:20:28] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[21:20:28] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[21:20:28] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[21:20:28] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[21:20:28] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[21:20:28] [Server thread/INFO]: [WorldGuard] Loading region data...
+[21:20:29] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v11.0.5
+[21:20:29] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises-11.0.5-Free.jar
+[21:20:29] [Server thread/INFO]: [LibsDisguises] Discovered nms version: (Package: v1_20_R1) (LD: v1_20_R1) (MC: 1.20.1)
+[21:20:29] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1585
+[21:20:29] [Server thread/INFO]: [LibsDisguises] Build Date: 13/04/2025 03:40
+[21:20:29] [Server thread/ERROR]: [LibsDisguises] You are running an outdated version of Minecraft, you are currently using 1.20.1, you should update to a minimum of 1.20.4
+[21:20:29] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
+[21:20:29] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
+[21:20:31] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20/12...
+[21:20:32] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20/12 in 824.921175ms
+[21:20:34] [Server thread/WARN]: java.lang.IncompatibleClassChangeError: Found class org.bukkit.Art, but interface was expected
+[21:20:34] [Server thread/WARN]: 	at LibsDisguises-11.0.5-Free.jar//me.libraryaddict.disguise.utilities.parser.DisguiseParser.updateDisguiseName(DisguiseParser.java:396)
+[21:20:34] [Server thread/WARN]: 	at LibsDisguises-11.0.5-Free.jar//me.libraryaddict.disguise.disguisetypes.watchers.PaintingWatcher.setArt(PaintingWatcher.java:45)
+[21:20:34] [Server thread/WARN]: 	at LibsDisguises-11.0.5-Free.jar//me.libraryaddict.disguise.disguisetypes.MiscDisguise.apply(MiscDisguise.java:98)
+[21:20:34] [Server thread/WARN]: 	at LibsDisguises-11.0.5-Free.jar//me.libraryaddict.disguise.disguisetypes.MiscDisguise.<init>(MiscDisguise.java:64)
+[21:20:34] [Server thread/WARN]: 	at LibsDisguises-11.0.5-Free.jar//me.libraryaddict.disguise.disguisetypes.MiscDisguise.<init>(MiscDisguise.java:23)
+[21:20:34] [Server thread/WARN]: 	at LibsDisguises-11.0.5-Free.jar//me.libraryaddict.disguise.utilities.parser.DisguiseParser.createDefaultMethods(DisguiseParser.java:126)
+[21:20:34] [Server thread/WARN]: 	at LibsDisguises-11.0.5-Free.jar//me.libraryaddict.disguise.LibsDisguises.runBackendStuff(LibsDisguises.java:278)
+[21:20:34] [Server thread/WARN]: 	at LibsDisguises-11.0.5-Free.jar//me.libraryaddict.disguise.LibsDisguises.onEnable(LibsDisguises.java:240)
+[21:20:34] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:281)
+[21:20:34] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:189)
+[21:20:34] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104)
+[21:20:34] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507)
+[21:20:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugin(CraftServer.java:642)
+[21:20:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugins(CraftServer.java:553)
+[21:20:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:635)
+[21:20:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:434)
+[21:20:34] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:308)
+[21:20:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1100)
+[21:20:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317)
+[21:20:34] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[21:20:34] [Server thread/INFO]: [LibsDisguises] Loaded custom disguise libraryaddict
+[21:20:34] [Server thread/INFO]: [LibsDisguises] Loaded 1 custom disguise
+[21:20:34] [Server thread/INFO]: [LibsDisguises] Config is up to date!
+[21:20:34] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: libsdisguises [1.0.0]
+[21:20:34] [Server thread/INFO]: [LibsDisguises] PlaceholderAPI support enabled
+[21:20:34] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.4.1-${CI_COMMIT_SHORT_SHA}
+[21:20:34] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.1)...
+[21:20:34] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality
+[21:20:36] [Server thread/INFO]: [MythicMobs] Mythic LibsDisguises Support has been enabled!
+[21:20:36] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
+[21:20:36] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
+[21:20:36] [Server thread/INFO]: [MythicMobs] Mythic ProtocolLib Support has been enabled!
+[21:20:36] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
+[21:20:36] [Server thread/INFO]: [MythicMobs] Base directory /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/SavedData
+[21:20:36] [Server thread/INFO]: [MythicMobs] Module directory /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/SavedData/worlds
+[21:20:38] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[21:20:38] [Server thread/INFO]: [MythicMobs] Loading Items...
+[21:20:38] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[21:20:38] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat ATTACK_DAMAGE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat ATTACK_SPEED from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat BONUS_DAMAGE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat CRITICAL_STRIKE_CHANCE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat CRITICAL_STRIKE_DAMAGE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat CRITICAL_STRIKE_RESILIENCE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat DAMAGE_REDUCTION from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat DEFENSE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat DODGE_CHANCE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat DODGE_NEGATION from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat HEALTH from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat HEALTH_REGENERATION from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat LIFESTEAL_CHANCE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat LIFESTEAL_POWER from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat MOVEMENT_SPEED from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat PARRY_CHANCE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat PARRY_NEGATION from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat PARRY_POWER from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat PARRY_COUNTERATTACK from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat ARMOR_GENERIC from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat ARMOR_BLUNT from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat ARMOR_SHARP from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat DAMAGE_BLUNT from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat DAMAGE_SHARP from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat FIRE_RESISTANCE from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading stat SPEED from /workspaces/MSP2.5/servidor_minecraft/plugins/MythicMobs/stats.yml
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[21:20:39] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[21:20:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mobs.
+[21:20:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 vanilla mob overrides.
+[21:20:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[21:20:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 18 skills.
+[21:20:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[21:20:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 7 mythic items.
+[21:20:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 drop tables.
+[21:20:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[21:20:39] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[21:20:39] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[21:20:39] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs v5.4.1 ( build ${CI_COMMIT_SHORT_SHA} ) has been successfully loaded!
+[21:20:39] [Server thread/INFO]: [AnimationUnicode] Enabling AnimationUnicode v1.0-BETA
+[21:20:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: animationunicode [1.0-BETA]
+[21:20:39] [Server thread/INFO]: [AnimationUnicode] Successfully Enabled (v1.0-BETA)
+[21:20:39] [Server thread/INFO]: [AnimationUnicode] Xhasi » Thanks for using my plugin
+[21:20:39] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.5.5
+[21:20:39] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[21:20:39] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[21:20:39] [Server thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:20:39] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[21:20:39] [Server thread/INFO]: [ItemEdit] Hooking into PlaceHolderAPI
+[21:20:39] [Server thread/INFO]: [ItemEdit] placeholders:
+[21:20:39] [Server thread/INFO]: [ItemEdit]   %itemedit_amount_<{itemid}>_[{slot}]_[{player}]%
+[21:20:39] [Server thread/INFO]: [ItemEdit]     shows how many itemid player has on slot
+[21:20:39] [Server thread/INFO]: [ItemEdit]     <{itemid}> for item id on serveritem
+[21:20:39] [Server thread/INFO]: [ItemEdit]     [{slot}] for the slot where the item should be counted, by default inventory
+[21:20:39] [Server thread/INFO]: [ItemEdit]       Values: inventory (include offhand), equip (include offhand), inventoryandequip (include offhand), hand, offhand, head, chest, legs, feet
+[21:20:39] [Server thread/INFO]: [ItemEdit]     [{player}] for the player, by default self
+[21:20:39] [Server thread/INFO]: [ItemEdit]     example: %itemedit_amount_{my_item_id}_{hand}%
+[21:20:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: itemedit [1.0]
+[21:20:39] [Server thread/INFO]: [ItemEdit] Hooking into MythicMobs
+[21:20:39] [Server thread/INFO]: [ItemEdit] # Enabled (took 426 ms)
+[21:20:39] [Server thread/INFO]: [CommandAPI] Enabling CommandAPI v10.1.2
+[21:20:39] [Server thread/INFO]: [CommandAPI] Hooked into Paper ServerResourcesReloadedEvent
+[21:20:40] [Server thread/INFO]: [ConditionalEvents] Enabling ConditionalEvents v4.60.1
+[21:20:40] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: conditionalevents [4.60.1]
+[21:20:40] [Server thread/INFO]: [ConditionalEvents] Has been enabled! Version: 4.60.1
+[21:20:40] [Server thread/INFO]: [ConditionalEvents] Thanks for using my plugin!   ~Ajneb97
+[21:20:41] [Server thread/INFO]: There is a new version available. (4.71.1)
+[21:20:41] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/conditionalevents
+[21:20:41] [Server thread/INFO]: [ServerVariables] Enabling ServerVariables v2.5.3
+[21:20:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: servervariables [2.5.3]
+[21:20:41] [Server thread/INFO]: [ServerVariables] Has been enabled! Version: 2.5.3
+[21:20:41] [Server thread/INFO]: [ServerVariables] Thanks for using my plugin!   ~Ajneb97
+[21:20:41] [Server thread/INFO]: There is a new version available. (3.1.1)
+[21:20:41] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/servervariables
+[21:20:41] [Server thread/INFO]: [TabPlugin] Enabling TabPlugin v1.03
+[21:20:41] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR3.1.11
+[21:20:41] [Server thread/INFO]: [MythicMobs] Model Engine Compatibility Loaded.
+[21:20:41] [Server thread/INFO]: [ModelEngine] [S] Compatibility applied: MythicMobs
+[21:20:41] [Server thread/INFO]: [ModelEngine] [S] bStats enabled
+[21:20:41] [Server thread/INFO]: [Morphy] Enabling Morphy v3.6
+[21:20:42] [Server thread/INFO]: [SimpleTimer] Enabling SimpleTimer v1.5.2
+[21:20:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: simpletimer [1.5.2]
+[21:20:42] [Server thread/INFO]: [SimpleTimer] Successfully Enabled (v1.5.2)
+[21:20:42] [Server thread/INFO]: [SimpleTimer] Xhasi » Thanks for using my plugin
+[21:20:42] [Server thread/INFO]: [SimpleTimer] There is a new version available. (v1.6.0)
+[21:20:42] [Server thread/INFO]: [SimpleTimer] You can download it at: https://www.spigotmc.org/resources/109565/
+[21:20:42] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[21:20:42] [Server thread/INFO]: Running delayed init tasks
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] [Importing models]
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] Importing luckyblock_cyan.bbmodel.
+[21:20:42] [Server thread/INFO]: [CommandAPI] Linked 0 Bukkit permissions to commands
+[21:20:42] [Server thread/INFO]: Done (30.092s)! For help, type "help"
+[21:20:42] [Server thread/INFO]: Timings Reset
+[21:20:42] [Craft Scheduler Thread - 0 - ItemEdit/INFO]: [ItemEdit] New Update at https://spigotmc.org/resources/40993
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] Importing luckyblock_red.bbmodel.
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] Importing luckyblock_yellow.bbmodel.
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] Importing m_luckyblock_cyan.bbmodel.
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] [Generating assets]
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] Generating luckyblock_cyan.
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] Generating luckyblock_red.
+[21:20:42] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:43] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] Generating luckyblock_yellow.
+[21:20:43] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:43] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] Generating m_luckyblock_cyan.
+[21:20:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: world [1.2.3]
+[21:20:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: team [1.2]
+[21:20:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.8]
+[21:20:43] [Server thread/INFO]: [PlaceholderAPI] [attribute] Available attributes: generic.knockback_resistance, generic.luck, GENERIC_LUCK, generic.attack_damage, generic.attack_knockback, horse.jump_strength, HORSE_JUMP_STRENGTH, GENERIC_MAX_HEALTH, ZOMBIE_SPAWN_REINFORCEMENTS, generic.movement_speed, GENERIC_MOVEMENT_SPEED, generic.armor, generic.attack_speed, zombie.spawn_reinforcements, GENERIC_ARMOR_TOUGHNESS, generic.max_health, GENERIC_FOLLOW_RANGE, GENERIC_ATTACK_KNOCKBACK, GENERIC_ATTACK_DAMAGE, GENERIC_ATTACK_SPEED, generic.flying_speed, GENERIC_FLYING_SPEED, GENERIC_KNOCKBACK_RESISTANCE, generic.follow_range, GENERIC_ARMOR, generic.armor_toughness
+[21:20:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: attribute [1.1.0]
+[21:20:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: Animations [1.0.5]
+[21:20:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: math [2.0.2]
+[21:20:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[21:20:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.3]
+[21:20:43] [Server thread/INFO]: 8 placeholder hook(s) registered! 1 placeholder hook(s) have an update available.
+[21:20:43] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] 
+[21:20:43] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [A] Resource pack zipped.
+[21:20:44] [Server thread/INFO]: [ProtocolLib] The updater found an update: 5.4.0 (Running 5.4.0-SNAPSHOT-741). Download at https://www.spigotmc.org/resources/protocollib.1997/
+[21:20:45] [Server thread/INFO]: Incorrect argument for command
+...coreboard objetives add Time dummy<--[HERE]
+[21:20:45] [Server thread/INFO]: Created team [Cazador]
+[21:20:45] [Server thread/INFO]: Created team [Admin]
+[21:20:45] [Server thread/INFO]: A team already exists by that name
+[21:20:45] [Server thread/INFO]: Created team [Muerto]
+[21:20:45] [Server thread/INFO]: Created team [esperando]
+[21:20:45] [Server thread/INFO]: Created team [mision1]
+[21:20:45] [Server thread/INFO]: Created team [mision2_1]
+[21:20:45] [Server thread/INFO]: Created team [mision2_2]
+[21:20:45] [Server thread/INFO]: Created team [mision2_3]
+[21:20:45] [Server thread/INFO]: Created team [mision2_4]
+[21:20:45] [Server thread/INFO]: Created team [mision3_1]
+[21:20:45] [Server thread/INFO]: Created team [mision3_2]
+[21:20:45] [Server thread/INFO]: Created team [mision3_3]
+[21:20:45] [Server thread/INFO]: Created team [mision3_4]
+[21:20:45] [Server thread/INFO]: Created team [mision4_1]
+[21:20:45] [Server thread/INFO]: Created team [mision4_2]
+[21:20:45] [Server thread/INFO]: Created team [mision4_3]
+[21:20:45] [Server thread/INFO]: Created team [mision4_4]
+[21:20:45] [Server thread/INFO]: Created team [mision5_1]
+[21:20:45] [Server thread/INFO]: Created team [mision5_2]
+[21:20:45] [Server thread/INFO]: Created team [mision5_3]
+[21:20:45] [Server thread/INFO]: Created team [mision5_4]
+[21:20:45] [Server thread/INFO]: Created team [mision6_1]
+[21:20:45] [Server thread/INFO]: Created team [mision6_2]
+[21:20:45] [Server thread/INFO]: Created team [mision6_3]
+[21:20:45] [Server thread/INFO]: Created team [mision6_4]
+[21:20:45] [Server thread/INFO]: Created team [mision7_1]
+[21:20:45] [Server thread/INFO]: Created team [mision7_2]
+[21:20:45] [Server thread/INFO]: Created team [mision7_3]
+[21:20:45] [Server thread/INFO]: Created team [mision7_4]
+[21:20:45] [Server thread/INFO]: Created team [mision8_1]
+[21:20:45] [Server thread/INFO]: Created team [mision8_2]
+[21:20:45] [Server thread/INFO]: Created team [mision8_3]
+[21:20:45] [Server thread/INFO]: Created team [mision8_4]
+[21:20:45] [Server thread/INFO]: Created team [mision9_1]
+[21:20:45] [Server thread/INFO]: Created team [mision9_2]
+[21:20:45] [Server thread/INFO]: Created team [mision9_3]
+[21:20:45] [Server thread/INFO]: Created team [mision9_4]
+[21:20:45] [Server thread/INFO]: Created team [mision10_1]
+[21:20:45] [Server thread/INFO]: Created team [mision10_2]
+[21:20:45] [Server thread/INFO]: Created team [mision10_3]
+[21:20:45] [Server thread/INFO]: Created team [mision10_4]
+[21:20:45] [Server thread/INFO]: Created team [mision11_1]
+[21:20:45] [Server thread/INFO]: Created team [mision11_2]
+[21:20:45] [Server thread/INFO]: Created team [mision11_3]
+[21:20:45] [Server thread/INFO]: Created team [mision11_4]
+[21:20:45] [Server thread/INFO]: Created team [mision12_1]
+[21:20:45] [Server thread/INFO]: Created team [mision12_2]
+[21:20:45] [Server thread/INFO]: Created team [mision12_3]
+[21:20:45] [Server thread/INFO]: Created team [mision12_4]
+[21:20:45] [Server thread/INFO]: Created team [mision13_1]
+[21:20:45] [Server thread/INFO]: Created team [mision13_2]
+[21:20:45] [Server thread/INFO]: Created team [mision13_3]
+[21:20:45] [Server thread/INFO]: Created team [mision13_4]
+[21:20:45] [Server thread/INFO]: Created team [mision14_1]
+[21:20:45] [Server thread/INFO]: Created team [mision14_2]
+[21:20:45] [Server thread/INFO]: Created team [mision14_3]
+[21:20:45] [Server thread/INFO]: Created team [mision14_4]
+[21:20:45] [Server thread/INFO]: Created team [mision15_1]
+[21:20:45] [Server thread/INFO]: Created team [mision15_2]
+[21:20:45] [Server thread/INFO]: Created team [mision15_3]
+[21:20:45] [Server thread/INFO]: Created team [mision15_4]
+[21:20:45] [Server thread/INFO]: Created team [mision16_1]
+[21:20:45] [Server thread/INFO]: Created team [mision16_2]
+[21:20:45] [Server thread/INFO]: Created team [mision16_3]
+[21:20:45] [Server thread/INFO]: Created team [mision16_4]
+[21:20:45] [Server thread/INFO]: Created team [mision17_1]
+[21:20:45] [Server thread/INFO]: Created team [mision17_2]
+[21:20:45] [Server thread/INFO]: Created team [mision17_3]
+[21:20:45] [Server thread/INFO]: Created team [mision17_4]
+[21:20:45] [Server thread/INFO]: Created team [mision18_1]
+[21:20:45] [Server thread/INFO]: Created team [mision18_2]
+[21:20:45] [Server thread/INFO]: Created team [mision18_3]
+[21:20:45] [Server thread/INFO]: Created team [mision18_4]
+[21:20:45] [Server thread/INFO]: Created team [mision19_1]
+[21:20:45] [Server thread/INFO]: Created team [mision19_2]
+[21:20:45] [Server thread/INFO]: Created team [mision19_3]
+[21:20:45] [Server thread/INFO]: Created team [mision19_4]
+[21:20:45] [Server thread/INFO]: Created team [mision20_1]
+[21:20:45] [Server thread/INFO]: Created team [mision20_2]
+[21:20:45] [Server thread/INFO]: Created team [mision20_3]
+[21:20:45] [Server thread/INFO]: Created team [mision20_4]
+[21:20:45] [Server thread/INFO]: Created team [mision21_1]
+[21:20:45] [Server thread/INFO]: Created team [mision21_2]
+[21:20:45] [Server thread/INFO]: Created team [mision21_3]
+[21:20:45] [Server thread/INFO]: Created team [mision21_4]
+[21:20:45] [Server thread/INFO]: Created team [mision22_1]
+[21:20:45] [Server thread/INFO]: Created team [mision22_2]
+[21:20:45] [Server thread/INFO]: Created team [mision22_3]
+[21:20:45] [Server thread/INFO]: Created team [mision22_4]
+[21:20:45] [Server thread/INFO]: Created team [mision23_1]
+[21:20:45] [Server thread/INFO]: Created team [mision23_2]
+[21:20:45] [Server thread/INFO]: Created team [mision23_3]
+[21:20:45] [Server thread/INFO]: Created team [mision23_4]
+[21:20:45] [Server thread/INFO]: Created team [mision24_1]
+[21:20:45] [Server thread/INFO]: Created team [mision24_2]
+[21:20:45] [Server thread/INFO]: Created team [mision24_3]
+[21:20:45] [Server thread/INFO]: Created team [mision24_4]
+[21:20:45] [Server thread/INFO]: Created team [mision25_1]
+[21:20:45] [Server thread/INFO]: Created team [mision25_2]
+[21:20:45] [Server thread/INFO]: Created team [mision25_3]
+[21:20:45] [Server thread/INFO]: Created team [mision25_4]
+[21:20:45] [Server thread/INFO]: Created team [mision26_1]
+[21:20:45] [Server thread/INFO]: Created team [mision26_2]
+[21:20:45] [Server thread/INFO]: Created team [mision26_3]
+[21:20:45] [Server thread/INFO]: Created team [mision26_4]
+[21:20:45] [Server thread/INFO]: Created team [mision27_1]
+[21:20:45] [Server thread/INFO]: Created team [mision27_2]
+[21:20:45] [Server thread/INFO]: Created team [mision27_3]
+[21:20:45] [Server thread/INFO]: Created team [mision27_4]
+[21:20:45] [Server thread/INFO]: Created team [mision28_1]
+[21:20:45] [Server thread/INFO]: Created team [mision28_2]
+[21:20:45] [Server thread/INFO]: Created team [mision28_3]
+[21:20:45] [Server thread/INFO]: Created team [mision28_4]
+[21:20:45] [Server thread/INFO]: Created team [mision29_1]
+[21:20:45] [Server thread/INFO]: Created team [mision29_2]
+[21:20:45] [Server thread/INFO]: Created team [mision29_3]
+[21:20:45] [Server thread/INFO]: Created team [mision29_4]
+[21:20:45] [Server thread/INFO]: Created team [mision30_1]
+[21:20:45] [Server thread/INFO]: Created team [mision30_2]
+[21:20:45] [Server thread/INFO]: Created team [mision30_3]
+[21:20:45] [Server thread/INFO]: Created team [mision30_4]
+[21:20:45] [Server thread/INFO]: Created team [Pollos]
+[21:20:45] [Server thread/INFO]: Created team [Cerdos]
+[21:20:45] [Server thread/INFO]: Created team [Cabras]
+[21:20:45] [Server thread/INFO]: Created team [Ovejas]
+[21:20:45] [Server thread/INFO]: A team already exists by that name
+[21:20:45] [Server thread/INFO]: Created team [Caballos]
+[21:20:45] [Server thread/INFO]: Created team [Llamas]
+[21:20:45] [Server thread/INFO]: Created team [Sniffers]
+[21:20:45] [Server thread/INFO]: Created team [con_bomba]
+[21:20:45] [Server thread/INFO]: Created team [Cazador P3]
+[21:20:45] [Server thread/INFO]: Updated the color for team [Cazador] to red
+[21:20:45] [Server thread/INFO]: Nothing changed. That team already has that color
+[21:20:45] [Server thread/INFO]: Updated the color for team [Muerto] to gray
+[21:20:45] [Server thread/INFO]: Updated the color for team [Pollos] to green
+[21:20:45] [Server thread/INFO]: Updated the color for team [Cerdos] to green
+[21:20:45] [Server thread/INFO]: Updated the color for team [Cabras] to green
+[21:20:45] [Server thread/INFO]: Updated the color for team [Ovejas] to green
+[21:20:45] [Server thread/INFO]: Nothing changed. That team already has that color
+[21:20:45] [Server thread/INFO]: Updated the color for team [Caballos] to green
+[21:20:45] [Server thread/INFO]: Updated the color for team [Llamas] to green
+[21:20:45] [Server thread/INFO]: Updated the color for team [Sniffers] to green
+[21:20:45] [Server thread/INFO]: Updated the color for team [con_bomba] to red
+[21:20:45] [Server thread/INFO]: Updated the color for team [Cazador P3] to dark_red
+[21:20:53] [User Authenticator #0/INFO]: UUID of player iMathS_ is d0ea624c-c5c1-38c9-9bc5-65b335d8fcdc
+[21:20:53] [Server thread/INFO]: iMathS_[/127.110.76.240:34753] logged in with entity id 238 at ([world]-172.7885924490231, -20.972706342036243, -823.7104037685208)
+[21:21:22] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.25
+[21:21:24] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.10000000149011612
+[21:21:25] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.25
+[21:21:27] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.10000000149011612
+[21:21:28] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.25
+[21:21:29] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.10000000149011612
+[21:21:38] [Server thread/INFO]: iMathS_ issued server command: /subtitle
+[21:21:43] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.25
+[21:21:45] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.10000000149011612
+[21:21:46] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.25
+[21:21:48] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.10000000149011612
+[21:22:41] [Server thread/INFO]: iMathS_ issued server command: /fill -167 -15 -798
+[21:22:47] [Server thread/INFO]: iMathS_ issued server command: /fill -167 -15 -798 -167 -28 -798 minecraft:azalea
+[21:22:47] [Server thread/INFO]: [iMathS_: Successfully filled 13 block(s)]
+[21:22:50] [Server thread/INFO]: iMathS_ issued server command: /fill -167 -15 -798 -167 -28 -798 minecraft:azalea
+[21:22:50] [Server thread/INFO]: [iMathS_: Successfully filled 13 block(s)]
+[21:23:18] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.25
+[21:23:20] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.10000000149011612
+[21:23:48] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.25
+[21:23:50] [Server thread/INFO]: Base value for attribute Speed for entity iMathS_ set to 0.10000000149011612
+[21:25:45] [Server thread/INFO]: iMathS_ lost connection: Disconnected
+[21:25:45] [Server thread/INFO]: iMathS_ left the game

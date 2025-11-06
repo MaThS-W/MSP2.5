@@ -1,0 +1,32 @@
+name: Maths_96
+events:
+  items_ronda1:
+    one_time: false
+    cooldown: 1743805531337
+  botiquin:
+    one_time: false
+    cooldown: 1748240291069
+  visores_nocturnos:
+    one_time: false
+    cooldown: 1748239773211
+  regalo_inicio:
+    one_time: true
+    cooldown: 0
+  interactuar_entities:
+    one_time: false
+    cooldown: 1745554109253
+  orbes:
+    one_time: false
+    cooldown: 1748757682500
+  chispas_invisibilidad_prueba1:
+    one_time: false
+    cooldown: 1748239760863
+  jump_pads:
+    one_time: false
+    cooldown: 1746416974586
+  jump_pads_p2:
+    one_time: false
+    cooldown: 1746417143652
+  palos&rocas:
+    one_time: false
+    cooldown: 1748757681715
